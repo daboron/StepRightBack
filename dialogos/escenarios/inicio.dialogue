@@ -1,0 +1,33 @@
+~ carpa
+Protagonista: Si que es grande cuando la ves de cerca. ¿Crees que puede caerse durante la función?
+Detective: Está muy bien sujeta. Ni siquiera he podido levantar la lona unos centímetros.
+Protagonista: ¿Por qué querrías levantarla?
+Detective: Para mirar qué hacen dentro.
+do detective_invisible()
+do prueba_dialogolog()
+=> END
+
+~ cartel
+Protagonista: Al menos alguien nos da la bienvenida.
+Detective: No parece tener nada interesante.
+Protagonista: (No le hagas caso, señor cartel. Yo recordaré tu amabilidad)
+do detective_invisible()
+do prueba_dialogolog()
+=> END
+
+~ caja1
+Detective: Está cerrada.
+Protagonista: Qué sorpresa.
+Detective: Parece que tendremos que encontrar la llave primero.
+Protagonista: No creo que hayan dejado la llave tirada por ahí para que la encuentres.
+Detective: Qué poco interesante.
+do detective_invisible()
+do prueba_dialogolog()
+=> END
+
+~ caja2
+Detective: Sigue cerrada.
+Protagonista: Que insistente.
+do detective_invisible()
+do prueba_dialogolog()
+=> END
