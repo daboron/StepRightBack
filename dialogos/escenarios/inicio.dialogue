@@ -1,33 +1,95 @@
-~ carpa
+~ inicio1
+: [color=green]Exterior del circo, media tarde.[/color]
+Protagonista: Aún no me creo que me invitaras aquí.
+do show_character("detective", "default_frio")
+Detective: ¿Qué tiene de malo?
+Protagonista: Normalmente solo me llamas para meternos en problemas.
+Detective: Tú eres el que siempre acepta acompañarme.
+Protagonista: Dime que no hay nada raro esta vez.
+Detective: Eso ya se verá. 
+Detective: Aún queda tiempo para que empiece, así que podemos aprovechar para mirar un poco los alrededores. 
+Protagonista: (Eso no me tranquiliza para nada.)
+: [color=green]Haz click sobre los diferentes objetos del escenario para interactuar con ellos.[/color]
+do hide_character("detective")
+=> END
+
+~ inicio2
+do show_character("duenyo", "default")
+: ...
+???: Veo que os interesa mi circo.
+Protagonista: Solo estábamos mirando.
+do show_character("detective", "default_frio")
+Detective: Estamos comprobando que todo está en orden.
+do show_character("duenyo", "laught")
+Dueño: Entonces lo dejo en vuestras manos. Pero aseguraros de disfrutar el espectáculo también.
+Protagonista: (Se está quedando con nosotros.)
+do show_character("detective", "default_frio")
+Detective: ¿Puede contarnos algo sobre el espectáculo de hoy?
+do show_character("duenyo", "default")
+Dueño: Diría que el plato fuerte de la noche es el truco de magia. Aunque, por supuesto, todas las actuaciones merecerán la pena.
+do hide_character("detective")
+do show_character("fortachon", "cold")
+???: Jefe, le necesitamos dentro un momento.
+Dueño: ¿Ha pasado algo?
+Forzudo: {nombre Maga} dice que ha tenido un problema.
+Dueño: Entiendo, ya voy.
+Dueño: Si me disculpan, nos veremos después.
+Protagonista: Hasta luego, que vaya bien.
+do hide_character("duenyo")
+do hide_character("fortachon")
+do show_character("detective", "default_frio")
+Detective: Creo que eso es todo por ahora. Vamos a revisar todo lo que sabemos.
+Detective: Asegúrate de apuntar todas las cosas que puedan ser importantes, así podremos revisarlas después.
+: [color=green]El cuaderno se ha actualizado, pulsa Esc para abrirlo.[/color]
+do hide_character("detective")
+# do prueba_dialogolog()
+=> END
+
+# Interacciones con objetos de la escena
+~ carpa_ini
 Protagonista: Si que es grande cuando la ves de cerca. ¿Crees que puede caerse durante la función?
 Detective: Está muy bien sujeta. Ni siquiera he podido levantar la lona unos centímetros.
 Protagonista: ¿Por qué querrías levantarla?
 Detective: Para mirar qué hacen dentro.
-do detective_invisible()
-do prueba_dialogolog()
+do hide_character("detective")
+do terminar_exploracion()
+#do prueba_dialogolog()
 => END
 
-~ cartel
+~ cartel_ini
 Protagonista: Al menos alguien nos da la bienvenida.
 Detective: No parece tener nada interesante.
 Protagonista: (No le hagas caso, señor cartel. Yo recordaré tu amabilidad)
-do detective_invisible()
-do prueba_dialogolog()
+do hide_character("detective")
+do terminar_exploracion()
+#do prueba_dialogolog()
 => END
 
-~ caja1
+~ caja_ini
 Detective: Está cerrada.
 Protagonista: Qué sorpresa.
 Detective: Parece que tendremos que encontrar la llave primero.
-Protagonista: No creo que hayan dejado la llave tirada por ahí para que la encuentres.
+Protagonista: No parece que use una llave, quizá está cerrada con clavos.
 Detective: Qué poco interesante.
-do detective_invisible()
-do prueba_dialogolog()
+do hide_character("detective")
+do terminar_exploracion()
+#do prueba_dialogolog()
 => END
 
-~ caja2
-Detective: Sigue cerrada.
-Protagonista: Que insistente.
-do detective_invisible()
-do prueba_dialogolog()
+~ banderines_ini
+Protagonista: Son muy coloridos. Me recuerdan a mi último cumpleaños.
+Detective: ¿No eres un poco mayor ya?
+Protagonista: Disculpe, disfrutaré de cosas más “adultas” como venir al circo.
+Detective: Touche.
+do hide_character("detective")
+do terminar_exploracion()
+#do prueba_dialogolog()
+=> END
+
+~ farola_ini
+Detective: Por ahora no son muy útiles.
+Protagonista: Cuando esté más oscuro, lo agradecerás.
+do hide_character("detective")
+do terminar_exploracion()
+#do prueba_dialogolog()
 => END

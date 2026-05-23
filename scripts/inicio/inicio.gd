@@ -1,38 +1,78 @@
 extends Node2D
-@onready var detective_node = $detective
-var detective: Character
-var clicked_objects = {}
+#dialogo que se usa en esta escena
+@onready var dialogo = load ("res://dialogos/escenarios/inicio.dialogue")
+
+var characters := {}
+var active_characters := []
+# contador de los objetos interactuados para continuar la escena
+var contador = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	detective = Character.new("detective",detective_node)
-	detective.hide()
-	for obj in get_tree().get_nodes_in_group("clickable"):
-		obj.connect("clicked_object", _on_clicked_object)
+	SaveGame.load_game() # Por ahora que cargue la partida aquí
+	# personajes que salen en la escena
+	characters["detective"] = $detective
+	characters["duenyo"] = $duenyo
+	characters["fortachon"] = $fortachon
+	for c in characters.values():
+		c.visibility(false)
+	# dialogo inicial
+	DialogueManager.show_dialogue_balloon(dialogo, "inicio1")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+# funcion para hacer un personaje visible y reproducir su animación cuando habla
+func show_character(name: String, anim: String = "default") -> void:
+	var char = characters[name]
+	char.visibility(true)
+	char.play_anim(anim)
+	_set_active(name)
 
-func detective_invisible() -> void:
-	detective.hide()
+func _set_active(name: String):
+	if !active_characters.has(name):
+		active_characters.append(name)
+	update_layout()
+	# cuando los personajes estan colocados aplicamos focus en el que esta hablando
+	if active_characters.size() > 1:
+		for c in characters.values():
+			c.unfocus()
+	characters[name].focus()
 
-func _on_clicked_object(id):
-	detective.show()
-	detective.play_anim("detective_default_frio")
-	if id == "caja":
-		if !clicked(id):
-			DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/inicio.dialogue"), "caja1")
-		else: 
-			DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/inicio.dialogue"), "caja2")
-	else:
-		DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/inicio.dialogue"), id)
-	if !clicked(id):
-		clicked_objects[id] = true
+# funcion para colocar los personajes en la posicion (x) correspondiente segun cuantos hay
+func update_layout():
+	if active_characters.size() == 1:
+		var c = characters[active_characters[0]]
+		c.set_base_position(Vector2(960, 540))
+	elif active_characters.size() == 2:
+		characters[active_characters[0]].set_base_position(Vector2(600, 540))
+		characters[active_characters[1]].set_base_position(Vector2(1320, 540))
 
-func clicked(id):
-	return clicked_objects.has(id)
+#ocultar al personaje que ya no esta en escena
+func hide_character(name: String):
+	characters[name].visibility(false)
+	active_characters.erase(name)
+	update_layout()
 
+# funcion para cuando se clica un objeto interactuable
+func _on_clicked_object(type, id):
+	# si es la 1ª vez que se clica el objeto se aumenta el contador y se guarda como obj clicado
+	if !SaveGame.game_data_has(type, id):
+		contador += 1
+		SaveGame.game_data_add(type, id)
+	# cuando se clica uno de los objetos interactuables se reproduce su dialogo correspondiente
+	characters["detective"].visibility(true)
+	characters["detective"].play_anim("default_frio")
+	DialogueManager.show_dialogue_balloon(dialogo, id)
+
+# cuando se termina un dialogo de objeto interactuable se comprueba si ya se han investigado todos
+# los objetos para seguir con la historia
+func terminar_exploracion() -> void:
+	if contador == 5:
+		DialogueManager.show_dialogue_balloon(dialogo, "inicio2")
+
+
+
+
+
+# funcion para comprobar que el log de dialogo funciona (borrar mas tarde)
 func prueba_dialogolog() -> void:
 	var log = DialogueLog.get_log()
 	for entry in log:

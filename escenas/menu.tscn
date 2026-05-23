@@ -1,0 +1,253 @@
+[gd_scene load_steps=56 format=3 uid="uid://b4w7roti5al5k"]
+
+[ext_resource type="Script" path="res://scripts/menu/menu.gd" id="1_yfi57"]
+[ext_resource type="Texture2D" uid="uid://ytc1xbt685vd" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0001.png" id="2_y6gkb"]
+[ext_resource type="Texture2D" uid="uid://8cam7lfg5xrn" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0002.png" id="3_jb6kf"]
+[ext_resource type="Texture2D" uid="uid://dv5qu73sltenr" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0003.png" id="4_a6n73"]
+[ext_resource type="Texture2D" uid="uid://b2uvop3ttb316" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0004.png" id="5_g4tw0"]
+[ext_resource type="Texture2D" uid="uid://b2oovd2878fh3" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0005.png" id="6_8tifj"]
+[ext_resource type="Texture2D" uid="uid://bkmb4tbu404vy" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0006.png" id="7_qi7o0"]
+[ext_resource type="Texture2D" uid="uid://cwjfv8xo75ros" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0007.png" id="8_i12kk"]
+[ext_resource type="Texture2D" uid="uid://bnt10ia32uovq" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0008.png" id="9_x6djk"]
+[ext_resource type="Texture2D" uid="uid://cit7ttlp4m33k" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0009.png" id="10_rhcn2"]
+[ext_resource type="Texture2D" uid="uid://b456r0wqxhsbh" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0010.png" id="11_lrkp4"]
+[ext_resource type="Texture2D" uid="uid://bnoa6pxsl40pc" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0011.png" id="12_ntuj2"]
+[ext_resource type="Texture2D" uid="uid://dunfvie0bgoww" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0012.png" id="13_72m1e"]
+[ext_resource type="Texture2D" uid="uid://gqfip4of2ixu" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0013.png" id="14_iqarp"]
+[ext_resource type="Texture2D" uid="uid://c1ax1txrh8po4" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0014.png" id="15_rjc4c"]
+[ext_resource type="Texture2D" uid="uid://b7cpe56px5hwx" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0015.png" id="16_32ttv"]
+[ext_resource type="Texture2D" uid="uid://cdr8veqgbv8vh" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0016.png" id="17_6vu7x"]
+[ext_resource type="Texture2D" uid="uid://d1hmv7ggnu54x" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0017.png" id="18_7vy6o"]
+[ext_resource type="Texture2D" uid="uid://c7evyalar2wmo" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0018.png" id="19_p0doo"]
+[ext_resource type="Texture2D" uid="uid://dg3h03e7ej7gf" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0019.png" id="20_pup08"]
+[ext_resource type="Texture2D" uid="uid://1ww4ocs31xbl" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0020.png" id="21_a4bfs"]
+[ext_resource type="Texture2D" uid="uid://dwx8psoq6wppu" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0021.png" id="22_obbcf"]
+[ext_resource type="Texture2D" uid="uid://d3tkku0nsbvv3" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0022.png" id="23_urrmt"]
+[ext_resource type="Texture2D" uid="uid://bn5u85dord48u" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0023.png" id="24_pori1"]
+[ext_resource type="Texture2D" uid="uid://b7vbblho3nyb3" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0024.png" id="25_3l7aj"]
+[ext_resource type="Texture2D" uid="uid://dfj33hquq3h1o" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0025.png" id="26_jn3pi"]
+[ext_resource type="Texture2D" uid="uid://b6qshapid10ua" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0026.png" id="27_sjlmi"]
+[ext_resource type="Texture2D" uid="uid://cbvbrv4oy34vw" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0027.png" id="28_0aln0"]
+[ext_resource type="Texture2D" uid="uid://d3l22igagvwij" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0028.png" id="29_oljsa"]
+[ext_resource type="Texture2D" uid="uid://cel2kq7xtk8cw" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0029.png" id="30_xihn3"]
+[ext_resource type="Texture2D" uid="uid://det8jdnvu7rn1" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0030.png" id="31_yjpuk"]
+[ext_resource type="Texture2D" uid="uid://c5m6bndka5iyn" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0031.png" id="32_r1fdp"]
+[ext_resource type="Texture2D" uid="uid://dpb6prx13yskn" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0032.png" id="33_2ic0t"]
+[ext_resource type="Texture2D" uid="uid://b0li7ujh0oxbc" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0033.png" id="34_0luet"]
+[ext_resource type="Texture2D" uid="uid://cjua4m5yrv6wq" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0034.png" id="35_mw62o"]
+[ext_resource type="Texture2D" uid="uid://cy0hgedilcucd" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0035.png" id="36_813ml"]
+[ext_resource type="Texture2D" uid="uid://bt37cw326vndp" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0036.png" id="37_6bhn6"]
+[ext_resource type="Texture2D" uid="uid://bw05sjcgum8m0" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0037.png" id="38_e0kg3"]
+[ext_resource type="Texture2D" uid="uid://c7ls1cuapdhnx" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0038.png" id="39_t4juy"]
+[ext_resource type="Texture2D" uid="uid://cxfwhw4bi5d4y" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0039.png" id="40_a5uaw"]
+[ext_resource type="Texture2D" uid="uid://ckk1s2m75mtbs" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0040.png" id="41_tshy1"]
+[ext_resource type="Texture2D" uid="uid://dsvyuw1ehyj70" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0041.png" id="42_cj2er"]
+[ext_resource type="Texture2D" uid="uid://binlehwiug74s" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0042.png" id="43_fjbu0"]
+[ext_resource type="Texture2D" uid="uid://djn20fnptm3fg" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0043.png" id="44_eos17"]
+[ext_resource type="Texture2D" uid="uid://d2src4606erqi" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0044.png" id="45_0xjkn"]
+[ext_resource type="Texture2D" uid="uid://bhosdmmsnqcif" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0045.png" id="46_gqlv8"]
+[ext_resource type="Texture2D" uid="uid://qpkjxjscxp3v" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0046.png" id="47_cvany"]
+[ext_resource type="Texture2D" uid="uid://btf8xd0lytvnu" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0047.png" id="48_navuj"]
+[ext_resource type="Texture2D" uid="uid://c1pa5ebqpp6mm" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0048.png" id="49_p2pce"]
+[ext_resource type="Texture2D" uid="uid://bfx2wkwp80jdb" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0049.png" id="50_e6oc4"]
+[ext_resource type="Texture2D" uid="uid://sabiubwyuyqv" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0050.png" id="51_mvift"]
+[ext_resource type="Script" path="res://scripts/clases/character.gd" id="52_q4opr"]
+[ext_resource type="Texture2D" uid="uid://dliebignbpfff" path="res://arte/menu/notebook.png" id="53_8dmn3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jguvv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_y6gkb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jb6kf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_a6n73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_g4tw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8tifj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qi7o0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_i12kk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_x6djk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_rhcn2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_lrkp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ntuj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_72m1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_iqarp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_rjc4c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_32ttv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6vu7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7vy6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_p0doo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_pup08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_a4bfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_obbcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_urrmt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_pori1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_3l7aj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_jn3pi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_sjlmi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_0aln0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_oljsa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_xihn3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_yjpuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_r1fdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_2ic0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_0luet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_mw62o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_813ml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_6bhn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_e0kg3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_t4juy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_a5uaw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_tshy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_cj2er")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_fjbu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_eos17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_0xjkn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_gqlv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_cvany")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_navuj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_p2pce")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_e6oc4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_mvift")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nhlvj"]
+bg_color = Color(0.258824, 0.65098, 0.87451, 1)
+
+[node name="Menu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_yfi57")
+
+[node name="fondo_osc" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0.462745)
+
+[node name="protagonista" type="AnimatedSprite2D" parent="."]
+position = Vector2(294, 540)
+sprite_frames = SubResource("SpriteFrames_jguvv")
+flip_h = true
+script = ExtResource("52_q4opr")
+id = "protagonista"
+
+[node name="cuaderno" type="TextureRect" parent="."]
+offset_left = 12.0
+offset_top = -3.0
+offset_right = 1932.0
+offset_bottom = 1077.0
+texture = ExtResource("53_8dmn3")
+
+[node name="pestañas" type="VBoxContainer" parent="."]
+offset_left = 1641.0
+offset_top = 34.0
+offset_right = 1798.0
+offset_bottom = 1030.0
+
+[node name="Button" type="Button" parent="pestañas"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_nhlvj")
+text = "Objetos"
