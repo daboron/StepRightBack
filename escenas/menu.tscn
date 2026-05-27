@@ -231,18 +231,11 @@ flip_h = true
 script = ExtResource("52_q4opr")
 id = "protagonista"
 
-[node name="cuaderno" type="TextureRect" parent="."]
-offset_left = 12.0
-offset_top = -3.0
-offset_right = 1932.0
-offset_bottom = 1077.0
-texture = ExtResource("53_8dmn3")
-
 [node name="pestañas" type="VBoxContainer" parent="."]
-offset_left = 1641.0
-offset_top = 34.0
-offset_right = 1798.0
-offset_bottom = 1030.0
+offset_left = 1628.0
+offset_top = 39.0
+offset_right = 1785.0
+offset_bottom = 1031.0
 
 [node name="Button" type="Button" parent="pestañas"]
 custom_minimum_size = Vector2(0, 100)
@@ -251,3 +244,10 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 33
 theme_override_styles/normal = SubResource("StyleBoxFlat_nhlvj")
 text = "Objetos"
+
+[node name="cuaderno" type="TextureRect" parent="."]
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 1919.0
+offset_bottom = 1079.0
+texture = ExtResource("53_8dmn3")
