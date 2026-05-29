@@ -2,10 +2,13 @@ extends Node2D
 #dialogo que se usa en esta escena
 @onready var dialogo = load ("res://dialogos/escenarios/inicio.dialogue")
 
-var characters := {}
-var active_characters := []
+var characters = {}
+var active_characters = []
 # contador de los objetos interactuados para continuar la escena
 var contador = 0
+var bloqueado = true
+var esperando = false
+var boton_Esc = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -53,6 +56,8 @@ func hide_character(name: String):
 
 # funcion para cuando se clica un objeto interactuable
 func _on_clicked_object(type, id):
+	if bloqueado:
+		return
 	# si es la 1ª vez que se clica el objeto se aumenta el contador y se guarda como obj clicado
 	if !SaveGame.game_data_has(type, id):
 		contador += 1
@@ -68,12 +73,25 @@ func terminar_exploracion() -> void:
 	if contador == 5:
 		DialogueManager.show_dialogue_balloon(dialogo, "inicio2")
 
+#funcio para desbloquear los dialogos de los objetos al terminar el primer dialogo
+func dialogo_inicial_terminado() -> void:
+	bloqueado = false
 
+func esperando_cuaderno() -> void:
+	esperando = true
+	$placeHolder.visible = true
 
+func _input(event) -> void:
+	if event.is_action_pressed("menu") && esperando == true:
+		if boton_Esc == false:
+			print("Se abre el cuaderno")
+			$placeHolder.visible = false
+			boton_Esc = true
+		else: 
+			print("Se cierra el cuaderno")
+			DialogueManager.show_dialogue_balloon(dialogo, "inicio3")
+			boton_Esc = false
+			esperando = false
 
-
-# funcion para comprobar que el log de dialogo funciona (borrar mas tarde)
-func prueba_dialogolog() -> void:
-	var log = DialogueLog.get_log()
-	for entry in log:
-		print(entry["character"], ":", entry["text"])
+func fin_escena() -> void:
+	Controlador.cambio_escena("carpa")

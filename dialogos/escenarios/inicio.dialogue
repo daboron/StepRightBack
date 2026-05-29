@@ -1,5 +1,5 @@
 ~ inicio1
-: [color=green]Exterior del circo, media tarde.[/color]
+: [color=#6CCF6C]Exterior del circo, media tarde.[/color]
 Samuel: Aún no me creo que me invitaras aquí.
 do show_character("detective", "default_frio")
 Claire: ¿Qué tiene de malo?
@@ -11,6 +11,7 @@ Claire: Aún queda tiempo para que empiece, así que podemos aprovechar para mir
 Samuel: (Eso no me tranquiliza para nada.)
 : [color=green]Haz click sobre los diferentes objetos del escenario para interactuar con ellos.[/color]
 do hide_character("detective")
+do dialogo_inicial_terminado()
 => END
 
 ~ inicio2
@@ -40,9 +41,19 @@ do hide_character("fortachon")
 do show_character("detective", "default_frio")
 Claire: Creo que eso es todo por ahora. Vamos a revisar todo lo que sabemos.
 Claire: Asegúrate de apuntar todas las cosas que puedan ser importantes, así podremos revisarlas después.
-: [color=green]El cuaderno se ha actualizado, pulsa Esc para abrirlo.[/color]
+do esperando_cuaderno()
+# : [color=green]El cuaderno se ha actualizado, pulsa Esc para abrirlo.[/color]
 do hide_character("detective")
 # do prueba_dialogolog()
+=> END
+
+~ inicio3
+Samuel: (Hemos estado un rato distraídos.)
+Claire: Por ahora eso está bien.
+Dueño del circo: Va a comenzar el espectáculo, pueden ir pasando a la carpa.
+Samuel: (Todo el mundo está comenzando a entrar de forma animada)
+Samuel: ¿Aún no vas a explicarme qué es lo que pasa?
+Claire: Solo mantente atento y disfruta del espectáculo.
 => END
 
 # Interacciones con objetos de la escena

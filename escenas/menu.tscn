@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=3 uid="uid://b4w7roti5al5k"]
+[gd_scene load_steps=70 format=3 uid="uid://bnq0lxjl6p2s3"]
 
 [ext_resource type="Script" path="res://scripts/menu/menu.gd" id="1_yfi57"]
 [ext_resource type="Texture2D" uid="uid://b1s4bpy1vyqh3" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0001.png" id="2_y6gkb"]
@@ -212,9 +212,6 @@ animations = [{
 "speed": 25.0
 }]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fbfja"]
-bg_color = Color(0.435294, 0.521569, 0.615686, 1)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hvp1v"]
 bg_color = Color(0.756863, 0.815686, 0.890196, 1)
 
@@ -282,19 +279,26 @@ offset_right = 1919.0
 offset_bottom = 1079.0
 texture = ExtResource("53_8dmn3")
 
-[node name="pestañas" type="VBoxContainer" parent="."]
+[node name="log" type="RichTextLabel" parent="cuaderno"]
+layout_mode = 0
+offset_left = 836.0
+offset_top = 168.0
+offset_right = 1590.0
+offset_bottom = 997.0
+
+[node name="pestanyas" type="VBoxContainer" parent="."]
 offset_left = 1628.0
-offset_top = 59.0
+offset_top = 50.0
 offset_right = 1783.0
-offset_bottom = 1045.0
+offset_bottom = 1030.0
 size_flags_vertical = 0
 
-[node name="PanelObjetos" type="PanelContainer" parent="pestañas"]
+[node name="PanelDialogos" type="PanelContainer" parent="pestanyas"]
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="Objetos" type="Button" parent="pestañas/PanelObjetos"]
-custom_minimum_size = Vector2(0, 190)
+[node name="Dialogos" type="Button" parent="pestanyas/PanelDialogos"]
+custom_minimum_size = Vector2(0, 160)
 layout_mode = 2
 mouse_filter = 1
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
@@ -305,18 +309,17 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 33
-theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_fbfja")
 theme_override_styles/hover = SubResource("StyleBoxFlat_hvp1v")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_t5rxk")
 theme_override_styles/normal = SubResource("StyleBoxFlat_nhlvj")
-text = "Objetos"
+text = "Diálogos"
 
-[node name="PanelPerfiles" type="PanelContainer" parent="pestañas"]
+[node name="PanelObjetos" type="PanelContainer" parent="pestanyas"]
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="Perfiles" type="Button" parent="pestañas/PanelPerfiles"]
-custom_minimum_size = Vector2(0, 190)
+[node name="Objetos" type="Button" parent="pestanyas/PanelObjetos"]
+custom_minimum_size = Vector2(0, 160)
 layout_mode = 2
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
@@ -329,14 +332,14 @@ theme_override_font_sizes/font_size = 33
 theme_override_styles/hover = SubResource("StyleBoxFlat_uea2r")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_jvjyc")
 theme_override_styles/normal = SubResource("StyleBoxFlat_udf7l")
-text = "Perfiles"
+text = "Objetos"
 
-[node name="PanelLugares" type="PanelContainer" parent="pestañas"]
+[node name="PanelPerfiles" type="PanelContainer" parent="pestanyas"]
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="Lugares" type="Button" parent="pestañas/PanelLugares"]
-custom_minimum_size = Vector2(0, 190)
+[node name="Perfiles" type="Button" parent="pestanyas/PanelPerfiles"]
+custom_minimum_size = Vector2(0, 160)
 layout_mode = 2
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
@@ -349,14 +352,14 @@ theme_override_font_sizes/font_size = 33
 theme_override_styles/hover = SubResource("StyleBoxFlat_aeyn2")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_82dl6")
 theme_override_styles/normal = SubResource("StyleBoxFlat_e5rb0")
-text = "Lugares"
+text = "Perfiles"
 
-[node name="PanelAjustes" type="PanelContainer" parent="pestañas"]
+[node name="PanelLugares" type="PanelContainer" parent="pestanyas"]
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="Ajustes" type="Button" parent="pestañas/PanelAjustes"]
-custom_minimum_size = Vector2(0, 190)
+[node name="Lugares" type="Button" parent="pestanyas/PanelLugares"]
+custom_minimum_size = Vector2(0, 160)
 layout_mode = 2
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
@@ -369,14 +372,35 @@ theme_override_font_sizes/font_size = 33
 theme_override_styles/hover = SubResource("StyleBoxFlat_n61o8")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_4u6cr")
 theme_override_styles/normal = SubResource("StyleBoxFlat_5avc8")
-text = "Ajustes"
+text = "Lugares
+"
 
-[node name="PanelNotas" type="PanelContainer" parent="pestañas"]
+[node name="PanelAjustes" type="PanelContainer" parent="pestanyas"]
 layout_mode = 2
 size_flags_vertical = 4
 
-[node name="Notas" type="Button" parent="pestañas/PanelNotas"]
-custom_minimum_size = Vector2(0, 190)
+[node name="Ajustes" type="Button" parent="pestanyas/PanelAjustes"]
+custom_minimum_size = Vector2(0, 160)
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 33
+theme_override_styles/hover = SubResource("StyleBoxFlat_07my0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_7mpf3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_qskvk")
+text = "Ajustes"
+
+[node name="PanelNotas" type="PanelContainer" parent="pestanyas"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="Notas" type="Button" parent="pestanyas/PanelNotas"]
+custom_minimum_size = Vector2(0, 160)
 layout_mode = 2
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
@@ -390,3 +414,11 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_07my0")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_7mpf3")
 theme_override_styles/normal = SubResource("StyleBoxFlat_qskvk")
 text = "Notas"
+
+[node name="salir" type="Button" parent="."]
+offset_left = 1092.0
+offset_top = 194.0
+offset_right = 1286.0
+offset_bottom = 280.0
+theme_override_font_sizes/font_size = 20
+text = "Guardar y salir"

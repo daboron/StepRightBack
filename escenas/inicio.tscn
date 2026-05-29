@@ -1928,6 +1928,26 @@ sprite_frames = SubResource("SpriteFrames_phgtx")
 animation = &"cold"
 script = ExtResource("104_c326t")
 
+[node name="placeHolder" type="CenterContainer" parent="."]
+visible = false
+offset_left = 520.0
+offset_top = 333.0
+offset_right = 1420.0
+offset_bottom = 694.0
+
+[node name="ColorRect" type="ColorRect" parent="placeHolder"]
+custom_minimum_size = Vector2(900, 361)
+layout_mode = 2
+color = Color(0.262933, 0.262932, 0.262933, 1)
+
+[node name="texto" type="RichTextLabel" parent="placeHolder"]
+custom_minimum_size = Vector2(900, 50)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 30
+bbcode_enabled = true
+text = "[center][color=green]El cuaderno se ha actualizado, pulsa Esc para abrirlo.[/color][/center]
+"
+
 [connection signal="input_event" from="Carpa" to="Carpa" method="_on_input_event"]
 [connection signal="mouse_entered" from="Carpa" to="Carpa" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Carpa" to="Carpa" method="_on_mouse_exited"]

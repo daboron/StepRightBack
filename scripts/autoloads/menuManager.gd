@@ -24,8 +24,15 @@ func _input(event):
 
 func toggle_menu():
 	var abrir = !menu_instance.visible
+	
+	if not abrir:
+		menu_instance.reset_tab_state()
+	
 	menu_instance.visible = abrir
 	get_tree().paused = abrir
+
+	if abrir and menu_instance.current_tab == null:
+		menu_instance._init_first_tab()
 
 	for node in get_tree().root.get_children():
 		ocultar_dialogue_layers(node, abrir)

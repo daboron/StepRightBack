@@ -5,7 +5,10 @@ var save_path = "user://save_game.dat"
 
 var game_data : Dictionary = {
 	"escena": null,
-	"objetos_clicados": {}
+	"objetos_clicados": {},
+	"objetos": {},
+	"perfiles": {},
+	"lugares": {}
 }
 
 func game_data_add(place, obj) -> void:
