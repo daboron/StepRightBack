@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=3 uid="uid://bnq0lxjl6p2s3"]
+[gd_scene load_steps=73 format=3 uid="uid://b4w7roti5al5k"]
 
 [ext_resource type="Script" path="res://scripts/menu/menu.gd" id="1_yfi57"]
 [ext_resource type="Texture2D" uid="uid://b1s4bpy1vyqh3" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0001.png" id="2_y6gkb"]
@@ -248,7 +248,7 @@ bg_color = Color(0.560784, 0.184314, 0.168627, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5avc8"]
 bg_color = Color(0.780392, 0.317647, 0.294118, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_07my0"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o46at"]
 bg_color = Color(0.878431, 0.478431, 0.721569, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7mpf3"]
@@ -256,6 +256,15 @@ bg_color = Color(0.560784, 0.247059, 0.45098, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qskvk"]
 bg_color = Color(0.784314, 0.372549, 0.623529, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v6h48"]
+bg_color = Color(0.658824, 0.415686, 0.772549, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqlem"]
+bg_color = Color(0.392157, 0.231373, 0.470588, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gfbjd"]
+bg_color = Color(0.545098, 0.345098, 0.639216, 1)
 
 [node name="Menu" type="CanvasLayer"]
 process_mode = 3
@@ -285,6 +294,31 @@ offset_left = 836.0
 offset_top = 168.0
 offset_right = 1590.0
 offset_bottom = 997.0
+
+[node name="salir" type="Button" parent="cuaderno"]
+visible = false
+offset_left = 1093.0
+offset_top = 195.0
+offset_right = 1287.0
+offset_bottom = 281.0
+theme_override_font_sizes/font_size = 20
+text = "Guardar y salir"
+
+[node name="inventario" type="Control" parent="cuaderno"]
+anchors_preset = 0
+offset_left = 805.0
+offset_top = 178.0
+offset_right = 1608.0
+offset_bottom = 1030.0
+
+[node name="Objetos" type="GridContainer" parent="cuaderno/inventario"]
+layout_mode = 0
+offset_left = 22.0
+offset_right = 791.0
+offset_bottom = 825.0
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 15
+columns = 4
 
 [node name="pestanyas" type="VBoxContainer" parent="."]
 offset_left = 1628.0
@@ -390,7 +424,7 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 33
-theme_override_styles/hover = SubResource("StyleBoxFlat_07my0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o46at")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_7mpf3")
 theme_override_styles/normal = SubResource("StyleBoxFlat_qskvk")
 text = "Ajustes"
@@ -410,15 +444,9 @@ theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 33
-theme_override_styles/hover = SubResource("StyleBoxFlat_07my0")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_7mpf3")
-theme_override_styles/normal = SubResource("StyleBoxFlat_qskvk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_v6h48")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dqlem")
+theme_override_styles/normal = SubResource("StyleBoxFlat_gfbjd")
 text = "Notas"
 
-[node name="salir" type="Button" parent="."]
-offset_left = 1092.0
-offset_top = 194.0
-offset_right = 1286.0
-offset_bottom = 280.0
-theme_override_font_sizes/font_size = 20
-text = "Guardar y salir"
+[connection signal="pressed" from="cuaderno/salir" to="." method="_on_salir_pressed"]

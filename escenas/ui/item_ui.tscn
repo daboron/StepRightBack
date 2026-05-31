@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cgri3pmhwcnt8"]
+
+[node name="itemUI" type="VBoxContainer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(175, 175)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Texto de prueba"
+horizontal_alignment = 1

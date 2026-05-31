@@ -87,11 +87,18 @@ func _input(event) -> void:
 			print("Se abre el cuaderno")
 			$placeHolder.visible = false
 			boton_Esc = true
+		#Aquí no se entra cuando se está en la escena del menu
 		else: 
 			print("Se cierra el cuaderno")
 			DialogueManager.show_dialogue_balloon(dialogo, "inicio3")
 			boton_Esc = false
 			esperando = false
+
+func cierra_cuaderno() -> void:
+	if esperando == true && boton_Esc == true:
+		DialogueManager.show_dialogue_balloon(dialogo, "inicio3")
+		boton_Esc = false
+		esperando = false
 
 func fin_escena() -> void:
 	Controlador.cambio_escena("carpa")

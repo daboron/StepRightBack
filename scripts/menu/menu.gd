@@ -2,8 +2,9 @@
 extends CanvasLayer
 @onready var protagonista = $protagonista
 @onready var tabs = $pestanyas.get_children()
+@onready var objetos = $cuaderno/inventario/Objetos
+const item_ui = preload("res://escenas/ui/item_ui.tscn")
 var current_tab = null
-# Guarda el tween activo de cada pestaña
 var tab_tweens = {}  
 
 func _ready() -> void:
@@ -16,12 +17,6 @@ func _ready() -> void:
 		var button = tab.get_child(0)
 		button.pressed.connect(_on_tab_pressed.bind(tab))
 
-	#await get_tree().process_frame
-	#select_tab(tabs[0])
-	#select_menu(tabs[0])
-	
-	#await get_tree().process_frame
-	#tabs[0].get_child(0).queue_redraw()
 
 func _init_first_tab() -> void:
 	await get_tree().process_frame
@@ -40,6 +35,7 @@ func _on_tab_pressed(tab):
 	select_menu(tab)
 
 func select_tab(selected_tab):
+	crear_inventario_prueba() #Solo para prueba
 	#print("Seleccionando: ", selected_tab.name if selected_tab else "NULL")
 	if selected_tab != current_tab:
 		current_tab = selected_tab
@@ -66,7 +62,8 @@ func select_menu(selected_menu):
 	var log = DialogueLog.get_log()
 	var text = $cuaderno/log
 	text.clear()
-	$salir.visible = false
+	$cuaderno/salir.visible = false
+	$cuaderno/inventario.visible = false
 	match selected_menu.name:
 		"PanelDialogos":
 			print("Dialgos")
@@ -77,13 +74,14 @@ func select_menu(selected_menu):
 					text.append_text("[color=#3E8E41][font_size=20][b]%s %s[/b][/font_size][/color]\n" % [entry["character"], entry["text"]])
 		"PanelObjetos":
 			print("Objetos")
+			$cuaderno/inventario.visible = true
 		"PanelPerfiles":
 			print("Perfiles")
 		"PanelLugares":
 			print("Lugares")
 		"PanelAjustes":
 			print("Ajustes")
-			$salir.visible = true
+			$cuaderno/salir.visible = true
 		"PanelNotas":
 			print("Notas")
 			text.append_text("[color=#000000][font_size=40][b]%s[/b][/font_size][/color]\n" % ["Esta opción no está disponible por el momento"])
@@ -95,3 +93,15 @@ func abrir():
 	visible = true
 func cerrar():
 	visible = false
+
+func _on_salir_pressed() -> void:
+	SaveGame.save_game()
+	get_tree().quit()
+
+
+#Solo para prueba, borrar después
+func crear_inventario_prueba():
+	for i in range(16):
+		var panel = Panel.new()
+		panel.custom_minimum_size = Vector2(175, 175)
+		objetos.add_child(panel)
