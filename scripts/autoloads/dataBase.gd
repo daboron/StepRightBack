@@ -6,7 +6,7 @@ var perfiles = {
 	"protagonista": {
 		"fases": {
 			1: {
-				"imagen": 1,
+				"imagen": preload("res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0001.png"), # Placeholder
 				"nombre": "Samuel Collins",
 				"informacion": "placeholder"
 			}
@@ -15,7 +15,7 @@ var perfiles = {
 	"detective": {
 		"fases": {
 			1: {
-				"imagen": 1,
+				"imagen": preload("res://arte/animaciones/detective/02_cold/detective_neutral_cold_0001.png"), # Placeholder
 				"nombre": "Claire Chandler",
 				"informacion": "placeholder"
 			}
@@ -24,7 +24,7 @@ var perfiles = {
 	"duenyo": {
 		"fases": {
 			1: {
-				"imagen": 1,
+				"imagen": preload("res://arte/animaciones/jefe/01_neutral/jefe_neutral_0001.png"), # Placeholder
 				"nombre": "Dueño del circo",
 				"informacion": "placeholder"
 			},
@@ -32,6 +32,15 @@ var perfiles = {
 				"imagen": 2,
 				"nombre": "Víctor Barnum",
 				"informacion": "placeholder2"
+			}
+		}
+	},
+	"forzudo": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0001.png"), # Placeholder
+				"nombre": "???",
+				"informacion": "placeholder"
 			}
 		}
 	}

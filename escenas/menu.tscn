@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://bnq0lxjl6p2s3"]
+[gd_scene load_steps=73 format=3 uid="uid://b4w7roti5al5k"]
 
 [ext_resource type="Script" path="res://scripts/menu/menu.gd" id="1_yfi57"]
 [ext_resource type="Texture2D" uid="uid://b1s4bpy1vyqh3" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0001.png" id="2_y6gkb"]
@@ -322,6 +322,7 @@ theme_override_constants/v_separation = 15
 columns = 4
 
 [node name="Perfiles" type="GridContainer" parent="cuaderno/inventario"]
+layout_mode = 0
 offset_left = 22.0
 offset_right = 791.0
 offset_bottom = 825.0
@@ -330,6 +331,7 @@ theme_override_constants/v_separation = 15
 columns = 4
 
 [node name="Lugares" type="GridContainer" parent="cuaderno/inventario"]
+layout_mode = 0
 offset_left = 22.0
 offset_right = 791.0
 offset_bottom = 825.0

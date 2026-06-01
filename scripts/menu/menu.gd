@@ -66,6 +66,7 @@ func select_menu(selected_menu):
 	var text = $cuaderno/log
 	text.clear()
 	$cuaderno/salir.visible = false
+	$cuaderno/inventario.visible = false
 	objetos.visible = false
 	perfiles.visible = false
 	lugares.visible = false
@@ -77,9 +78,13 @@ func select_menu(selected_menu):
 					text.append_text("[color=#000000][font_size=20][b]%s[/b] %s[/font_size][/color]\n" % [entry["character"], entry["text"]])
 				else:
 					text.append_text("[color=#3E8E41][font_size=20][b]%s %s[/b][/font_size][/color]\n" % [entry["character"], entry["text"]])
+			text.scroll_to_line(text.get_line_count())
 		"PanelObjetos":
 			print("Objetos")
+			$cuaderno/inventario.visible = true
 			objetos.visible = true
+			for child in objetos.get_children():
+				child.queue_free()
 			for objeto in SaveGame.game_data["objetos"]:
 				var inventory_item = item_ui.instantiate()
 				var datos = DataBase.objetos[objeto]["fases"][1]
@@ -88,16 +93,22 @@ func select_menu(selected_menu):
 				objetos.add_child(inventory_item)
 		"PanelPerfiles":
 			print("Perfiles")
+			$cuaderno/inventario.visible = true
 			perfiles.visible = true
+			for child in perfiles.get_children():
+				child.queue_free()
 			for perfil in SaveGame.game_data["perfiles"]:
 				var inventory_item = item_ui.instantiate()
 				var datos = DataBase.perfiles[perfil]["fases"][1]
 				inventory_item.get_node("ColorRect/TextureRect").texture = datos["imagen"]
 				inventory_item.get_node("Label").text = datos["nombre"]
-				lugares.add_child(inventory_item)
+				perfiles.add_child(inventory_item)
 		"PanelLugares":
 			print("Lugares")
+			$cuaderno/inventario.visible = true
 			lugares.visible = true
+			for child in lugares.get_children():
+				child.queue_free()
 			for lugar in SaveGame.game_data["lugares"]:
 				var inventory_item = item_ui.instantiate()
 				var datos = DataBase.lugares[lugar]["fases"][1]
