@@ -7,12 +7,11 @@ var active_characters = []
 # contador de los objetos interactuados para continuar la escena
 var contador = 0
 var bloqueado = true
-var esperando = false
-var boton_Esc = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	SaveGame.load_game() # Por ahora que cargue la partida aquí
+	MenuManager.cerrar_espera_menu.connect(cierra_cuaderno)
 	# personajes que salen en la escena
 	characters["detective"] = $detective
 	characters["duenyo"] = $duenyo
@@ -78,27 +77,21 @@ func dialogo_inicial_terminado() -> void:
 	bloqueado = false
 
 func esperando_cuaderno() -> void:
-	esperando = true
+	SaveGame.game_data_add("perfiles", "protagonista")
+	SaveGame.game_data_add("perfiles", "detective")
+	SaveGame.game_data_add("perfiles", "duenyo")
+	SaveGame.game_data_add("perfiles", "forzudo")
+	SaveGame.game_data_add("lugares", "exterior")
 	$placeHolder.visible = true
+	MenuManager.esperaMenu("inicio")
 
+#Para quitar el cartel de aviso
 func _input(event) -> void:
-	if event.is_action_pressed("menu") && esperando == true:
-		if boton_Esc == false:
-			print("Se abre el cuaderno")
-			$placeHolder.visible = false
-			boton_Esc = true
-		#Aquí no se entra cuando se está en la escena del menu
-		else: 
-			print("Se cierra el cuaderno")
-			DialogueManager.show_dialogue_balloon(dialogo, "inicio3")
-			boton_Esc = false
-			esperando = false
+	if event.is_action_pressed("menu"):
+		$placeHolder.visible = false
 
 func cierra_cuaderno() -> void:
-	if esperando == true && boton_Esc == true:
-		DialogueManager.show_dialogue_balloon(dialogo, "inicio3")
-		boton_Esc = false
-		esperando = false
+	DialogueManager.show_dialogue_balloon(dialogo, "inicio3")
 
 func fin_escena() -> void:
 	Controlador.cambio_escena("carpa")

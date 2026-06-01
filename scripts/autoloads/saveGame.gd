@@ -11,7 +11,7 @@ var game_data : Dictionary = {
 	"lugares": {}
 }
 
-func game_data_add(place, obj) -> void:
+func game_data_add(place, obj, fase := 1) -> void:
 	game_data[place][obj] = true
 
 func game_data_has(place, obj) -> bool:

@@ -3,6 +3,8 @@ extends CanvasLayer
 @onready var protagonista = $protagonista
 @onready var tabs = $pestanyas.get_children()
 @onready var objetos = $cuaderno/inventario/Objetos
+@onready var perfiles = $cuaderno/inventario/Perfiles
+@onready var lugares = $cuaderno/inventario/Lugares
 const item_ui = preload("res://escenas/ui/item_ui.tscn")
 var current_tab = null
 var tab_tweens = {}  
@@ -35,7 +37,7 @@ func _on_tab_pressed(tab):
 	select_menu(tab)
 
 func select_tab(selected_tab):
-	crear_inventario_prueba() #Solo para prueba
+	#crear_inventario_prueba() #Solo para prueba
 	#print("Seleccionando: ", selected_tab.name if selected_tab else "NULL")
 	if selected_tab != current_tab:
 		current_tab = selected_tab
@@ -58,12 +60,15 @@ func select_tab(selected_tab):
 				button.z_index = 0
 				tween.tween_property(button, "scale", Vector2(1.0, 1.0), 0.15)
 
+#Seleccion de los distintos apartados del menu
 func select_menu(selected_menu):
 	var log = DialogueLog.get_log()
 	var text = $cuaderno/log
 	text.clear()
 	$cuaderno/salir.visible = false
-	$cuaderno/inventario.visible = false
+	objetos.visible = false
+	perfiles.visible = false
+	lugares.visible = false
 	match selected_menu.name:
 		"PanelDialogos":
 			print("Dialgos")
@@ -74,11 +79,31 @@ func select_menu(selected_menu):
 					text.append_text("[color=#3E8E41][font_size=20][b]%s %s[/b][/font_size][/color]\n" % [entry["character"], entry["text"]])
 		"PanelObjetos":
 			print("Objetos")
-			$cuaderno/inventario.visible = true
+			objetos.visible = true
+			for objeto in SaveGame.game_data["objetos"]:
+				var inventory_item = item_ui.instantiate()
+				var datos = DataBase.objetos[objeto]["fases"][1]
+				inventory_item.get_node("ColorRect/TextureRect").texture = datos["imagen"]
+				inventory_item.get_node("Label").text = datos["nombre"]
+				objetos.add_child(inventory_item)
 		"PanelPerfiles":
 			print("Perfiles")
+			perfiles.visible = true
+			for perfil in SaveGame.game_data["perfiles"]:
+				var inventory_item = item_ui.instantiate()
+				var datos = DataBase.perfiles[perfil]["fases"][1]
+				inventory_item.get_node("ColorRect/TextureRect").texture = datos["imagen"]
+				inventory_item.get_node("Label").text = datos["nombre"]
+				lugares.add_child(inventory_item)
 		"PanelLugares":
 			print("Lugares")
+			lugares.visible = true
+			for lugar in SaveGame.game_data["lugares"]:
+				var inventory_item = item_ui.instantiate()
+				var datos = DataBase.lugares[lugar]["fases"][1]
+				inventory_item.get_node("ColorRect/TextureRect").texture = datos["imagen"]
+				inventory_item.get_node("Label").text = datos["nombre"]
+				lugares.add_child(inventory_item)
 		"PanelAjustes":
 			print("Ajustes")
 			$cuaderno/salir.visible = true

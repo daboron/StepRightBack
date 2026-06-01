@@ -23,6 +23,7 @@ MouseManager="*res://scripts/autoloads/mouseManager.gd"
 SaveGame="*res://scripts/autoloads/saveGame.gd"
 MenuManager="*res://scripts/autoloads/menuManager.gd"
 Controlador="*res://scripts/autoloads/controlador.gd"
+DataBase="*res://scripts/autoloads/dataBase.gd"
 
 [display]
 

@@ -3,6 +3,10 @@ extends Node
 
 var menu_scene = preload("res://escenas/menu.tscn")
 var menu_instance
+var espera_menu = false
+var menu_abierto_espera = false
+
+signal cerrar_espera_menu
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -21,6 +25,13 @@ func _on_node_added(node):
 func _input(event):
 	if event.is_action_pressed("menu"):
 		toggle_menu()
+		if espera_menu == true :
+			if menu_abierto_espera == false:
+				menu_abierto_espera = true
+			else:
+				espera_menu = false
+				menu_abierto_espera = false
+				cerrar_espera_menu.emit()
 
 func toggle_menu():
 	var abrir = !menu_instance.visible
@@ -65,3 +76,6 @@ func ocultar_dialogo_recursivo(node, abrir):
 
 	for child in node.get_children():
 		ocultar_dialogo_recursivo(child, abrir)
+
+func esperaMenu(escena) -> void:
+	espera_menu = true
