@@ -1,4 +1,4 @@
-[gd_scene load_steps=458 format=3 uid="uid://cdwu02cje1afe"]
+[gd_scene load_steps=358 format=3 uid="uid://cdwu02cje1afe"]
 
 [ext_resource type="Script" path="res://scripts/inicio/inicio.gd" id="1_u3o5i"]
 [ext_resource type="Texture2D" uid="uid://dyd7byn8iifly" path="res://arte/fondos/SET_Exterior.png" id="2_5lhr7"]
@@ -254,205 +254,105 @@
 [ext_resource type="Texture2D" uid="uid://c21npwl0txax5" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0048.png" id="251_4kdci"]
 [ext_resource type="Texture2D" uid="uid://kygreo6rwvb1" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0049.png" id="252_4spvk"]
 [ext_resource type="Texture2D" uid="uid://bt2js7hh0nivj" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0050.png" id="253_fljop"]
-[ext_resource type="Texture2D" uid="uid://dr2jm6jlhunh5" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0001.png" id="255_b2vki"]
 [ext_resource type="Texture2D" uid="uid://bkqy1jjpq7k0x" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0001.png" id="255_uivv4"]
-[ext_resource type="Texture2D" uid="uid://dkjk10rv4laae" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0002.png" id="256_1bqcx"]
 [ext_resource type="Texture2D" uid="uid://dalisrv7uhdlh" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0002.png" id="256_spu4v"]
-[ext_resource type="Texture2D" uid="uid://chksr1epfm3xg" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0003.png" id="257_x4tvh"]
 [ext_resource type="Texture2D" uid="uid://cg8vi18ebt0ba" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0003.png" id="257_xcqp4"]
-[ext_resource type="Texture2D" uid="uid://dsv56grqgrai7" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0004.png" id="258_cv6r4"]
 [ext_resource type="Texture2D" uid="uid://ckthkgai0ensb" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0004.png" id="258_nxv2n"]
 [ext_resource type="Texture2D" uid="uid://btgplpf5866q4" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0005.png" id="259_asaxk"]
-[ext_resource type="Texture2D" uid="uid://d2vovaei4hro0" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0005.png" id="259_t5j6s"]
-[ext_resource type="Texture2D" uid="uid://7dmewcsoqhqh" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0006.png" id="260_j23kf"]
 [ext_resource type="Texture2D" uid="uid://bnulyrcvo28fp" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0006.png" id="260_w0vvf"]
-[ext_resource type="Texture2D" uid="uid://ctu2b5otvdj0n" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0007.png" id="261_7cd35"]
 [ext_resource type="Texture2D" uid="uid://dysbwm4sxbxab" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0007.png" id="261_pmooq"]
 [ext_resource type="Texture2D" uid="uid://bsn8jq0xtwqx0" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0008.png" id="262_bugfy"]
-[ext_resource type="Texture2D" uid="uid://ccsycdw8536wm" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0008.png" id="262_e7nt3"]
-[ext_resource type="Texture2D" uid="uid://cbg0ff75wyu1i" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0009.png" id="263_2ug7k"]
 [ext_resource type="Texture2D" uid="uid://cwssdt6yyac52" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0009.png" id="263_8l07q"]
-[ext_resource type="Texture2D" uid="uid://ds4qaxed5e7d5" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0010.png" id="264_466lq"]
 [ext_resource type="Texture2D" uid="uid://ddgsds6814igd" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0010.png" id="264_p5a72"]
 [ext_resource type="Texture2D" uid="uid://cbpcl1gi30lqw" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0011.png" id="265_2yisx"]
-[ext_resource type="Texture2D" uid="uid://qg6b0f7u6sgp" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0011.png" id="265_lubx6"]
 [ext_resource type="Texture2D" uid="uid://d4k0d3si6uytm" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0012.png" id="266_tpdd3"]
-[ext_resource type="Texture2D" uid="uid://b74kb16dck8rd" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0012.png" id="266_w8aki"]
-[ext_resource type="Texture2D" uid="uid://baocyrlrbg2dm" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0013.png" id="267_17w0l"]
 [ext_resource type="Texture2D" uid="uid://b5dmg2a7vuoa8" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0013.png" id="267_lu0to"]
-[ext_resource type="Texture2D" uid="uid://bdkg21d2n60vn" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0014.png" id="268_6lciu"]
 [ext_resource type="Texture2D" uid="uid://c5lya0jynctql" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0014.png" id="268_6lfao"]
 [ext_resource type="Texture2D" uid="uid://be7fl44v463d4" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0015.png" id="269_k8r5u"]
-[ext_resource type="Texture2D" uid="uid://c04mr7vfobu0v" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0015.png" id="269_wycdq"]
 [ext_resource type="Texture2D" uid="uid://dyo0yigkno8di" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0016.png" id="270_fjxih"]
-[ext_resource type="Texture2D" uid="uid://dudxh1553df8q" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0016.png" id="270_fwvgr"]
 [ext_resource type="Texture2D" uid="uid://dnxf6toqahe07" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0017.png" id="271_g2s4j"]
-[ext_resource type="Texture2D" uid="uid://drhdjgypaquru" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0017.png" id="271_kotsd"]
 [ext_resource type="Texture2D" uid="uid://dj47e53bkrpft" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0018.png" id="272_ca1rg"]
-[ext_resource type="Texture2D" uid="uid://d25rtxkia73vl" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0018.png" id="272_rcuyx"]
 [ext_resource type="Texture2D" uid="uid://c31phvksqdb7r" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0019.png" id="273_bd3r5"]
-[ext_resource type="Texture2D" uid="uid://dveyvmqt7h2ku" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0019.png" id="273_i7ruy"]
-[ext_resource type="Texture2D" uid="uid://cnuymr2r81bs7" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0020.png" id="274_qctk5"]
 [ext_resource type="Texture2D" uid="uid://dbu4hwa4n3cxt" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0020.png" id="274_xdoxw"]
-[ext_resource type="Texture2D" uid="uid://cw2vyuv7tp1lk" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0021.png" id="275_0xmq2"]
 [ext_resource type="Texture2D" uid="uid://bu7lco2uyg0dd" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0021.png" id="275_lucps"]
-[ext_resource type="Texture2D" uid="uid://buhl7u7g8sj2q" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0022.png" id="276_d0xjn"]
 [ext_resource type="Texture2D" uid="uid://b77h3lvr6fsst" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0022.png" id="276_qf83f"]
-[ext_resource type="Texture2D" uid="uid://d2xt5qj0oyfqf" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0023.png" id="277_agcl4"]
 [ext_resource type="Texture2D" uid="uid://c7c1a25lwywjr" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0023.png" id="277_pqhek"]
-[ext_resource type="Texture2D" uid="uid://bf48vly2a8xci" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0024.png" id="278_4nsx8"]
 [ext_resource type="Texture2D" uid="uid://dg5xy2ovnahdv" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0024.png" id="278_uh336"]
-[ext_resource type="Texture2D" uid="uid://p701qste8fkl" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0025.png" id="279_gfaxj"]
 [ext_resource type="Texture2D" uid="uid://yoh7elltwxul" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0025.png" id="279_wur02"]
 [ext_resource type="Texture2D" uid="uid://ciiinxs0hidgf" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0026.png" id="280_j8w7i"]
-[ext_resource type="Texture2D" uid="uid://w2u8h11i5043" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0026.png" id="280_jwj66"]
 [ext_resource type="Texture2D" uid="uid://cgnjc05s514sf" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0027.png" id="281_60ftg"]
-[ext_resource type="Texture2D" uid="uid://c438atg5tm5co" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0027.png" id="281_mqxue"]
 [ext_resource type="Texture2D" uid="uid://cn1u54y4obuyr" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0028.png" id="282_20wm3"]
-[ext_resource type="Texture2D" uid="uid://dodmcu8ab3lw8" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0028.png" id="282_35kn7"]
-[ext_resource type="Texture2D" uid="uid://dqrunj2x30q3g" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0029.png" id="283_5ljf5"]
 [ext_resource type="Texture2D" uid="uid://d3dxamce51fmc" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0029.png" id="283_ctwtc"]
-[ext_resource type="Texture2D" uid="uid://q1w0di7lkix2" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0030.png" id="284_45n3a"]
 [ext_resource type="Texture2D" uid="uid://dnhk5edf1k52j" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0030.png" id="284_necda"]
 [ext_resource type="Texture2D" uid="uid://dwcnnwy6v6rk8" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0031.png" id="285_andml"]
-[ext_resource type="Texture2D" uid="uid://we1650rxy8wy" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0031.png" id="285_lnhuk"]
-[ext_resource type="Texture2D" uid="uid://dtndxdfujbk3f" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0032.png" id="286_fjm7e"]
 [ext_resource type="Texture2D" uid="uid://bxjofk4hmcsu2" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0032.png" id="286_sgkaf"]
 [ext_resource type="Texture2D" uid="uid://c4ajxv7oti3bb" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0033.png" id="287_8x1x4"]
-[ext_resource type="Texture2D" uid="uid://d4hf7ein883j8" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0033.png" id="287_jkqbr"]
-[ext_resource type="Texture2D" uid="uid://ga502ulbwi4l" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0034.png" id="288_h5ern"]
 [ext_resource type="Texture2D" uid="uid://bwo67j8cq0ofq" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0034.png" id="288_xyybn"]
-[ext_resource type="Texture2D" uid="uid://cl7ji3q1igg6t" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0035.png" id="289_xovri"]
 [ext_resource type="Texture2D" uid="uid://ciuk4mprqhflx" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0035.png" id="289_yrkjp"]
 [ext_resource type="Texture2D" uid="uid://bffryshqy8rtw" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0036.png" id="290_ei28o"]
-[ext_resource type="Texture2D" uid="uid://8dg1ai4x34r" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0036.png" id="290_xww46"]
 [ext_resource type="Texture2D" uid="uid://4kydji70fy4j" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0037.png" id="291_aminy"]
-[ext_resource type="Texture2D" uid="uid://yyrqmki3i54w" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0037.png" id="291_n0n7f"]
-[ext_resource type="Texture2D" uid="uid://by3jj04p77e8j" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0038.png" id="292_iorqh"]
 [ext_resource type="Texture2D" uid="uid://wrq6m7mlwqq" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0038.png" id="292_pdxxw"]
 [ext_resource type="Texture2D" uid="uid://b4ah7ncuyitq7" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0039.png" id="293_dwkha"]
-[ext_resource type="Texture2D" uid="uid://diwr3msvin2ox" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0039.png" id="293_wvq7j"]
-[ext_resource type="Texture2D" uid="uid://dvjvehfk828ry" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0040.png" id="294_m8tn2"]
 [ext_resource type="Texture2D" uid="uid://dbpdgvlto572w" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0040.png" id="294_xonlo"]
 [ext_resource type="Texture2D" uid="uid://capca0ee02cci" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0041.png" id="295_jrsqi"]
-[ext_resource type="Texture2D" uid="uid://bpip78ybl48i7" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0041.png" id="295_xcru8"]
 [ext_resource type="Texture2D" uid="uid://2kmdt86518co" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0042.png" id="296_20773"]
-[ext_resource type="Texture2D" uid="uid://ssi0f8mgb57d" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0042.png" id="296_xcfq2"]
-[ext_resource type="Texture2D" uid="uid://bx7773jn36onh" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0043.png" id="297_mc8sl"]
 [ext_resource type="Texture2D" uid="uid://dwpijbjdq7ux4" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0043.png" id="297_o1jry"]
-[ext_resource type="Texture2D" uid="uid://gke10ikeymv5" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0044.png" id="298_sdyor"]
 [ext_resource type="Texture2D" uid="uid://cgjp7dspf1117" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0044.png" id="298_si6wj"]
 [ext_resource type="Texture2D" uid="uid://di4o8per1foq6" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0045.png" id="299_s8l5q"]
-[ext_resource type="Texture2D" uid="uid://b0kk63bte1g" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0045.png" id="299_ups4d"]
 [ext_resource type="Texture2D" uid="uid://di745uans7wni" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0046.png" id="300_3i7bn"]
-[ext_resource type="Texture2D" uid="uid://nfdylp4mf38l" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0046.png" id="300_we8nw"]
 [ext_resource type="Texture2D" uid="uid://ljyk1ix3yjgh" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0047.png" id="301_2jb70"]
-[ext_resource type="Texture2D" uid="uid://cdoycsq8bddiv" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0047.png" id="301_c0gle"]
-[ext_resource type="Texture2D" uid="uid://puu2jwki1e6s" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0048.png" id="302_1f64p"]
 [ext_resource type="Texture2D" uid="uid://b2duo5fw5kft4" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0048.png" id="302_gvg6h"]
-[ext_resource type="Texture2D" uid="uid://d0rdlk8yvqlhu" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0049.png" id="303_0od3i"]
 [ext_resource type="Texture2D" uid="uid://duy7uy8n02h7l" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0049.png" id="303_7v0q7"]
-[ext_resource type="Texture2D" uid="uid://7oggxrdyu3cs" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0050.png" id="304_eqcdd"]
 [ext_resource type="Texture2D" uid="uid://bn20n6y4qp24l" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0050.png" id="304_y582d"]
 [ext_resource type="Texture2D" uid="uid://cktliwikai1wx" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0051.png" id="305_3dhe8"]
-[ext_resource type="Texture2D" uid="uid://bhbgap8wwbbif" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0051.png" id="305_efpe4"]
 [ext_resource type="Texture2D" uid="uid://nm46vwvqp6oa" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0052.png" id="306_e47tk"]
-[ext_resource type="Texture2D" uid="uid://ci0tfqdlm8ses" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0052.png" id="306_hm00u"]
 [ext_resource type="Texture2D" uid="uid://dcqou8qebpn40" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0053.png" id="307_dy3vy"]
-[ext_resource type="Texture2D" uid="uid://nbhredo6ou01" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0053.png" id="307_i4vfs"]
-[ext_resource type="Texture2D" uid="uid://okbrs2ialx8y" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0054.png" id="308_drc8t"]
 [ext_resource type="Texture2D" uid="uid://bfx5r20k5ahih" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0054.png" id="308_jcmg6"]
 [ext_resource type="Texture2D" uid="uid://dl884seti7tb8" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0055.png" id="309_jpf4m"]
-[ext_resource type="Texture2D" uid="uid://b2frv4vhrm3h4" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0055.png" id="309_yk3an"]
 [ext_resource type="Texture2D" uid="uid://dd0esccqf7dek" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0056.png" id="310_s6bv3"]
-[ext_resource type="Texture2D" uid="uid://bphm6ivecn6lm" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0056.png" id="310_ynmqq"]
 [ext_resource type="Texture2D" uid="uid://bewmslb7cgrpp" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0057.png" id="311_etqa0"]
-[ext_resource type="Texture2D" uid="uid://cgqrxxl7dqos2" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0057.png" id="311_twhwn"]
 [ext_resource type="Texture2D" uid="uid://8xp57be7s25b" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0058.png" id="312_7et4g"]
-[ext_resource type="Texture2D" uid="uid://dxb8f6x046224" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0058.png" id="312_hv6us"]
 [ext_resource type="Texture2D" uid="uid://b07toio3kclyo" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0059.png" id="313_2ktyw"]
-[ext_resource type="Texture2D" uid="uid://cgies07jpxl2v" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0059.png" id="313_akkfi"]
-[ext_resource type="Texture2D" uid="uid://ddglcckpkh25r" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0060.png" id="314_q2a86"]
 [ext_resource type="Texture2D" uid="uid://ck4aluprm4bev" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0060.png" id="314_utd6r"]
-[ext_resource type="Texture2D" uid="uid://b6seojhqgsgsv" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0061.png" id="315_bbl13"]
 [ext_resource type="Texture2D" uid="uid://cxoted1qs55cn" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0061.png" id="315_ssbkb"]
 [ext_resource type="Texture2D" uid="uid://dgc07daqcnqa0" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0062.png" id="316_g1nhg"]
-[ext_resource type="Texture2D" uid="uid://c2fuvos8gee02" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0062.png" id="316_pccrq"]
-[ext_resource type="Texture2D" uid="uid://edqoxqkaldrk" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0063.png" id="317_c1ana"]
 [ext_resource type="Texture2D" uid="uid://cmpuwxb1hkrw" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0063.png" id="317_hotr5"]
 [ext_resource type="Texture2D" uid="uid://kii8xwnx8pi" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0064.png" id="318_m4ynd"]
-[ext_resource type="Texture2D" uid="uid://b7vokqelxdoq8" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0064.png" id="318_nrykd"]
-[ext_resource type="Texture2D" uid="uid://bvk06tey3qo53" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0065.png" id="319_878vn"]
 [ext_resource type="Texture2D" uid="uid://sytgnvnj5p8i" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0065.png" id="319_yud7y"]
-[ext_resource type="Texture2D" uid="uid://co1amfc2gogr8" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0066.png" id="320_446q3"]
 [ext_resource type="Texture2D" uid="uid://ch0evjqc7qkrt" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0066.png" id="320_k28ls"]
 [ext_resource type="Texture2D" uid="uid://cftusc7ywwm3n" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0067.png" id="321_05xf3"]
-[ext_resource type="Texture2D" uid="uid://bdn2vccsjeob8" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0067.png" id="321_kxjr6"]
-[ext_resource type="Texture2D" uid="uid://u5ptr1wqbvil" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0068.png" id="322_2p1rp"]
 [ext_resource type="Texture2D" uid="uid://bi2pvgy56b7kh" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0068.png" id="322_yn441"]
 [ext_resource type="Texture2D" uid="uid://odo2foy2sml6" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0069.png" id="323_iy6hq"]
-[ext_resource type="Texture2D" uid="uid://dnb8uehli5ljs" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0069.png" id="323_umrxt"]
-[ext_resource type="Texture2D" uid="uid://qw4e8v18d3ly" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0070.png" id="324_esm1d"]
 [ext_resource type="Texture2D" uid="uid://7t2d4575l6cl" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0070.png" id="324_mijyu"]
 [ext_resource type="Texture2D" uid="uid://xauvioxvx2h8" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0071.png" id="325_3brha"]
-[ext_resource type="Texture2D" uid="uid://oxeblscq6aes" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0071.png" id="325_kv24k"]
 [ext_resource type="Texture2D" uid="uid://d2xutsqg5rk3c" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0072.png" id="326_5jeb7"]
-[ext_resource type="Texture2D" uid="uid://cyupnp307b3fy" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0072.png" id="326_bvr50"]
 [ext_resource type="Texture2D" uid="uid://cdeiw5vw8gnay" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0073.png" id="327_i7mf5"]
-[ext_resource type="Texture2D" uid="uid://ch0geukjlwq7x" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0073.png" id="327_vlyso"]
 [ext_resource type="Texture2D" uid="uid://f5yi3i0pi637" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0074.png" id="328_0jxkf"]
-[ext_resource type="Texture2D" uid="uid://dqcj7d88thr2h" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0074.png" id="328_sulnp"]
 [ext_resource type="Texture2D" uid="uid://dmnx03uaf0p2u" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0075.png" id="329_i2788"]
-[ext_resource type="Texture2D" uid="uid://0kq04vdnmvul" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0075.png" id="329_ylmm5"]
 [ext_resource type="Texture2D" uid="uid://dnwfgy0kuv6d6" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0076.png" id="330_bn8rs"]
-[ext_resource type="Texture2D" uid="uid://c6gl1uaqfpg07" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0076.png" id="330_wcfjg"]
 [ext_resource type="Texture2D" uid="uid://dihjrfnqsaim8" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0077.png" id="331_3n07c"]
-[ext_resource type="Texture2D" uid="uid://b87r6jxhnloev" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0077.png" id="331_n268e"]
 [ext_resource type="Texture2D" uid="uid://bbpw58381kwiw" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0078.png" id="332_ghn0h"]
-[ext_resource type="Texture2D" uid="uid://ku6du2tr2yvv" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0078.png" id="332_shxvb"]
-[ext_resource type="Texture2D" uid="uid://c2ojq8h5p20nw" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0079.png" id="333_ayagx"]
 [ext_resource type="Texture2D" uid="uid://b0v82d7ku1ti" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0079.png" id="333_vdy1f"]
 [ext_resource type="Texture2D" uid="uid://juny6ug4o3tq" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0080.png" id="334_3gq65"]
-[ext_resource type="Texture2D" uid="uid://bcvc6gu7u50f3" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0080.png" id="334_lh2cl"]
-[ext_resource type="Texture2D" uid="uid://b4j7uru1b5b1t" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0081.png" id="335_htdf7"]
 [ext_resource type="Texture2D" uid="uid://dkra3enro7g1c" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0081.png" id="335_kc72a"]
 [ext_resource type="Texture2D" uid="uid://bshwsui8m0xa8" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0082.png" id="336_doy4b"]
-[ext_resource type="Texture2D" uid="uid://bw4leo1c0t64r" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0082.png" id="336_rvn6j"]
-[ext_resource type="Texture2D" uid="uid://0q6ywvr8s5st" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0083.png" id="337_4lkh4"]
 [ext_resource type="Texture2D" uid="uid://d0ild056uxbhj" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0083.png" id="337_7b71b"]
-[ext_resource type="Texture2D" uid="uid://dbg02eu3y8n2u" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0084.png" id="338_2sxl4"]
 [ext_resource type="Texture2D" uid="uid://dc0kvqyunfv67" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0084.png" id="338_lk2gx"]
-[ext_resource type="Texture2D" uid="uid://le7r5vlf7dp2" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0085.png" id="339_6y88o"]
 [ext_resource type="Texture2D" uid="uid://bnevbkdnr4u0n" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0085.png" id="339_djbso"]
 [ext_resource type="Texture2D" uid="uid://b35nid80n6w3t" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0086.png" id="340_158jm"]
-[ext_resource type="Texture2D" uid="uid://cnphqqnjh674c" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0086.png" id="340_h17qk"]
-[ext_resource type="Texture2D" uid="uid://to5dlgb350xb" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0087.png" id="341_1q1ft"]
 [ext_resource type="Texture2D" uid="uid://d0kma57ahamg0" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0087.png" id="341_qsbmh"]
-[ext_resource type="Texture2D" uid="uid://dlufcv6wc1w8b" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0088.png" id="342_majxj"]
 [ext_resource type="Texture2D" uid="uid://csdj8yx8tr4h3" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0088.png" id="342_nte7e"]
 [ext_resource type="Texture2D" uid="uid://cp6m168c8smwa" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0089.png" id="343_tlkdf"]
-[ext_resource type="Texture2D" uid="uid://cmwdwpyt3m356" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0089.png" id="343_wxmut"]
 [ext_resource type="Texture2D" uid="uid://f4stitsp3u2p" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0090.png" id="344_1siqo"]
-[ext_resource type="Texture2D" uid="uid://stuaekpoo15i" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0090.png" id="344_3mq5q"]
 [ext_resource type="Texture2D" uid="uid://mk68lcpxa1rg" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0091.png" id="345_gn43u"]
-[ext_resource type="Texture2D" uid="uid://ba6afsxkt56dq" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0091.png" id="345_rl2k5"]
-[ext_resource type="Texture2D" uid="uid://dknjnm18ykgea" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0092.png" id="346_u74ul"]
 [ext_resource type="Texture2D" uid="uid://chdu1f3qcnbmh" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0092.png" id="346_yvsam"]
-[ext_resource type="Texture2D" uid="uid://cgr0lcvpqrvuh" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0093.png" id="347_pxhte"]
 [ext_resource type="Texture2D" uid="uid://y14274g6ynw5" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0093.png" id="347_tgxc2"]
-[ext_resource type="Texture2D" uid="uid://tu180irscorh" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0094.png" id="348_sipft"]
 [ext_resource type="Texture2D" uid="uid://dfuj6t5w3x8r2" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0094.png" id="348_u5him"]
 [ext_resource type="Texture2D" uid="uid://co322lvi60dc0" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0095.png" id="349_yrbo7"]
-[ext_resource type="Texture2D" uid="uid://6237kvblyn7v" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0095.png" id="349_yvh41"]
 [ext_resource type="Texture2D" uid="uid://cwmp7ogb3upnn" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0096.png" id="350_8x2f7"]
-[ext_resource type="Texture2D" uid="uid://u61temftvb0f" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0096.png" id="350_p3h0s"]
-[ext_resource type="Texture2D" uid="uid://c6w8egpbcf771" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0097.png" id="351_ddy7m"]
 [ext_resource type="Texture2D" uid="uid://c3p5t43shyfn0" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0097.png" id="351_mn4qs"]
-[ext_resource type="Texture2D" uid="uid://byr53u4ylo7u5" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0098.png" id="352_1k63u"]
 [ext_resource type="Texture2D" uid="uid://biw88040rlh21" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0098.png" id="352_slref"]
 [ext_resource type="Texture2D" uid="uid://dwwpwgm5yxbd5" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0099.png" id="353_3ve2c"]
-[ext_resource type="Texture2D" uid="uid://bbx21dh5k4lhv" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0099.png" id="353_hnbym"]
-[ext_resource type="Texture2D" uid="uid://p7ov7s6r6u58" path="res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0100.png" id="354_fqfbi"]
 [ext_resource type="Texture2D" uid="uid://ifdiigbu8txb" path="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0100.png" id="354_j4lko"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_6fusk"]
@@ -1532,311 +1432,6 @@ animations = [{
 "loop": true,
 "name": &"cold",
 "speed": 25.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("255_b2vki")
-}, {
-"duration": 1.0,
-"texture": ExtResource("256_1bqcx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("257_x4tvh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("258_cv6r4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("259_t5j6s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("260_j23kf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("261_7cd35")
-}, {
-"duration": 1.0,
-"texture": ExtResource("262_e7nt3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("263_2ug7k")
-}, {
-"duration": 1.0,
-"texture": ExtResource("264_466lq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("265_lubx6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("266_w8aki")
-}, {
-"duration": 1.0,
-"texture": ExtResource("267_17w0l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("268_6lciu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("269_wycdq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("270_fwvgr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("271_kotsd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("272_rcuyx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("273_i7ruy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("274_qctk5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("275_0xmq2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("276_d0xjn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("277_agcl4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("278_4nsx8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("279_gfaxj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("280_jwj66")
-}, {
-"duration": 1.0,
-"texture": ExtResource("281_mqxue")
-}, {
-"duration": 1.0,
-"texture": ExtResource("282_35kn7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("283_5ljf5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("284_45n3a")
-}, {
-"duration": 1.0,
-"texture": ExtResource("285_lnhuk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("286_fjm7e")
-}, {
-"duration": 1.0,
-"texture": ExtResource("287_jkqbr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("288_h5ern")
-}, {
-"duration": 1.0,
-"texture": ExtResource("289_xovri")
-}, {
-"duration": 1.0,
-"texture": ExtResource("290_xww46")
-}, {
-"duration": 1.0,
-"texture": ExtResource("291_n0n7f")
-}, {
-"duration": 1.0,
-"texture": ExtResource("292_iorqh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("293_wvq7j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("294_m8tn2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("295_xcru8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("296_xcfq2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("297_mc8sl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("298_sdyor")
-}, {
-"duration": 1.0,
-"texture": ExtResource("299_ups4d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("300_we8nw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("301_c0gle")
-}, {
-"duration": 1.0,
-"texture": ExtResource("302_1f64p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("303_0od3i")
-}, {
-"duration": 1.0,
-"texture": ExtResource("304_eqcdd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("305_efpe4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("306_hm00u")
-}, {
-"duration": 1.0,
-"texture": ExtResource("307_i4vfs")
-}, {
-"duration": 1.0,
-"texture": ExtResource("308_drc8t")
-}, {
-"duration": 1.0,
-"texture": ExtResource("309_yk3an")
-}, {
-"duration": 1.0,
-"texture": ExtResource("310_ynmqq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("311_twhwn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("312_hv6us")
-}, {
-"duration": 1.0,
-"texture": ExtResource("313_akkfi")
-}, {
-"duration": 1.0,
-"texture": ExtResource("314_q2a86")
-}, {
-"duration": 1.0,
-"texture": ExtResource("315_bbl13")
-}, {
-"duration": 1.0,
-"texture": ExtResource("316_pccrq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("317_c1ana")
-}, {
-"duration": 1.0,
-"texture": ExtResource("318_nrykd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("319_878vn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("320_446q3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("321_kxjr6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("322_2p1rp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("323_umrxt")
-}, {
-"duration": 1.0,
-"texture": ExtResource("324_esm1d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("325_kv24k")
-}, {
-"duration": 1.0,
-"texture": ExtResource("326_bvr50")
-}, {
-"duration": 1.0,
-"texture": ExtResource("327_vlyso")
-}, {
-"duration": 1.0,
-"texture": ExtResource("328_sulnp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("329_ylmm5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("330_wcfjg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("331_n268e")
-}, {
-"duration": 1.0,
-"texture": ExtResource("332_shxvb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("333_ayagx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("334_lh2cl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("335_htdf7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("336_rvn6j")
-}, {
-"duration": 1.0,
-"texture": ExtResource("337_4lkh4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("338_2sxl4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("339_6y88o")
-}, {
-"duration": 1.0,
-"texture": ExtResource("340_h17qk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("341_1q1ft")
-}, {
-"duration": 1.0,
-"texture": ExtResource("342_majxj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("343_wxmut")
-}, {
-"duration": 1.0,
-"texture": ExtResource("344_3mq5q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("345_rl2k5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("346_u74ul")
-}, {
-"duration": 1.0,
-"texture": ExtResource("347_pxhte")
-}, {
-"duration": 1.0,
-"texture": ExtResource("348_sipft")
-}, {
-"duration": 1.0,
-"texture": ExtResource("349_yvh41")
-}, {
-"duration": 1.0,
-"texture": ExtResource("350_p3h0s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("351_ddy7m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("352_1k63u")
-}, {
-"duration": 1.0,
-"texture": ExtResource("353_hnbym")
-}, {
-"duration": 1.0,
-"texture": ExtResource("354_fqfbi")
-}],
-"loop": true,
-"name": &"default",
-"speed": 25.0
 }]
 
 [node name="Inicio" type="Node2D"]
@@ -1922,7 +1517,6 @@ script = ExtResource("104_c326t")
 id = "duenyo"
 
 [node name="fortachon" type="AnimatedSprite2D" parent="."]
-visible = false
 position = Vector2(962, 537)
 sprite_frames = SubResource("SpriteFrames_phgtx")
 animation = &"cold"

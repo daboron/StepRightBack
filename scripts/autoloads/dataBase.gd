@@ -38,7 +38,7 @@ var perfiles = {
 	"forzudo": {
 		"fases": {
 			1: {
-				"imagen": preload("res://arte/animaciones/fortachon/01_neutral/fortachon_neutral_0001.png"), # Placeholder
+				"imagen": preload("res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0001.png"), # Placeholder
 				"nombre": "???",
 				"informacion": "placeholder"
 			}

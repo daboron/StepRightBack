@@ -1,14 +1,23 @@
 extends Node2D
 @onready var dialogo = load ("res://dialogos/escenarios/carpa.dialogue")
+@onready var presentacion = $presentacion
+@onready var descubrimiento = $descubrimiento
 
 var characters = {}
 var active_characters = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	presentacion.visible = false
+	descubrimiento.visible = false
 	$espada.visible = false
+	$pantalla_negra.visible = false
 	characters["detective"] = $detective
 	characters["duenyo"] = $duenyo
+	characters["maga"] = $maga
+	characters["payasa"] = $payasa
+	characters["trapecista"] = $trapecista
+	characters["fortachon"] = $fortachon
 	for c in characters.values():
 		c.visibility(false)
 	DialogueManager.show_dialogue_balloon(dialogo, "carpa1")
@@ -47,3 +56,20 @@ func hide_character(name: String):
 
 func espada_visibility(valor) -> void:
 	$espada.visible = valor
+
+func pantalla_negra(valor) -> void:
+	$pantalla_negra.visible = valor
+
+func play(obj, anim) -> void:
+	await Controlador.fade_out()
+	obj.visible = true
+	await Controlador.fade_in()
+	obj.play(anim)
+	await obj.animation_finished
+	await Controlador.fade_out()
+	obj.visible = false
+	await Controlador.fade_in()
+
+func despues_descubrimiento() -> void:
+	$pantalla_negra.visible = false
+	DialogueManager.show_dialogue_balloon(dialogo, "carpa2")

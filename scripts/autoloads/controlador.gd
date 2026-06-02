@@ -25,15 +25,12 @@ func cambio_escena(escena) -> void:
 
 func fade_out(t := 0.5) -> void:
 	fade_rect.visible = true
-
 	tween = create_tween()
 	tween.tween_property(fade_rect, "modulate:a", 1.0, t)
-
 	await tween.finished
 
 func fade_in(t := 0.5) -> void:
 	tween = create_tween()
 	tween.tween_property(fade_rect, "modulate:a", 0.0, t)
-
 	await tween.finished
 	fade_rect.visible = false
