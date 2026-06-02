@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bnga8w7wflxj5"
+path="res://.godot/imported/carpa.dialogue-2759d0bb261d1b6b1413086d44acde61.tres"
+
+[deps]
+
+source_file="res://dialogos/escenarios/carpa.dialogue"
+dest_files=["res://.godot/imported/carpa.dialogue-2759d0bb261d1b6b1413086d44acde61.tres"]
+
+[params]
+
+defaults=true

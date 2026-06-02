@@ -1,0 +1,54 @@
+#Hay que cambiar todas las animaciones a las de luz cálida
+~ carpa1
+do show_character("duenyo", "default")
+Dueño del circo: ¡Adelante todos, pasen y vean las maravillas de nuestro espectáculo!
+do hide_character("duenyo")
+Samuel: (Todo el mundo ha entrado ya, se les ve muy animados. El escenario está iluminado llamándo la atención de todo el mundo.)
+Samuel: Has conseguido buenas entradas.
+do show_character("detective", "default_frio")
+Claire: Fue complicado, parece ser que son muy populares.
+do hide_character("detective")
+Dueño del circo: ¡Para comenzar permitidme presentaros a las estrellas del espectáculo!
+Dueño del circo: Empezamos con el hombre que desafía la gravedad.
+Trapecista: Espero que las señoritas del público puedan disfrutar del espectáculo de hoy.
+
+Dueño del circo: ¡Continuamos con la alegría de nuestro circo!
+Payasa: ¡Vamos a divertirnos mucho hoy!
+
+Dueño del circo: ¡Aquí tenemos la fuerza imparable del espectáculo!
+Forzudo: ¿Alguien quiere ponerse a prueba conmigo?
+
+Dueño del circo: Y por último la mujer capaz de engañar a la realidad misma.
+Maga: Os dejaré asombrados el día de hoy.
+
+Dueño del circo: Todo esto presentado por un servidor.
+Dueño del circo: Con todo esto dicho, que el espectáculo comience.
+
+Samuel: (Al terminar la presentación el trapecista hizo unas acrobacias increíbles y la chica vestida de payasa hizo reír a todos los niños con su torpeza.)
+Samuel: (Pero parece que alguien no se está divirtiendo demasiado.)
+Claire: Ya llevamos la mitad, a ver si se pone interesante.
+Samuel: (A mi me está gustando…)
+
+Maga: Encantada de volver a veros, yo soy Adelaide, intentad no olvidarlo cuando os deje sin aliento.
+Adelaide: Para este número necesitaré la colaboración de nuestro jefe.
+do show_character("duenyo", "laught")
+Dueño del circo: Espero salir entero esta vez. 
+Samuel: (El público comienza a reírse.)
+Adelaide: Haré todo lo posible.
+Adelaide: Ahora entre en la caja, si es tan amable.
+do hide_character("duenyo")
+Samuel: (El dueño del circo entra con tranquilidad en la gran caja que han colocado en el centro del escenario.)
+Adelaide: Se trata de un truco clásico.
+do espada_visibility(true)
+Adelaide: Ahora clavaré las espadas en la caja y veremos si nuestro querido jefe sale como un colador o no.
+do espada_visibility(false)
+Samuel: (Levanta una espada larga y brillante, para después clavarla en la caja.)
+Samuel: (Después clava otra y otra más.)
+Samuel: (El público cuchichea y los más pequeños parecen preocupados.)
+Samuel: (Entre los murmullos del público se escucha algo más. Probablemente algún niño emocionado.) 
+
+Adelaide: Esto sería suficiente para dejar a cualquiera como un queso suizo.
+Adelaide: Así que comprobemos cómo se encuentra.
+Samuel: (Comienza a retirar las espadas lentamente.)
+
+=> END

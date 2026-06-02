@@ -77,6 +77,7 @@ func dialogo_inicial_terminado() -> void:
 	bloqueado = false
 
 func esperando_cuaderno() -> void:
+	bloqueado = true
 	SaveGame.game_data_add("perfiles", "protagonista")
 	SaveGame.game_data_add("perfiles", "detective")
 	SaveGame.game_data_add("perfiles", "duenyo")
@@ -94,4 +95,4 @@ func cierra_cuaderno() -> void:
 	DialogueManager.show_dialogue_balloon(dialogo, "inicio3")
 
 func fin_escena() -> void:
-	Controlador.cambio_escena("carpa")
+	Controlador.cambio_escena("res://escenas/carpa.tscn")

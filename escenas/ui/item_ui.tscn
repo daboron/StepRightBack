@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://cgri3pmhwcnt8"]
+[gd_scene load_steps=2 format=3 uid="uid://cgri3pmhwcnt8"]
+
+[ext_resource type="Script" path="res://scripts/menu/item_ui.gd" id="1_cyvxb"]
 
 [node name="itemUI" type="VBoxContainer"]
+script = ExtResource("1_cyvxb")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(175, 175)
@@ -14,8 +17,17 @@ offset_right = 175.0
 offset_bottom = 131.438
 expand_mode = 5
 
+[node name="Button" type="Button" parent="ColorRect"]
+custom_minimum_size = Vector2(175, 175)
+layout_mode = 0
+offset_right = 175.0
+offset_bottom = 175.0
+flat = true
+
 [node name="Label" type="Label" parent="."]
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "Texto de prueba"
 horizontal_alignment = 1
+
+[connection signal="pressed" from="ColorRect/Button" to="." method="_on_button_pressed"]

@@ -42,18 +42,23 @@ do show_character("detective", "default_frio")
 Claire: Creo que eso es todo por ahora. Vamos a revisar todo lo que sabemos.
 Claire: Asegúrate de apuntar todas las cosas que puedan ser importantes, así podremos revisarlas después.
 do esperando_cuaderno()
-# : [color=#3E8E41]El cuaderno se ha actualizado, pulsa Esc para abrirlo.[/color]
 do hide_character("detective")
 # do prueba_dialogolog()
 => END
 
 ~ inicio3
 Samuel: (Hemos estado un rato distraídos.)
+do show_character("detective", "default_frio")
 Claire: Por ahora eso está bien.
+do show_character("duenyo", "default")
 Dueño del circo: Va a comenzar el espectáculo, pueden ir pasando a la carpa.
 Samuel: (Todo el mundo está comenzando a entrar de forma animada)
+do hide_character("duenyo")
+do show_character("detective", "default_frio")
 Samuel: ¿Aún no vas a explicarme qué es lo que pasa?
 Claire: Solo mantente atento y disfruta del espectáculo.
+do hide_character("detective")
+do fin_escena()
 => END
 
 # Interacciones con objetos de la escena

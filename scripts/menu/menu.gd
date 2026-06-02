@@ -12,6 +12,8 @@ var tab_tweens = {}
 func _ready() -> void:
 	protagonista.visibility(true)
 	protagonista.play_anim("default")
+	$detalle.visible = false
+	$bloqueador_clic.visible = false
 
 	for tab in tabs:
 		tab.custom_minimum_size = Vector2(140, 48)
@@ -90,6 +92,8 @@ func select_menu(selected_menu):
 				var datos = DataBase.objetos[objeto]["fases"][1]
 				inventory_item.get_node("ColorRect/TextureRect").texture = datos["imagen"]
 				inventory_item.get_node("Label").text = datos["nombre"]
+				inventory_item.datos_item = datos
+				inventory_item.item_pressed.connect(mostrar_detalle)
 				objetos.add_child(inventory_item)
 		"PanelPerfiles":
 			print("Perfiles")
@@ -102,6 +106,8 @@ func select_menu(selected_menu):
 				var datos = DataBase.perfiles[perfil]["fases"][1]
 				inventory_item.get_node("ColorRect/TextureRect").texture = datos["imagen"]
 				inventory_item.get_node("Label").text = datos["nombre"]
+				inventory_item.datos_item = datos
+				inventory_item.item_pressed.connect(mostrar_detalle)
 				perfiles.add_child(inventory_item)
 		"PanelLugares":
 			print("Lugares")
@@ -114,6 +120,8 @@ func select_menu(selected_menu):
 				var datos = DataBase.lugares[lugar]["fases"][1]
 				inventory_item.get_node("ColorRect/TextureRect").texture = datos["imagen"]
 				inventory_item.get_node("Label").text = datos["nombre"]
+				inventory_item.datos_item = datos
+				inventory_item.item_pressed.connect(mostrar_detalle)
 				lugares.add_child(inventory_item)
 		"PanelAjustes":
 			print("Ajustes")
@@ -134,10 +142,18 @@ func _on_salir_pressed() -> void:
 	SaveGame.save_game()
 	get_tree().quit()
 
+func mostrar_detalle(datos):
+	$detalle.visible = true
+	$detalle.z_index = 100
+	$bloqueador_clic.visible = true
+	#$detalle.move_to_front()
+	#$detalle.mouse_filter = Control.MOUSE_FILTER_STOP
+	#$detalle.modulate = Color(1, 1, 1, 1)
 
-#Solo para prueba, borrar después
-func crear_inventario_prueba():
-	for i in range(16):
-		var panel = Panel.new()
-		panel.custom_minimum_size = Vector2(175, 175)
-		objetos.add_child(panel)
+	$detalle/ColorRect/HBoxContainer/imagen.texture = datos["imagen"]
+	$detalle/ColorRect/HBoxContainer/VBoxContainer/nombre.text = datos["nombre"]
+	$detalle/ColorRect/HBoxContainer/VBoxContainer/informacion.text = datos["informacion"]
+
+func _on_cerrar_pressed() -> void:
+	$detalle.visible = false
+	$bloqueador_clic.visible = false

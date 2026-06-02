@@ -50,7 +50,7 @@ menu={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogos/escenarios/inicio.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogos/escenarios/inicio.dialogue", "res://dialogos/escenarios/carpa.dialogue")
 
 [rendering]
 
