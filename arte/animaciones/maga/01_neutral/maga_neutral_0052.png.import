@@ -3,19 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c5uh6fxcw5dpn"
-path="res://.godot/imported/maga_neutral_0052.png-33f75f8e8fe9957935c913e65d7009a5.ctex"
+path.s3tc="res://.godot/imported/maga_neutral_0052.png-33f75f8e8fe9957935c913e65d7009a5.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://arte/animaciones/maga/01_neutral/maga_neutral_0052.png"
-dest_files=["res://.godot/imported/maga_neutral_0052.png-33f75f8e8fe9957935c913e65d7009a5.ctex"]
+dest_files=["res://.godot/imported/maga_neutral_0052.png-33f75f8e8fe9957935c913e65d7009a5.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

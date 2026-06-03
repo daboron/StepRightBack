@@ -12,7 +12,7 @@ var game_data : Dictionary = {
 }
 
 func game_data_add(place, obj, fase := 1) -> void:
-	game_data[place][obj] = true
+	game_data[place][obj] = fase
 
 func game_data_has(place, obj) -> bool:
 	return game_data[place].has(obj)

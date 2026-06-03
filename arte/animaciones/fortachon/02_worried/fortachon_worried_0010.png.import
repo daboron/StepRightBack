@@ -3,19 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqe8gevgu8tsx"
-path="res://.godot/imported/fortachon_worried_0010.png-b9b76fb4c6695cb6f5187727ddaaf506.ctex"
+path.s3tc="res://.godot/imported/fortachon_worried_0010.png-b9b76fb4c6695cb6f5187727ddaaf506.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0010.png"
-dest_files=["res://.godot/imported/fortachon_worried_0010.png-b9b76fb4c6695cb6f5187727ddaaf506.ctex"]
+dest_files=["res://.godot/imported/fortachon_worried_0010.png-b9b76fb4c6695cb6f5187727ddaaf506.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

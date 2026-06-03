@@ -3,19 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drere7uerg7w7"
-path="res://.godot/imported/maga_angry_0007.png-258e03b3240bd7ff454aa5a76586b9b8.ctex"
+path.s3tc="res://.godot/imported/maga_angry_0007.png-258e03b3240bd7ff454aa5a76586b9b8.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://arte/animaciones/maga/02_angry/maga_angry_0007.png"
-dest_files=["res://.godot/imported/maga_angry_0007.png-258e03b3240bd7ff454aa5a76586b9b8.ctex"]
+dest_files=["res://.godot/imported/maga_angry_0007.png-258e03b3240bd7ff454aa5a76586b9b8.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

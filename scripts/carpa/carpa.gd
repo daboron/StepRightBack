@@ -1,58 +1,31 @@
 extends Node2D
-@onready var dialogo = load ("res://dialogos/escenarios/carpa.dialogue")
-@onready var presentacion = $presentacion
-@onready var descubrimiento = $descubrimiento
+@onready var dialogo = preload ("res://dialogos/escenarios/carpa.dialogue")
 
-var characters = {}
-var active_characters = []
+@onready var video_presentacion = $presentacion
+@onready var video_descubrimiento = $descubrimiento
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	presentacion.visible = false
-	descubrimiento.visible = false
-	$espada.visible = false
-	$pantalla_negra.visible = false
-	characters["detective"] = $detective
-	characters["duenyo"] = $duenyo
-	characters["maga"] = $maga
-	characters["payasa"] = $payasa
-	characters["trapecista"] = $trapecista
-	characters["fortachon"] = $fortachon
-	for c in characters.values():
-		c.visibility(false)
+	await Controlador.fade_in()
+	CharacterManager.register("detective", $detective)
+	CharacterManager.register("duenyo", $duenyo)
+	CharacterManager.register("maga", $maga)
+	CharacterManager.register("payasa", $payasa)
+	CharacterManager.register("trapecista", $trapecista)
+	CharacterManager.register("fortachon", $fortachon)
 	DialogueManager.show_dialogue_balloon(dialogo, "carpa1")
+	call_deferred("cargar_videos")
+
+func cargar_videos() -> void:
+	video_presentacion.stream = load("res://arte/animaciones/otras/personajes_converted.ogv")
+	video_descubrimiento.stream = load("res://arte/animaciones/otras/cadaver_converted.ogv")
 
 # funcion para hacer un personaje visible y reproducir su animación cuando habla
 func show_character(name: String, anim: String = "default") -> void:
-	var char = characters[name]
-	char.visibility(true)
-	char.play_anim(anim)
-	_set_active(name)
+	CharacterManager.show_character(name, anim)
 
-func _set_active(name: String):
-	if !active_characters.has(name):
-		active_characters.append(name)
-	update_layout()
-	# cuando los personajes estan colocados aplicamos focus en el que esta hablando
-	if active_characters.size() > 1:
-		for c in characters.values():
-			c.unfocus()
-	characters[name].focus()
-
-# funcion para colocar los personajes en la posicion (x) correspondiente segun cuantos hay
-func update_layout():
-	if active_characters.size() == 1:
-		var c = characters[active_characters[0]]
-		c.set_base_position(Vector2(960, 540))
-	elif active_characters.size() == 2:
-		characters[active_characters[0]].set_base_position(Vector2(600, 540))
-		characters[active_characters[1]].set_base_position(Vector2(1320, 540))
-
-#ocultar al personaje que ya no esta en escena
-func hide_character(name: String):
-	characters[name].visibility(false)
-	active_characters.erase(name)
-	update_layout()
+func hide_character(id: String) -> void:
+	CharacterManager.hide_character(id)
 
 func espada_visibility(valor) -> void:
 	$espada.visible = valor
@@ -60,16 +33,19 @@ func espada_visibility(valor) -> void:
 func pantalla_negra(valor) -> void:
 	$pantalla_negra.visible = valor
 
-func play(obj, anim) -> void:
-	await Controlador.fade_out()
-	obj.visible = true
-	await Controlador.fade_in()
-	obj.play(anim)
-	await obj.animation_finished
-	await Controlador.fade_out()
-	obj.visible = false
-	await Controlador.fade_in()
-
 func despues_descubrimiento() -> void:
 	$pantalla_negra.visible = false
+	SaveGame.game_data_add("perfiles", "maga")
+	SaveGame.game_data_add("perfiles", "payasa")
+	SaveGame.game_data_add("perfiles", "trapecista")
+	SaveGame.game_data_add("perfiles", "duenyo", 2)
 	DialogueManager.show_dialogue_balloon(dialogo, "carpa2")
+
+func video(video) -> void:
+	await Controlador.fade_out()
+	video.visible = true
+	await get_tree().process_frame
+	Controlador.fade_in()
+	video.play()
+	await video.finished
+	video.stream = null

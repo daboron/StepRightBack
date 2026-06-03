@@ -3,19 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bkds0rsbnx3jp"
-path="res://.godot/imported/jefe_laugh_0016.png-1751c758b98128d77b6e07ca535333ff.ctex"
+path.s3tc="res://.godot/imported/jefe_laugh_0016.png-1751c758b98128d77b6e07ca535333ff.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0016.png"
-dest_files=["res://.godot/imported/jefe_laugh_0016.png-1751c758b98128d77b6e07ca535333ff.ctex"]
+dest_files=["res://.godot/imported/jefe_laugh_0016.png-1751c758b98128d77b6e07ca535333ff.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

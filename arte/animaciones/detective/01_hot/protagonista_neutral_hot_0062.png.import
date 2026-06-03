@@ -3,19 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cikg0w5pu7xn1"
-path="res://.godot/imported/protagonista_neutral_hot_0062.png-2f182b2ccff0419722b35cc727eda7f5.ctex"
+path.s3tc="res://.godot/imported/protagonista_neutral_hot_0062.png-2f182b2ccff0419722b35cc727eda7f5.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0062.png"
-dest_files=["res://.godot/imported/protagonista_neutral_hot_0062.png-2f182b2ccff0419722b35cc727eda7f5.ctex"]
+dest_files=["res://.godot/imported/protagonista_neutral_hot_0062.png-2f182b2ccff0419722b35cc727eda7f5.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

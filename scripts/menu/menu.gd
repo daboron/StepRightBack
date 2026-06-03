@@ -103,7 +103,9 @@ func select_menu(selected_menu):
 				child.queue_free()
 			for perfil in SaveGame.game_data["perfiles"]:
 				var inventory_item = item_ui.instantiate()
-				var datos = DataBase.perfiles[perfil]["fases"][1]
+				#var datos = DataBase.perfiles[perfil]["fases"][1]
+				var fase = SaveGame.game_data["perfiles"].get(perfil, 1)
+				var datos = DataBase.perfiles[perfil]["fases"][fase]
 				inventory_item.get_node("ColorRect/TextureRect").texture = datos["imagen"]
 				inventory_item.get_node("Label").text = datos["nombre"]
 				inventory_item.datos_item = datos

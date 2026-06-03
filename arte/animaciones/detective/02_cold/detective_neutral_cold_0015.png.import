@@ -3,19 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d07ddtensdxe0"
-path="res://.godot/imported/detective_neutral_cold_0015.png-d53b0442a6761d3c9143cf590672bdce.ctex"
+path.s3tc="res://.godot/imported/detective_neutral_cold_0015.png-d53b0442a6761d3c9143cf590672bdce.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://arte/animaciones/detective/02_cold/detective_neutral_cold_0015.png"
-dest_files=["res://.godot/imported/detective_neutral_cold_0015.png-d53b0442a6761d3c9143cf590672bdce.ctex"]
+dest_files=["res://.godot/imported/detective_neutral_cold_0015.png-d53b0442a6761d3c9143cf590672bdce.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

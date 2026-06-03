@@ -3,19 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4mrduc844enq"
-path="res://.godot/imported/protagonista_notebook_cold_0035.png-d683022ed7fcc3de6dcfb30fe511bc19.ctex"
+path.s3tc="res://.godot/imported/protagonista_notebook_cold_0035.png-d683022ed7fcc3de6dcfb30fe511bc19.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0035.png"
-dest_files=["res://.godot/imported/protagonista_notebook_cold_0035.png-d683022ed7fcc3de6dcfb30fe511bc19.ctex"]
+dest_files=["res://.godot/imported/protagonista_notebook_cold_0035.png-d683022ed7fcc3de6dcfb30fe511bc19.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

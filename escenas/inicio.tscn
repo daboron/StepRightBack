@@ -1430,7 +1430,7 @@ animations = [{
 "texture": ExtResource("354_j4lko")
 }],
 "loop": true,
-"name": &"cold",
+"name": &"default_frio",
 "speed": 25.0
 }]
 
@@ -1519,7 +1519,7 @@ id = "duenyo"
 [node name="fortachon" type="AnimatedSprite2D" parent="."]
 position = Vector2(962, 537)
 sprite_frames = SubResource("SpriteFrames_phgtx")
-animation = &"cold"
+animation = &"default_frio"
 script = ExtResource("104_c326t")
 
 [node name="placeHolder" type="CenterContainer" parent="."]

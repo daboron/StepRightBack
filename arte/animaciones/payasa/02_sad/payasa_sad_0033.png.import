@@ -3,19 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xr8ynicfq00w"
-path="res://.godot/imported/payasa_sad_0033.png-cf05bc7db0ed805f8599ff820b3244fc.ctex"
+path.s3tc="res://.godot/imported/payasa_sad_0033.png-cf05bc7db0ed805f8599ff820b3244fc.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://arte/animaciones/payasa/02_sad/payasa_sad_0033.png"
-dest_files=["res://.godot/imported/payasa_sad_0033.png-cf05bc7db0ed805f8599ff820b3244fc.ctex"]
+dest_files=["res://.godot/imported/payasa_sad_0033.png-cf05bc7db0ed805f8599ff820b3244fc.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

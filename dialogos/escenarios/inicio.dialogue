@@ -29,7 +29,7 @@ Claire: ¿Puede contarnos algo sobre el espectáculo de hoy?
 do show_character("duenyo", "default")
 Dueño del circo: Diría que el plato fuerte de la noche es el truco de magia. Aunque, por supuesto, todas las actuaciones merecerán la pena.
 do hide_character("detective")
-do show_character("fortachon", "cold")
+do show_character("fortachon", "default_frio")
 ???: Jefe, le necesitamos dentro un momento.
 Dueño del circo: ¿Ha pasado algo?
 ???: Adelaide dice que ha tenido un problema.

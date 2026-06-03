@@ -6,7 +6,7 @@ var perfiles = {
 	"protagonista": {
 		"fases": {
 			1: {
-				"imagen": preload("res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0001.png"), # Placeholder
+				"imagen": preload("res://arte/fotos/02_PROTAGONIST_POLAROID.png"),
 				"nombre": "Samuel Collins",
 				"informacion": "placeholder"
 			}
@@ -15,7 +15,7 @@ var perfiles = {
 	"detective": {
 		"fases": {
 			1: {
-				"imagen": preload("res://arte/animaciones/detective/02_cold/detective_neutral_cold_0001.png"), # Placeholder
+				"imagen": preload("res://arte/fotos/01_DETECTIVE_POLAROID.png"),
 				"nombre": "Claire Chandler",
 				"informacion": "placeholder"
 			}
@@ -24,12 +24,17 @@ var perfiles = {
 	"duenyo": {
 		"fases": {
 			1: {
-				"imagen": preload("res://arte/animaciones/jefe/01_neutral/jefe_neutral_0001.png"), # Placeholder
+				"imagen": preload("res://arte/fotos/06_BOSS_POLAROID.png"),
 				"nombre": "Dueño del circo",
 				"informacion": "placeholder"
 			},
 			2: {
-				"imagen": 2,
+				"imagen": preload("res://arte/fotos/06_BOSS_POLAROID_BW.png"),
+				"nombre": "Dueño del circo",
+				"informacion": "placeholder2"
+			},
+			3: {
+				"imagen": preload("res://arte/fotos/06_BOSS_POLAROID_BW.png"),
 				"nombre": "Víctor Barnum",
 				"informacion": "placeholder2"
 			}
@@ -38,7 +43,34 @@ var perfiles = {
 	"forzudo": {
 		"fases": {
 			1: {
-				"imagen": preload("res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0001.png"), # Placeholder
+				"imagen": preload("res://arte/fotos/07_STRONGMAN_POLAROID.png"),
+				"nombre": "???",
+				"informacion": "placeholder"
+			}
+		}
+	},
+	"maga": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/fotos/04_MAGICIAN_POLAROID.png"),
+				"nombre": "???",
+				"informacion": "placeholder"
+			}
+		}
+	},
+	"payasa": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/fotos/03_CLOWN_POLAROID.png"),
+				"nombre": "???",
+				"informacion": "placeholder"
+			}
+		}
+	},
+	"trapecista": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/fotos/05_AERIALIST_POLAROID.png"),
 				"nombre": "???",
 				"informacion": "placeholder"
 			}

@@ -3,19 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://drgr7xmor1hay"
-path="res://.godot/imported/jefe_neutral_0094.png-fadfca40472aaa794514a44af6a6f718.ctex"
+path.s3tc="res://.godot/imported/jefe_neutral_0094.png-fadfca40472aaa794514a44af6a6f718.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://arte/animaciones/jefe/01_neutral/jefe_neutral_0094.png"
-dest_files=["res://.godot/imported/jefe_neutral_0094.png-fadfca40472aaa794514a44af6a6f718.ctex"]
+dest_files=["res://.godot/imported/jefe_neutral_0094.png-fadfca40472aaa794514a44af6a6f718.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

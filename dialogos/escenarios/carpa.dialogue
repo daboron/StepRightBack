@@ -5,8 +5,9 @@ Samuel: (Todo el mundo ha entrado ya, se les ve muy animados. El escenario está
 do show_character("duenyo", "laught")
 Dueño del circo: ¡Para comenzar permitidme presentaros a las estrellas del espectáculo!
 do hide_character("duenyo")
-do play(presentacion, "default")
+do video(video_presentacion)
 
+Samuel: (Al terminar la presentación casi todos se van detrás del escenario.)
 do show_character("maga", "neutral")
 ???: Es un placer estar aquí con vosotros, yo soy Adelaide, intentad no olvidarlo cuando os deje sin aliento.
 Adelaide: Para este número necesitaré la colaboración de nuestro jefe.
@@ -33,8 +34,7 @@ Adelaide: Esto sería suficiente para dejar a cualquiera como un queso suizo.
 Adelaide: Así que comprobemos cómo se encuentra.
 do hide_character("maga")
 Samuel: (Comienza a retirar las espadas lentamente.)
-#do pantalla_negra(false)
-do play(descubrimiento, "default")
+do video(video_descubrimiento)
 do despues_descubrimiento()
 => END
 

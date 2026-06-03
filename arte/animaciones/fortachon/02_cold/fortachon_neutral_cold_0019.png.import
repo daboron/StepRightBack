@@ -3,19 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c31phvksqdb7r"
-path="res://.godot/imported/fortachon_neutral_cold_0019.png-39fa23f7b3cc7ad2f712053b3f7a398d.ctex"
+path.s3tc="res://.godot/imported/fortachon_neutral_cold_0019.png-39fa23f7b3cc7ad2f712053b3f7a398d.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://arte/animaciones/fortachon/02_cold/fortachon_neutral_cold_0019.png"
-dest_files=["res://.godot/imported/fortachon_neutral_cold_0019.png-39fa23f7b3cc7ad2f712053b3f7a398d.ctex"]
+dest_files=["res://.godot/imported/fortachon_neutral_cold_0019.png-39fa23f7b3cc7ad2f712053b3f7a398d.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

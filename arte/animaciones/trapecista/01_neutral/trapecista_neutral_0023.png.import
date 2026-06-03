@@ -3,19 +3,20 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dier3fin15yad"
-path="res://.godot/imported/trapecista_neutral_0023.png-08b2fabf89e9f02ccb1ddc22f02c974e.ctex"
+path.s3tc="res://.godot/imported/trapecista_neutral_0023.png-08b2fabf89e9f02ccb1ddc22f02c974e.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
 source_file="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0023.png"
-dest_files=["res://.godot/imported/trapecista_neutral_0023.png-08b2fabf89e9f02ccb1ddc22f02c974e.ctex"]
+dest_files=["res://.godot/imported/trapecista_neutral_0023.png-08b2fabf89e9f02ccb1ddc22f02c974e.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
