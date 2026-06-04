@@ -1,0 +1,285 @@
+[gd_scene load_steps=56 format=3 uid="uid://1sri8aynycv4"]
+
+[ext_resource type="Script" path="res://scripts/cuarto_chicas/cuarto_chicas.gd" id="1_6q256"]
+[ext_resource type="Texture2D" uid="uid://ufvvvdkk4vbe" path="res://arte/fondos/SET_CuartoChicas.png" id="2_uamr3"]
+[ext_resource type="Script" path="res://scripts/clases/interactable_object.gd" id="3_lim55"]
+[ext_resource type="Texture2D" uid="uid://enq8h355hnys" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0001.png" id="4_pg0uj"]
+[ext_resource type="Texture2D" uid="uid://jb3lxspis0tj" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0002.png" id="5_ets61"]
+[ext_resource type="Texture2D" uid="uid://kbembdxbv7ir" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0003.png" id="6_qju0g"]
+[ext_resource type="Texture2D" uid="uid://djpt2n4sx2bka" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0004.png" id="7_g00d6"]
+[ext_resource type="Texture2D" uid="uid://dbkb7brhwxgpl" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0005.png" id="8_k0php"]
+[ext_resource type="Texture2D" uid="uid://b8irew4dlock7" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0006.png" id="9_gyvvp"]
+[ext_resource type="Texture2D" uid="uid://c20y2el6g1qol" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0007.png" id="10_sxerd"]
+[ext_resource type="Texture2D" uid="uid://b1osc5skk863d" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0008.png" id="11_s5ck0"]
+[ext_resource type="Texture2D" uid="uid://be2grr2t6u1g2" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0009.png" id="12_cecmt"]
+[ext_resource type="Texture2D" uid="uid://c8y8uvfv3w4rq" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0010.png" id="13_e76l1"]
+[ext_resource type="Texture2D" uid="uid://dhuvn1rihdboo" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0011.png" id="14_4jx21"]
+[ext_resource type="Texture2D" uid="uid://dhvrs5ufnjiaa" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0012.png" id="15_13gkv"]
+[ext_resource type="Texture2D" uid="uid://bwyu8fps2ffml" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0013.png" id="16_tfrpv"]
+[ext_resource type="Texture2D" uid="uid://b2eop6443x64q" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0014.png" id="17_xht0r"]
+[ext_resource type="Texture2D" uid="uid://ba4lmgm7f616n" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0015.png" id="18_nfw8l"]
+[ext_resource type="Texture2D" uid="uid://ca76bxaytp47m" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0016.png" id="19_1xbn7"]
+[ext_resource type="Texture2D" uid="uid://16o0qciqc8qw" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0017.png" id="20_0x1cf"]
+[ext_resource type="Texture2D" uid="uid://biwhxerbqpjby" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0018.png" id="21_hrokf"]
+[ext_resource type="Texture2D" uid="uid://nkbiijt74m8v" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0019.png" id="22_f4eet"]
+[ext_resource type="Texture2D" uid="uid://bdsw8acnupe12" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0020.png" id="23_j14pj"]
+[ext_resource type="Texture2D" uid="uid://c5ilfqycdjq7j" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0021.png" id="24_qkcf4"]
+[ext_resource type="Texture2D" uid="uid://dwftts7t1gmo8" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0022.png" id="25_6rr8d"]
+[ext_resource type="Texture2D" uid="uid://batxtxe3rjwr" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0023.png" id="26_bt387"]
+[ext_resource type="Texture2D" uid="uid://cwt67ps5nvmvt" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0024.png" id="27_xr075"]
+[ext_resource type="Texture2D" uid="uid://ch558d3kocmwd" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0025.png" id="28_trn2u"]
+[ext_resource type="Texture2D" uid="uid://ccv0cbib8w54e" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0026.png" id="29_teomd"]
+[ext_resource type="Texture2D" uid="uid://5jcqrqitbbs3" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0027.png" id="30_jqdwf"]
+[ext_resource type="Texture2D" uid="uid://b78orxu3gex2r" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0028.png" id="31_ap1rg"]
+[ext_resource type="Texture2D" uid="uid://dtkcxb1mctuth" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0029.png" id="32_oxytx"]
+[ext_resource type="Texture2D" uid="uid://bidc0u1y30dmc" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0030.png" id="33_7hjbt"]
+[ext_resource type="Texture2D" uid="uid://cnnj73hh4ax26" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0031.png" id="34_mj75c"]
+[ext_resource type="Texture2D" uid="uid://7lbjpdf3m88k" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0032.png" id="35_mgrj2"]
+[ext_resource type="Texture2D" uid="uid://xr8ynicfq00w" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0033.png" id="36_8y06y"]
+[ext_resource type="Texture2D" uid="uid://fuoys2xmkywo" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0034.png" id="37_2q5og"]
+[ext_resource type="Texture2D" uid="uid://dhuh4vedb034o" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0035.png" id="38_luc2v"]
+[ext_resource type="Texture2D" uid="uid://x36knjeohgma" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0036.png" id="39_8a8lj"]
+[ext_resource type="Texture2D" uid="uid://dmfamqk8nu1en" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0037.png" id="40_lj54r"]
+[ext_resource type="Texture2D" uid="uid://bqc33xbiva48y" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0038.png" id="41_q3vhw"]
+[ext_resource type="Texture2D" uid="uid://cabnafeqcndk1" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0039.png" id="42_1as8w"]
+[ext_resource type="Texture2D" uid="uid://bm7ky0lvro23m" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0040.png" id="43_53c61"]
+[ext_resource type="Texture2D" uid="uid://cf4hx2i3p0x8y" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0041.png" id="44_xva82"]
+[ext_resource type="Texture2D" uid="uid://xti6itgfhyj4" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0042.png" id="45_ytfm7"]
+[ext_resource type="Texture2D" uid="uid://cv0wvbdl3vgb0" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0043.png" id="46_kr3ny"]
+[ext_resource type="Texture2D" uid="uid://b6g2uap7i1key" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0044.png" id="47_n614g"]
+[ext_resource type="Texture2D" uid="uid://c8hpekb0oruyb" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0045.png" id="48_y5qbg"]
+[ext_resource type="Texture2D" uid="uid://l8u837kdoao8" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0046.png" id="49_mdr0k"]
+[ext_resource type="Texture2D" uid="uid://jopwgg3itkeo" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0047.png" id="50_2gu8w"]
+[ext_resource type="Texture2D" uid="uid://dughf1ea2bgjy" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0048.png" id="51_61b05"]
+[ext_resource type="Texture2D" uid="uid://d4cmak0vpt3bf" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0049.png" id="52_inppp"]
+[ext_resource type="Texture2D" uid="uid://dsa0urj05543s" path="res://arte/animaciones/payasa/02_sad/payasa_sad_0050.png" id="53_et3q3"]
+[ext_resource type="Script" path="res://scripts/clases/character.gd" id="54_6x177"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8cl37"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_pg0uj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ets61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qju0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_g00d6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_k0php")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_gyvvp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sxerd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_s5ck0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_cecmt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_e76l1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_4jx21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_13gkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_tfrpv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_xht0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_nfw8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_1xbn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0x1cf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_hrokf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_f4eet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_j14pj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_qkcf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_6rr8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_bt387")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_xr075")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_trn2u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_teomd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_jqdwf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ap1rg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_oxytx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_7hjbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_mj75c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_mgrj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_8y06y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_2q5og")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_luc2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_8a8lj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_lj54r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_q3vhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_1as8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_53c61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_xva82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_ytfm7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_kr3ny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_n614g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_y5qbg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_mdr0k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_2gu8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_61b05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_inppp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_et3q3")
+}],
+"loop": true,
+"name": &"triste",
+"speed": 25.0
+}]
+
+[node name="cuartoChicas" type="Node2D"]
+script = ExtResource("1_6q256")
+
+[node name="fondo" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("2_uamr3")
+
+[node name="tocador_chicas" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("3_lim55")
+id = "tocador_chicas"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="tocador_chicas"]
+polygon = PackedVector2Array(285, 290, 267, 305, 249, 334, 237, 377, 233, 393, 219, 390, 203, 392, 197, 405, 200, 415, 209, 426, 227, 428, 228, 438, 224, 456, 214, 490, 205, 525, 203, 548, 208, 561, 212, 566, 199, 567, 192, 569, 190, 575, 203, 588, 223, 597, 233, 597, 237, 597, 254, 614, 259, 620, 252, 622, 249, 629, 249, 641, 240, 642, 239, 645, 238, 673, 159, 682, 159, 691, 158, 834, 152, 836, 149, 839, 149, 858, 145, 868, 145, 884, 150, 899, 166, 921, 177, 937, 183, 954, 185, 976, 185, 995, 180, 1023, 177, 1031, 168, 1036, 158, 1045, 154, 1056, 155, 1061, 158, 1064, 166, 1064, 179, 1060, 190, 1049, 196, 1030, 199, 1005, 201, 976, 195, 937, 189, 922, 179, 901, 176, 884, 177, 876, 315, 878, 318, 891, 328, 911, 338, 926, 346, 942, 350, 962, 351, 995, 345, 1031, 333, 1038, 325, 1053, 325, 1059, 329, 1063, 340, 1063, 353, 1057, 359, 1044, 362, 1021, 364, 983, 362, 950, 355, 922, 349, 898, 346, 886, 349, 884, 383, 886, 403, 894, 424, 890, 432, 870, 433, 806, 425, 804, 425, 774, 450, 776, 445, 805, 444, 846, 446, 866, 450, 873, 459, 872, 466, 866, 466, 859, 461, 855, 456, 855, 452, 840, 452, 816, 463, 775, 505, 775, 505, 766, 510, 755, 521, 745, 543, 738, 567, 733, 566, 724, 571, 722, 573, 710, 566, 707, 566, 677, 569, 676, 574, 669, 571, 660, 566, 659, 565, 642, 566, 636, 566, 633, 471, 632, 472, 604, 406, 605, 392, 585, 397, 582, 399, 576, 384, 563, 377, 563, 376, 548, 380, 535, 385, 524, 381, 520, 387, 493, 390, 455, 397, 453, 404, 449, 405, 436, 398, 426, 388, 425, 385, 396, 378, 368, 368, 339, 355, 316, 342, 301, 327, 293, 316, 291)
+
+[node name="litera_chicas" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("3_lim55")
+id = "litera_chicas"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="litera_chicas"]
+polygon = PackedVector2Array(1528, 886, 1527, 879, 1531, 835, 1483, 833, 1240, 832, 948, 833, 948, 871, 949, 887, 944, 892, 931, 888, 935, 863, 937, 833, 937, 675, 932, 671, 934, 608, 938, 603, 938, 527, 932, 520, 934, 494, 938, 488, 938, 318, 935, 314, 936, 278, 937, 271, 938, 234, 940, 223, 948, 222, 951, 229, 953, 317, 960, 316, 973, 329, 989, 348, 997, 365, 1304, 364, 1322, 374, 1332, 389, 1334, 404, 1384, 404, 1384, 367, 1380, 353, 1385, 338, 1390, 331, 1397, 313, 1411, 306, 1413, 282, 1419, 255, 1432, 233, 1446, 223, 1457, 225, 1468, 235, 1473, 251, 1474, 276, 1485, 268, 1494, 269, 1504, 277, 1509, 283, 1515, 284, 1518, 297, 1518, 308, 1519, 314, 1516, 318, 1515, 331, 1514, 493, 1518, 496, 1517, 507, 1518, 521, 1514, 525, 1515, 608, 1528, 616, 1538, 634, 1543, 636, 1547, 654, 1546, 664, 1547, 671, 1543, 674, 1543, 857, 1546, 864, 1547, 879, 1547, 886, 1541, 890)
+
+[node name="baul_chicas" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("3_lim55")
+id = "baul_chicas"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="baul_chicas"]
+polygon = PackedVector2Array(623, 677, 585, 694, 586, 730, 635, 730, 659, 735, 671, 742, 680, 756, 680, 770, 684, 775, 683, 798, 683, 815, 839, 815, 853, 792, 855, 685, 848, 678, 813, 678)
+
+[node name="cajas_chicas" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("3_lim55")
+id = "cajas_chicas"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="cajas_chicas"]
+polygon = PackedVector2Array(983, 836, 984, 887, 1081, 890, 1083, 837)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="cajas_chicas"]
+polygon = PackedVector2Array(1110, 844, 1141, 889, 1237, 888, 1239, 835, 1139, 833, 1109, 833)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="cajas_chicas"]
+polygon = PackedVector2Array(1390, 886, 1391, 834, 1289, 834, 1241, 834, 1242, 847, 1296, 888)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="cajas_chicas"]
+polygon = PackedVector2Array(1524, 889, 1527, 837, 1485, 835, 1396, 834, 1395, 864, 1424, 885)
+
+[node name="payasa" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(959, 540)
+sprite_frames = SubResource("SpriteFrames_8cl37")
+animation = &"triste"
+script = ExtResource("54_6x177")
+id = "payasa"
+
+[connection signal="input_event" from="tocador_chicas" to="tocador_chicas" method="_on_input_event"]
+[connection signal="mouse_entered" from="tocador_chicas" to="tocador_chicas" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="tocador_chicas" to="tocador_chicas" method="_on_mouse_exited"]
+[connection signal="input_event" from="litera_chicas" to="litera_chicas" method="_on_input_event"]
+[connection signal="mouse_entered" from="litera_chicas" to="litera_chicas" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="litera_chicas" to="litera_chicas" method="_on_mouse_exited"]
+[connection signal="input_event" from="baul_chicas" to="baul_chicas" method="_on_input_event"]
+[connection signal="mouse_entered" from="baul_chicas" to="baul_chicas" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="baul_chicas" to="baul_chicas" method="_on_mouse_exited"]
+[connection signal="input_event" from="cajas_chicas" to="cajas_chicas" method="_on_input_event"]
+[connection signal="mouse_entered" from="cajas_chicas" to="cajas_chicas" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="cajas_chicas" to="cajas_chicas" method="_on_mouse_exited"]

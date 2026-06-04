@@ -8,13 +8,13 @@ do hide_character("duenyo")
 do video(video_presentacion)
 
 Samuel: (Al terminar la presentación casi todos se van detrás del escenario.)
-do show_character("maga", "neutral")
+do show_character("maga", "default")
 ???: Es un placer estar aquí con vosotros, yo soy Adelaide, intentad no olvidarlo cuando os deje sin aliento.
 Adelaide: Para este número necesitaré la colaboración de nuestro jefe.
 do show_character("duenyo", "laught")
 Dueño del circo: Espero salir entero esta vez. 
 Samuel: (El público comienza a reírse.)
-do show_character("maga", "neutral")
+do show_character("maga", "default")
 Adelaide: Haré todo lo posible.
 Adelaide: Ahora entre en la caja, si es tan amable.
 do hide_character("duenyo")
@@ -29,7 +29,7 @@ Samuel: (Levanta una espada larga y brillante, para después clavarla en la caja
 Samuel: (Después clava otra y otra más.)
 Samuel: (El público cuchichea y los más pequeños parecen preocupados.)
 Samuel: (Entre los murmullos del público se escucha algo más. Probablemente algún niño emocionado.)
-do show_character("maga", "neutral")
+do show_character("maga", "default")
 Adelaide: Esto sería suficiente para dejar a cualquiera como un queso suizo.
 Adelaide: Así que comprobemos cómo se encuentra.
 do hide_character("maga")

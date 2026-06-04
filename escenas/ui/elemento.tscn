@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3k7tlngmbfcl"]
+
+[ext_resource type="Texture2D" uid="uid://bq1w5jv7cgqc8" path="res://arte/fotos/01_DETECTIVE_POLAROID.png" id="1_2jpeu"]
+
+[node name="elemento" type="Control"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+offset_right = 150.0
+offset_bottom = 150.0
+texture = ExtResource("1_2jpeu")
+expand_mode = 5

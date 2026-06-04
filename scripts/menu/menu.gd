@@ -89,7 +89,8 @@ func select_menu(selected_menu):
 				child.queue_free()
 			for objeto in SaveGame.game_data["objetos"]:
 				var inventory_item = item_ui.instantiate()
-				var datos = DataBase.objetos[objeto]["fases"][1]
+				var fase = SaveGame.game_data["objetos"].get(objeto, 1)
+				var datos =  DataBase.get_perfil(objeto, fase)
 				inventory_item.get_node("ColorRect/TextureRect").texture = datos["imagen"]
 				inventory_item.get_node("Label").text = datos["nombre"]
 				inventory_item.datos_item = datos
@@ -103,9 +104,8 @@ func select_menu(selected_menu):
 				child.queue_free()
 			for perfil in SaveGame.game_data["perfiles"]:
 				var inventory_item = item_ui.instantiate()
-				#var datos = DataBase.perfiles[perfil]["fases"][1]
 				var fase = SaveGame.game_data["perfiles"].get(perfil, 1)
-				var datos = DataBase.perfiles[perfil]["fases"][fase]
+				var datos =  DataBase.get_perfil(perfil, fase)
 				inventory_item.get_node("ColorRect/TextureRect").texture = datos["imagen"]
 				inventory_item.get_node("Label").text = datos["nombre"]
 				inventory_item.datos_item = datos
@@ -119,7 +119,8 @@ func select_menu(selected_menu):
 				child.queue_free()
 			for lugar in SaveGame.game_data["lugares"]:
 				var inventory_item = item_ui.instantiate()
-				var datos = DataBase.lugares[lugar]["fases"][1]
+				var fase = SaveGame.game_data["lugares"].get(lugar, 1)
+				var datos =  DataBase.get_lugar(lugar, fase)
 				inventory_item.get_node("ColorRect/TextureRect").texture = datos["imagen"]
 				inventory_item.get_node("Label").text = datos["nombre"]
 				inventory_item.datos_item = datos

@@ -1,0 +1,303 @@
+[gd_scene load_steps=56 format=3 uid="uid://c0bqe7ivwr5tx"]
+
+[ext_resource type="Texture2D" uid="uid://dj1pe2ajjp6a5" path="res://arte/fondos/SET_Despacho.png" id="1_gxr4o"]
+[ext_resource type="Script" path="res://scripts/despacho/despacho.gd" id="1_s2r7n"]
+[ext_resource type="Script" path="res://scripts/clases/interactable_object.gd" id="2_34g2u"]
+[ext_resource type="Texture2D" uid="uid://b12veh4s4fc4d" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0001.png" id="4_ybw5s"]
+[ext_resource type="Texture2D" uid="uid://7p7odccmwucg" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0002.png" id="5_vnf8h"]
+[ext_resource type="Texture2D" uid="uid://2tf3hho7ek4r" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0003.png" id="6_vlbmb"]
+[ext_resource type="Texture2D" uid="uid://ct3qftjg0optm" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0004.png" id="7_3a3n2"]
+[ext_resource type="Texture2D" uid="uid://cimd3hrwyescc" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0005.png" id="8_eihk7"]
+[ext_resource type="Texture2D" uid="uid://bfww14wjq1bob" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0006.png" id="9_54fei"]
+[ext_resource type="Texture2D" uid="uid://sn1i888bpvsx" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0007.png" id="10_v8tee"]
+[ext_resource type="Texture2D" uid="uid://ctevdtobysi1f" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0008.png" id="11_1oxyj"]
+[ext_resource type="Texture2D" uid="uid://b6854j316pt6s" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0009.png" id="12_5imk2"]
+[ext_resource type="Texture2D" uid="uid://dqe8gevgu8tsx" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0010.png" id="13_opxkh"]
+[ext_resource type="Texture2D" uid="uid://bxak30dtuccc" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0011.png" id="14_tq4fk"]
+[ext_resource type="Texture2D" uid="uid://c6obtc4m377ot" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0012.png" id="15_bb6hf"]
+[ext_resource type="Texture2D" uid="uid://i58qx636i48f" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0013.png" id="16_jk8u1"]
+[ext_resource type="Texture2D" uid="uid://c3g8bene7gr6v" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0014.png" id="17_6hyxt"]
+[ext_resource type="Texture2D" uid="uid://dcvmjpsudany0" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0015.png" id="18_r0h2v"]
+[ext_resource type="Texture2D" uid="uid://ca6m7rqe30m2g" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0016.png" id="19_hqtxw"]
+[ext_resource type="Texture2D" uid="uid://bai8nh15eh4at" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0017.png" id="20_vyskr"]
+[ext_resource type="Texture2D" uid="uid://gjwsf7bjf6sf" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0018.png" id="21_ghpkt"]
+[ext_resource type="Texture2D" uid="uid://btxajw4faoj4a" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0019.png" id="22_11ell"]
+[ext_resource type="Texture2D" uid="uid://d1tegbaxvti5m" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0020.png" id="23_kegxy"]
+[ext_resource type="Texture2D" uid="uid://dp5ovrwmkwub6" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0021.png" id="24_w8x53"]
+[ext_resource type="Texture2D" uid="uid://dtoqs3opkgrpy" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0022.png" id="25_jgia0"]
+[ext_resource type="Texture2D" uid="uid://dkqqh4oum1kym" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0023.png" id="26_tjwpb"]
+[ext_resource type="Texture2D" uid="uid://j4pl2tvefne5" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0024.png" id="27_wh0dv"]
+[ext_resource type="Texture2D" uid="uid://c45xdau2flm6m" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0025.png" id="28_ykwhc"]
+[ext_resource type="Texture2D" uid="uid://dai65wc5wwrnw" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0026.png" id="29_ct7je"]
+[ext_resource type="Texture2D" uid="uid://btx028yjwfo1l" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0027.png" id="30_kclkn"]
+[ext_resource type="Texture2D" uid="uid://nu6qbrwbiff4" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0028.png" id="31_m2nmu"]
+[ext_resource type="Texture2D" uid="uid://e7fw6r2bfctb" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0029.png" id="32_jqiqe"]
+[ext_resource type="Texture2D" uid="uid://xiu2e77ak1pp" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0030.png" id="33_4ktg4"]
+[ext_resource type="Texture2D" uid="uid://dune6lbf7vv48" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0031.png" id="34_md4bx"]
+[ext_resource type="Texture2D" uid="uid://cwydckmtm125u" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0032.png" id="35_4gp7m"]
+[ext_resource type="Texture2D" uid="uid://ck56s1jbhq3qb" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0033.png" id="36_ajkum"]
+[ext_resource type="Texture2D" uid="uid://cytbf6srr42h3" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0034.png" id="37_2xvig"]
+[ext_resource type="Texture2D" uid="uid://72g2xgoqri1v" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0035.png" id="38_ksx7k"]
+[ext_resource type="Texture2D" uid="uid://dnxcjt23erfx3" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0036.png" id="39_05yhn"]
+[ext_resource type="Texture2D" uid="uid://bpp74xth44p4j" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0037.png" id="40_6u3yn"]
+[ext_resource type="Texture2D" uid="uid://dtm73a3i143ec" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0038.png" id="41_bdtq7"]
+[ext_resource type="Texture2D" uid="uid://bb251gy7bhv8y" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0039.png" id="42_rhjp4"]
+[ext_resource type="Texture2D" uid="uid://480wwaoq1rsh" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0040.png" id="43_digvs"]
+[ext_resource type="Texture2D" uid="uid://citp52smfcqb3" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0041.png" id="44_30381"]
+[ext_resource type="Texture2D" uid="uid://b1iukg1wou8um" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0042.png" id="45_75t8e"]
+[ext_resource type="Texture2D" uid="uid://cu01j3bcg8ds1" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0043.png" id="46_wghk6"]
+[ext_resource type="Texture2D" uid="uid://djxjiilqteygx" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0044.png" id="47_ry1ga"]
+[ext_resource type="Texture2D" uid="uid://ctqtaky73bqvr" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0045.png" id="48_wuy3n"]
+[ext_resource type="Texture2D" uid="uid://bvqh5travk8w4" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0046.png" id="49_p7ctw"]
+[ext_resource type="Texture2D" uid="uid://clmpt45xwoomq" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0047.png" id="50_22jc5"]
+[ext_resource type="Texture2D" uid="uid://fg6e834d78ch" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0048.png" id="51_oo6in"]
+[ext_resource type="Texture2D" uid="uid://iy81gbhhdtga" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0049.png" id="52_743bn"]
+[ext_resource type="Texture2D" uid="uid://bg2vrps558wqk" path="res://arte/animaciones/fortachon/02_worried/fortachon_worried_0050.png" id="53_5qaor"]
+[ext_resource type="Script" path="res://scripts/clases/character.gd" id="54_tm8se"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lti7p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_ybw5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vnf8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vlbmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_3a3n2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_eihk7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_54fei")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_v8tee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1oxyj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5imk2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_opxkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_tq4fk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_bb6hf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jk8u1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6hyxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_r0h2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_hqtxw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_vyskr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ghpkt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_11ell")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_kegxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_w8x53")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_jgia0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_tjwpb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_wh0dv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ykwhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ct7je")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_kclkn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_m2nmu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_jqiqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_4ktg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_md4bx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_4gp7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ajkum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_2xvig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ksx7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_05yhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_6u3yn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_bdtq7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_rhjp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_digvs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_30381")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_75t8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_wghk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_ry1ga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_wuy3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_p7ctw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_22jc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_oo6in")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_743bn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_5qaor")
+}],
+"loop": true,
+"name": &"preocupado",
+"speed": 25.0
+}]
+
+[node name="despacho" type="Node2D"]
+script = ExtResource("1_s2r7n")
+
+[node name="fondo" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("1_gxr4o")
+
+[node name="foto" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("2_34g2u")
+id = "foto"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="foto"]
+polygon = PackedVector2Array(789, 628, 791, 619, 792, 616, 789, 612, 790, 602, 792, 599, 791, 589, 792, 585, 796, 584, 805, 587, 808, 585, 818, 584, 822, 587, 832, 585, 836, 584, 838, 587, 835, 599, 838, 604, 837, 613, 834, 617, 837, 620, 838, 631, 837, 632, 830, 633, 826, 631, 822, 631, 817, 633, 809, 632, 805, 630, 800, 631, 798, 633, 791, 633, 789, 632)
+
+[node name="libros" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("2_34g2u")
+id = "libros"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="libros"]
+polygon = PackedVector2Array(384, 620, 383, 629, 382, 637, 371, 638, 371, 642, 371, 653, 375, 654, 375, 661, 374, 666, 396, 673, 507, 663, 507, 651, 506, 647, 509, 646, 509, 634, 506, 631, 500, 631, 500, 620, 495, 615, 492, 614)
+
+[node name="mueble" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("2_34g2u")
+id = "mueble"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="mueble"]
+polygon = PackedVector2Array(251, 302, 326, 302, 567, 393, 564, 629, 583, 630, 593, 634, 604, 636, 609, 706, 591, 707, 519, 739, 519, 919, 528, 925, 529, 930, 460, 993, 364, 993, 376, 935, 370, 892, 367, 888, 270, 903, 268, 699, 268, 692, 253, 690, 256, 682, 263, 681, 334, 680, 348, 671, 369, 667, 391, 676, 505, 667, 512, 663, 511, 649, 513, 646, 513, 630, 506, 627, 503, 614, 490, 608, 379, 614, 378, 628, 367, 634, 369, 664, 369, 666, 348, 670, 334, 679, 263, 680, 258, 349, 257, 326, 243, 313, 245, 304)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="mueble"]
+polygon = PackedVector2Array(751, 855, 754, 700, 744, 696, 751, 670, 764, 641, 768, 632, 785, 631, 790, 634, 797, 634, 800, 634, 802, 632, 806, 632, 809, 634, 817, 635, 823, 633, 828, 634, 831, 635, 839, 634, 840, 631, 881, 631, 884, 632, 886, 634, 875, 647, 863, 658, 863, 819, 869, 828, 856, 869, 854, 870, 744, 869)
+
+[node name="papelera" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("2_34g2u")
+id = "papelera"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="papelera"]
+polygon = PackedVector2Array(212, 1080, 190, 963, 208, 915, 366, 893, 370, 936, 349, 1069, 296, 1080)
+
+[node name="cama" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("2_34g2u")
+id = "cama"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="cama"]
+polygon = PackedVector2Array(1041, 652, 1063, 634, 1113, 635, 1128, 618, 1150, 611, 1157, 611, 1176, 592, 1210, 586, 1249, 595, 1278, 617, 1289, 633, 1295, 626, 1308, 622, 1317, 629, 1324, 640, 1324, 658, 1319, 669, 1351, 666, 1386, 656, 1394, 658, 1387, 684, 1387, 726, 1395, 741, 1411, 753, 1411, 758, 1590, 848, 1594, 927, 1550, 928, 1530, 935, 1525, 946, 1528, 954, 1534, 985, 1414, 979, 1344, 980, 1277, 990, 1208, 1017, 1181, 1049, 1188, 1057, 1187, 1068, 1175, 1072, 1155, 1068, 1150, 1058, 1156, 1046, 1161, 1044, 1142, 978, 1129, 976, 1120, 970, 1054, 790, 1055, 752, 1061, 747, 1057, 720, 1044, 705, 1033, 682, 1036, 660)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="cama"]
+polygon = PackedVector2Array(1637, 870, 1684, 890, 1699, 860, 1717, 850, 1734, 850, 1748, 861, 1746, 892, 1729, 909, 1713, 920, 1713, 977, 1703, 978, 1701, 965, 1668, 945, 1627, 934, 1633, 895)
+
+[node name="lampara" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("2_34g2u")
+id = "lampara"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="lampara"]
+polygon = PackedVector2Array(927, 518, 880, 499, 878, 492, 886, 485, 893, 482, 905, 471, 915, 470, 919, 461, 923, 460, 934, 448, 950, 440, 963, 438, 982, 444, 998, 459, 1006, 477, 1006, 480, 1013, 480, 1017, 483, 1019, 490, 1014, 496, 1006, 496, 1003, 498, 1001, 505, 996, 510, 983, 521, 972, 533, 968, 538, 968, 543, 969, 548, 969, 667, 971, 670, 970, 673, 968, 675, 969, 802, 970, 806, 972, 809, 973, 814, 978, 815, 990, 818, 994, 823, 993, 848, 989, 853, 980, 856, 954, 856, 944, 856, 934, 851, 931, 848, 931, 827, 935, 820, 946, 815, 954, 814, 954, 809, 956, 807, 957, 803, 957, 675, 955, 673, 954, 670, 956, 667, 957, 666, 957, 553, 957, 546, 958, 541, 964, 531, 973, 520, 986, 507, 992, 501, 995, 497, 994, 494, 991, 492, 988, 497, 983, 502, 978, 504, 967, 502, 961, 496, 957, 489, 959, 477, 965, 469, 969, 466, 966, 463, 965, 456, 969, 452, 972, 450, 968, 448, 958, 447, 949, 450, 934, 459, 929, 465, 930, 467, 930, 470, 928, 470, 926, 470, 923, 475, 927, 479, 929, 484, 931, 493, 929, 501, 932, 508, 933, 514, 930, 516)
+
+[node name="fortachon" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(962, 537)
+sprite_frames = SubResource("SpriteFrames_lti7p")
+animation = &"preocupado"
+script = ExtResource("54_tm8se")
+
+[connection signal="input_event" from="foto" to="foto" method="_on_input_event"]
+[connection signal="mouse_entered" from="foto" to="foto" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="foto" to="foto" method="_on_mouse_exited"]
+[connection signal="input_event" from="libros" to="libros" method="_on_input_event"]
+[connection signal="mouse_entered" from="libros" to="libros" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="libros" to="libros" method="_on_mouse_exited"]
+[connection signal="input_event" from="mueble" to="mueble" method="_on_input_event"]
+[connection signal="mouse_entered" from="mueble" to="mueble" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="mueble" to="mueble" method="_on_mouse_exited"]
+[connection signal="input_event" from="papelera" to="papelera" method="_on_input_event"]
+[connection signal="mouse_entered" from="papelera" to="papelera" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="papelera" to="papelera" method="_on_mouse_exited"]
+[connection signal="input_event" from="cama" to="cama" method="_on_input_event"]
+[connection signal="mouse_entered" from="cama" to="cama" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="cama" to="cama" method="_on_mouse_exited"]
+[connection signal="input_event" from="lampara" to="lampara" method="_on_input_event"]
+[connection signal="mouse_entered" from="lampara" to="lampara" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="lampara" to="lampara" method="_on_mouse_exited"]

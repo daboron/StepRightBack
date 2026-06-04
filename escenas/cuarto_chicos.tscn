@@ -1,0 +1,490 @@
+[gd_scene load_steps=106 format=3 uid="uid://d1gl44xj61grx"]
+
+[ext_resource type="Texture2D" uid="uid://cf6h78js4f4da" path="res://arte/fondos/SET_CuartoChicos.png" id="1_xgvbx"]
+[ext_resource type="Script" path="res://scripts/cuarto_chicos/cuarto_chicos.gd" id="1_yyyf4"]
+[ext_resource type="Script" path="res://scripts/clases/interactable_object.gd" id="2_nkljs"]
+[ext_resource type="Texture2D" uid="uid://dxha6tfwuwvd3" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0001.png" id="4_4m54d"]
+[ext_resource type="Texture2D" uid="uid://dsxjllmlwi6t5" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0002.png" id="5_n2efe"]
+[ext_resource type="Texture2D" uid="uid://c2xttd73lwfj" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0003.png" id="6_ovt1q"]
+[ext_resource type="Texture2D" uid="uid://srsr8fms1m0i" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0004.png" id="7_560sp"]
+[ext_resource type="Texture2D" uid="uid://k6ghyi87pxwu" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0005.png" id="8_5eeuh"]
+[ext_resource type="Texture2D" uid="uid://voxme8s8ex4y" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0006.png" id="9_3neh8"]
+[ext_resource type="Texture2D" uid="uid://1yjlgegqdcyl" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0007.png" id="10_ftili"]
+[ext_resource type="Texture2D" uid="uid://maieor8p30ym" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0008.png" id="11_yguw0"]
+[ext_resource type="Texture2D" uid="uid://cxnqkc6erpec1" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0009.png" id="12_5qbng"]
+[ext_resource type="Texture2D" uid="uid://cu4ydw0tihwi2" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0010.png" id="13_4hkhb"]
+[ext_resource type="Texture2D" uid="uid://oqm2feuyvupc" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0011.png" id="14_pyqjs"]
+[ext_resource type="Texture2D" uid="uid://damcfaq0nuy4w" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0012.png" id="15_4fa1v"]
+[ext_resource type="Texture2D" uid="uid://c7nmccwv8lk7k" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0013.png" id="16_lauxu"]
+[ext_resource type="Texture2D" uid="uid://ohfmml5rceoc" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0014.png" id="17_ydmb2"]
+[ext_resource type="Texture2D" uid="uid://d1q1hse1as76l" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0015.png" id="18_de3v8"]
+[ext_resource type="Texture2D" uid="uid://c5s2gw66t3im0" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0016.png" id="19_41quh"]
+[ext_resource type="Texture2D" uid="uid://cqv1b2su24jgd" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0017.png" id="20_t10q0"]
+[ext_resource type="Texture2D" uid="uid://cn200a6grepac" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0018.png" id="21_gweq6"]
+[ext_resource type="Texture2D" uid="uid://m0lm1yof0wea" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0019.png" id="22_hxb8h"]
+[ext_resource type="Texture2D" uid="uid://dsswy0w113mcq" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0020.png" id="23_1xgtb"]
+[ext_resource type="Texture2D" uid="uid://bur7wlkqhg35f" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0021.png" id="24_aac1j"]
+[ext_resource type="Texture2D" uid="uid://brxs3lgga4w7l" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0022.png" id="25_4r7fk"]
+[ext_resource type="Texture2D" uid="uid://dier3fin15yad" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0023.png" id="26_ss1m4"]
+[ext_resource type="Texture2D" uid="uid://dxragah2fhfsn" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0024.png" id="27_l7h20"]
+[ext_resource type="Texture2D" uid="uid://dsc352j1fem8v" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0025.png" id="28_7e8cy"]
+[ext_resource type="Texture2D" uid="uid://bv6s6oje4fx6u" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0026.png" id="29_qm6ut"]
+[ext_resource type="Texture2D" uid="uid://b7ntmrdfp64ya" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0027.png" id="30_jn3pf"]
+[ext_resource type="Texture2D" uid="uid://buuwbef3ty1nu" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0028.png" id="31_tsdcx"]
+[ext_resource type="Texture2D" uid="uid://u8k2wt47docn" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0029.png" id="32_t8ksi"]
+[ext_resource type="Texture2D" uid="uid://c1oyvonoj7irr" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0030.png" id="33_dx64c"]
+[ext_resource type="Texture2D" uid="uid://bymvbqyogs3i" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0031.png" id="34_b13k4"]
+[ext_resource type="Texture2D" uid="uid://bijd8qksnbtln" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0032.png" id="35_lcb54"]
+[ext_resource type="Texture2D" uid="uid://bsrr1jgky4i0l" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0033.png" id="36_js4cg"]
+[ext_resource type="Texture2D" uid="uid://b2v313y3oujt3" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0034.png" id="37_4m46e"]
+[ext_resource type="Texture2D" uid="uid://xl0nhjm30wvv" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0035.png" id="38_ccnx8"]
+[ext_resource type="Texture2D" uid="uid://30tnjklr1buj" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0036.png" id="39_viccq"]
+[ext_resource type="Texture2D" uid="uid://hhk7omi0i6tv" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0037.png" id="40_co86n"]
+[ext_resource type="Texture2D" uid="uid://ktpnq6ewpefg" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0038.png" id="41_mgtej"]
+[ext_resource type="Texture2D" uid="uid://dlxfycl3j25ia" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0039.png" id="42_y5yst"]
+[ext_resource type="Texture2D" uid="uid://btpl856tfjhbj" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0040.png" id="43_nh7ep"]
+[ext_resource type="Texture2D" uid="uid://du8455np6y8r6" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0041.png" id="44_qbmgu"]
+[ext_resource type="Texture2D" uid="uid://dahyjsm08mi10" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0042.png" id="45_apt27"]
+[ext_resource type="Texture2D" uid="uid://rtnqwog8vmbt" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0043.png" id="46_ei2yn"]
+[ext_resource type="Texture2D" uid="uid://dccic5mleld2q" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0044.png" id="47_luqp4"]
+[ext_resource type="Texture2D" uid="uid://c4bmhmxev3re6" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0045.png" id="48_vj485"]
+[ext_resource type="Texture2D" uid="uid://kh4f7xnkco5m" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0046.png" id="49_6uqkf"]
+[ext_resource type="Texture2D" uid="uid://dgjucxojj7q84" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0047.png" id="50_5uaco"]
+[ext_resource type="Texture2D" uid="uid://cw6yv33gygb0h" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0048.png" id="51_u5055"]
+[ext_resource type="Texture2D" uid="uid://c6306ve7xvmro" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0049.png" id="52_pxjvh"]
+[ext_resource type="Texture2D" uid="uid://cfosk27itemfb" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0050.png" id="53_43xru"]
+[ext_resource type="Texture2D" uid="uid://bf6pnd6eanmd7" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0051.png" id="54_lpxkd"]
+[ext_resource type="Texture2D" uid="uid://byiyk0ojpk1yf" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0052.png" id="55_es2l3"]
+[ext_resource type="Texture2D" uid="uid://btsjth72f0wn0" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0053.png" id="56_m5jxr"]
+[ext_resource type="Texture2D" uid="uid://lmab16epkwdu" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0054.png" id="57_wkg35"]
+[ext_resource type="Texture2D" uid="uid://bo8rci27vy6j2" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0055.png" id="58_jsklh"]
+[ext_resource type="Texture2D" uid="uid://l82aqvdp4tfh" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0056.png" id="59_joejl"]
+[ext_resource type="Texture2D" uid="uid://bkp5ey87tcoaf" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0057.png" id="60_0q6nt"]
+[ext_resource type="Texture2D" uid="uid://iec01hnmhn6e" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0058.png" id="61_g3hu6"]
+[ext_resource type="Texture2D" uid="uid://3lm2mn4glrgx" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0059.png" id="62_tav4t"]
+[ext_resource type="Texture2D" uid="uid://bmyhb8yaqvbti" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0060.png" id="63_5bdx6"]
+[ext_resource type="Texture2D" uid="uid://cf36pf00yf7et" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0061.png" id="64_gu5v2"]
+[ext_resource type="Texture2D" uid="uid://ykv2mvx4x7ie" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0062.png" id="65_mo01f"]
+[ext_resource type="Texture2D" uid="uid://bshoyrsl3tyyf" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0063.png" id="66_r2t43"]
+[ext_resource type="Texture2D" uid="uid://c32o0wk8804m8" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0064.png" id="67_bc1yi"]
+[ext_resource type="Texture2D" uid="uid://cmluys3ulaxd7" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0065.png" id="68_i4hdc"]
+[ext_resource type="Texture2D" uid="uid://c30xnhhfjvo6r" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0066.png" id="69_e0p3o"]
+[ext_resource type="Texture2D" uid="uid://2vbwkyu6f3be" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0067.png" id="70_ixwgu"]
+[ext_resource type="Texture2D" uid="uid://b4sfn5g235nx5" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0068.png" id="71_liyfb"]
+[ext_resource type="Texture2D" uid="uid://ckutd7t4ykyiw" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0069.png" id="72_s12rt"]
+[ext_resource type="Texture2D" uid="uid://ckohv652ugmfv" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0070.png" id="73_f7hrs"]
+[ext_resource type="Texture2D" uid="uid://0827l5nvtwuy" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0071.png" id="74_0rem6"]
+[ext_resource type="Texture2D" uid="uid://ccmy6nnwms3jv" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0072.png" id="75_wb4rq"]
+[ext_resource type="Texture2D" uid="uid://cuk1bswpeb1u5" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0073.png" id="76_8xh68"]
+[ext_resource type="Texture2D" uid="uid://3wa156ntxgpk" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0074.png" id="77_tv5ar"]
+[ext_resource type="Texture2D" uid="uid://bgtysjudnm8qk" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0075.png" id="78_ejapu"]
+[ext_resource type="Texture2D" uid="uid://hsqk6mt2sc51" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0076.png" id="79_dtf6e"]
+[ext_resource type="Texture2D" uid="uid://crxnmuhspyybe" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0077.png" id="80_a26og"]
+[ext_resource type="Texture2D" uid="uid://bhdxfwr15qpu8" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0078.png" id="81_bcier"]
+[ext_resource type="Texture2D" uid="uid://swaq1xqrelmx" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0079.png" id="82_fuoq4"]
+[ext_resource type="Texture2D" uid="uid://dhenpq4v588e3" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0080.png" id="83_wtvxr"]
+[ext_resource type="Texture2D" uid="uid://b7gprgq5rm6bu" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0081.png" id="84_c5wub"]
+[ext_resource type="Texture2D" uid="uid://bojw4yyh76pvr" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0082.png" id="85_4yev0"]
+[ext_resource type="Texture2D" uid="uid://cu0ws88qh44fo" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0083.png" id="86_86ltb"]
+[ext_resource type="Texture2D" uid="uid://dwpk1vqmdip1y" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0084.png" id="87_br4c2"]
+[ext_resource type="Texture2D" uid="uid://b0bemi5doa0xf" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0085.png" id="88_yyc2w"]
+[ext_resource type="Texture2D" uid="uid://0xhcd28obeia" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0086.png" id="89_w82nf"]
+[ext_resource type="Texture2D" uid="uid://buni8jsdch51s" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0087.png" id="90_kqg18"]
+[ext_resource type="Texture2D" uid="uid://drrjir3qljkax" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0088.png" id="91_pbi8o"]
+[ext_resource type="Texture2D" uid="uid://bdaik7h4pvv0m" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0089.png" id="92_lm2hb"]
+[ext_resource type="Texture2D" uid="uid://cjha2dytfsqrt" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0090.png" id="93_4bs8d"]
+[ext_resource type="Texture2D" uid="uid://b7xwiblhvekuv" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0091.png" id="94_hdbxv"]
+[ext_resource type="Texture2D" uid="uid://8qu1b52yh84d" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0092.png" id="95_2w1di"]
+[ext_resource type="Texture2D" uid="uid://bgph7ercy773f" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0093.png" id="96_v45xm"]
+[ext_resource type="Texture2D" uid="uid://dkdhc6h5ydgqn" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0094.png" id="97_5s0t8"]
+[ext_resource type="Texture2D" uid="uid://dp7ifvafcv5s1" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0095.png" id="98_jfg76"]
+[ext_resource type="Texture2D" uid="uid://b8jrj2mxrqulo" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0096.png" id="99_rwk2r"]
+[ext_resource type="Texture2D" uid="uid://b5yvx43e4rjj0" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0097.png" id="100_cuic0"]
+[ext_resource type="Texture2D" uid="uid://dw5phyaxyhwfu" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0098.png" id="101_nrldq"]
+[ext_resource type="Texture2D" uid="uid://b7sb04dxpdlrq" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0099.png" id="102_rs7fb"]
+[ext_resource type="Texture2D" uid="uid://ctdbbsxxmhpnx" path="res://arte/animaciones/trapecista/01_neutral/trapecista_neutral_0100.png" id="103_yq2tp"]
+[ext_resource type="Script" path="res://scripts/clases/character.gd" id="104_kw8fr"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_38bce"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_4m54d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_n2efe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ovt1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_560sp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5eeuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3neh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ftili")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_yguw0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_5qbng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_4hkhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_pyqjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4fa1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_lauxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ydmb2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_de3v8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_41quh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_t10q0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_gweq6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_hxb8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_1xgtb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_aac1j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_4r7fk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ss1m4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_l7h20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_7e8cy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_qm6ut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_jn3pf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_tsdcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_t8ksi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_dx64c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_b13k4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_lcb54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_js4cg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_4m46e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ccnx8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_viccq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_co86n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_mgtej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_y5yst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_nh7ep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_qbmgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_apt27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ei2yn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_luqp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_vj485")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_6uqkf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_5uaco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_u5055")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_pxjvh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_43xru")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_lpxkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_es2l3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_m5jxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_wkg35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_jsklh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_joejl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_0q6nt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_g3hu6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_tav4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_5bdx6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_gu5v2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_mo01f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_r2t43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_bc1yi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_i4hdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_e0p3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_ixwgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_liyfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_s12rt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_f7hrs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_0rem6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_wb4rq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_8xh68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_tv5ar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_ejapu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_dtf6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_a26og")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_bcier")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_fuoq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_wtvxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_c5wub")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_4yev0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_86ltb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_br4c2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_yyc2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_w82nf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_kqg18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_pbi8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_lm2hb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_4bs8d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_hdbxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_2w1di")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_v45xm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_5s0t8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_jfg76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_rwk2r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_cuic0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_nrldq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_rs7fb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_yq2tp")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[node name="cuarto_chicos" type="Node2D"]
+script = ExtResource("1_yyyf4")
+
+[node name="fondo" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("1_xgvbx")
+
+[node name="litera_chicos" type="StaticBody2D" parent="."]
+script = ExtResource("2_nkljs")
+id = "litera_chicos"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="litera_chicos"]
+polygon = PackedVector2Array(370, 906, 370, 694, 371, 664, 381, 653, 391, 635, 404, 627, 403, 547, 398, 540, 401, 508, 403, 342, 397, 332, 399, 307, 411, 298, 426, 289, 438, 290, 444, 296, 446, 265, 456, 246, 473, 242, 490, 254, 502, 290, 506, 324, 519, 331, 531, 354, 536, 358, 536, 370, 537, 380, 540, 386, 767, 387, 779, 392, 793, 405, 797, 416, 797, 421, 968, 421, 968, 384, 965, 380, 964, 351, 961, 346, 964, 339, 965, 326, 966, 318, 967, 260, 968, 243, 974, 242, 978, 243, 979, 259, 981, 304, 984, 312, 984, 347, 980, 352, 980, 513, 982, 515, 982, 543, 979, 547, 981, 626, 983, 636, 985, 687, 987, 695, 982, 698, 980, 873, 983, 875, 982, 907, 974, 908, 966, 905, 968, 856, 387, 856, 387, 877, 397, 882, 395, 896, 389, 907, 378, 910)
+
+[node name="foto_chicos" type="StaticBody2D" parent="."]
+script = ExtResource("2_nkljs")
+id = "foto_chicos"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="foto_chicos"]
+polygon = PackedVector2Array(1683, 764, 1662, 848, 1607, 824, 1626, 747)
+
+[node name="baul_chicos" type="StaticBody2D" parent="."]
+script = ExtResource("2_nkljs")
+id = "baul_chicos"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="baul_chicos"]
+polygon = PackedVector2Array(1726, 813, 1892, 876, 1891, 1080, 1640, 1080, 1444, 923, 1443, 772, 1448, 768, 1451, 768, 1592, 766, 1616, 776, 1605, 823, 1605, 826, 1662, 850, 1664, 849, 1667, 835, 1685, 841, 1709, 842, 1712, 839, 1712, 835, 1722, 823)
+
+[node name="espejo_chicos" type="StaticBody2D" parent="."]
+script = ExtResource("2_nkljs")
+id = "espejo_chicos"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="espejo_chicos"]
+polygon = PackedVector2Array(1195, 824, 1205, 803, 1205, 783, 1210, 780, 1216, 767, 1221, 765, 1222, 472, 1225, 464, 1232, 467, 1232, 424, 1249, 422, 1247, 416, 1249, 406, 1254, 404, 1253, 396, 1259, 389, 1258, 382, 1263, 381, 1264, 374, 1273, 371, 1272, 366, 1272, 362, 1277, 363, 1292, 346, 1304, 338, 1319, 324, 1325, 325, 1334, 334, 1354, 339, 1362, 348, 1370, 351, 1374, 349, 1375, 353, 1378, 350, 1380, 353, 1377, 358, 1385, 358, 1391, 364, 1391, 367, 1396, 366, 1396, 369, 1394, 374, 1401, 379, 1402, 386, 1403, 392, 1410, 394, 1407, 396, 1410, 403, 1406, 408, 1414, 407, 1422, 408, 1422, 459, 1426, 455, 1430, 454, 1434, 455, 1436, 459, 1434, 467, 1437, 473, 1437, 803, 1441, 804, 1443, 852, 1438, 853, 1432, 828, 1428, 831, 1426, 836, 1421, 862, 1421, 872, 1416, 875, 1406, 875, 1399, 872, 1401, 862, 1407, 849, 1408, 824, 1390, 826, 1389, 816, 1256, 791, 1244, 795, 1231, 790, 1224, 793, 1223, 802, 1210, 807, 1211, 820, 1213, 823, 1213, 827, 1205, 830)
+
+[node name="cajas_chicos" type="StaticBody2D" parent="."]
+script = ExtResource("2_nkljs")
+id = "cajas_chicas"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="cajas_chicos"]
+polygon = PackedVector2Array(549, 914, 553, 968, 724, 989, 776, 948, 779, 893, 616, 876)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="cajas_chicos"]
+polygon = PackedVector2Array(844, 1013, 966, 1001, 968, 942, 922, 877, 815, 887, 816, 934)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="cajas_chicos"]
+polygon = PackedVector2Array(1108, 881, 1216, 930, 1292, 913, 1293, 864, 1180, 825, 1108, 838)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="cajas_chicos"]
+polygon = PackedVector2Array(1212, 808, 1254, 793, 1385, 818, 1384, 859, 1347, 878, 1293, 866, 1293, 863, 1214, 836, 1214, 822, 1212, 819)
+
+[node name="trapecista" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(959, 540)
+sprite_frames = SubResource("SpriteFrames_38bce")
+script = ExtResource("104_kw8fr")
+id = "trapecista"
+
+[connection signal="input_event" from="litera_chicos" to="litera_chicos" method="_on_input_event"]
+[connection signal="mouse_entered" from="litera_chicos" to="litera_chicos" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="litera_chicos" to="litera_chicos" method="_on_mouse_exited"]
+[connection signal="input_event" from="foto_chicos" to="foto_chicos" method="_on_input_event"]
+[connection signal="mouse_entered" from="foto_chicos" to="foto_chicos" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="foto_chicos" to="foto_chicos" method="_on_mouse_exited"]
+[connection signal="input_event" from="baul_chicos" to="baul_chicos" method="_on_input_event"]
+[connection signal="mouse_entered" from="baul_chicos" to="baul_chicos" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="baul_chicos" to="baul_chicos" method="_on_mouse_exited"]
+[connection signal="input_event" from="espejo_chicos" to="espejo_chicos" method="_on_input_event"]
+[connection signal="mouse_entered" from="espejo_chicos" to="espejo_chicos" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="espejo_chicos" to="espejo_chicos" method="_on_mouse_exited"]
+[connection signal="input_event" from="cajas_chicos" to="cajas_chicos" method="_on_input_event"]
+[connection signal="mouse_entered" from="cajas_chicos" to="cajas_chicos" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="cajas_chicos" to="cajas_chicos" method="_on_mouse_exited"]

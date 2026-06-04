@@ -1,0 +1,125 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnf8tm6enkmth"]
+
+[ext_resource type="Texture2D" uid="uid://dliebignbpfff" path="res://arte/menu/notebook.png" id="1_426ti"]
+[ext_resource type="Script" path="res://scripts/cuaderno/cuaderno.gd" id="1_euvpb"]
+
+[node name="cuaderno" type="Node2D"]
+script = ExtResource("1_euvpb")
+
+[node name="cuaderno" type="TextureRect" parent="."]
+offset_left = -671.0
+offset_top = 2.0
+offset_right = 1249.0
+offset_bottom = 1082.0
+texture = ExtResource("1_426ti")
+
+[node name="elementos" type="VBoxContainer" parent="cuaderno"]
+layout_mode = 0
+offset_left = 820.0
+offset_top = 81.0
+offset_right = 1597.0
+offset_bottom = 1012.0
+theme_override_constants/separation = 20
+
+[node name="perfiles" type="ColorRect" parent="cuaderno/elementos"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+color = Color(0.562507, 0.700026, 0.89971, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="cuaderno/elementos/perfiles"]
+layout_mode = 2
+offset_right = 766.0
+offset_bottom = 268.0
+
+[node name="nombre" type="Label" parent="cuaderno/elementos/perfiles/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Perfiles"
+horizontal_alignment = 1
+
+[node name="grid_perfiles" type="GridContainer" parent="cuaderno/elementos/perfiles/VBoxContainer"]
+custom_minimum_size = Vector2(0, 190)
+layout_mode = 2
+columns = 5
+
+[node name="acciones" type="ColorRect" parent="cuaderno/elementos"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+color = Color(0.685534, 0.644447, 0.952288, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="cuaderno/elementos/acciones"]
+layout_mode = 2
+offset_right = 766.0
+offset_bottom = 268.0
+
+[node name="nombre" type="Label" parent="cuaderno/elementos/acciones/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Acciones"
+horizontal_alignment = 1
+
+[node name="grid_perfiles" type="GridContainer" parent="cuaderno/elementos/acciones/VBoxContainer"]
+layout_mode = 2
+columns = 5
+
+[node name="objetos" type="ColorRect" parent="cuaderno/elementos"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+color = Color(0.966654, 0.532161, 0.702165, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="cuaderno/elementos/objetos"]
+layout_mode = 2
+offset_right = 766.0
+offset_bottom = 268.0
+
+[node name="nombre" type="Label" parent="cuaderno/elementos/objetos/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Objetos"
+horizontal_alignment = 1
+
+[node name="grid_perfiles" type="GridContainer" parent="cuaderno/elementos/objetos/VBoxContainer"]
+layout_mode = 2
+columns = 5
+
+[node name="lugares" type="ColorRect" parent="cuaderno/elementos"]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+color = Color(0.365801, 0.778954, 0.6689, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="cuaderno/elementos/lugares"]
+layout_mode = 2
+offset_right = 766.0
+offset_bottom = 268.0
+
+[node name="nombre" type="Label" parent="cuaderno/elementos/lugares/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Lugares"
+horizontal_alignment = 1
+
+[node name="grid_perfiles" type="GridContainer" parent="cuaderno/elementos/lugares/VBoxContainer"]
+layout_mode = 2
+columns = 5
+
+[node name="area_deduccion" type="ColorRect" parent="."]
+offset_left = 1010.0
+offset_top = 33.0
+offset_right = 1875.0
+offset_bottom = 1046.0
+color = Color(0.703808, 0.703808, 0.703808, 1)
+
+[node name="pregunta" type="RichTextLabel" parent="area_deduccion"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 62.0
+offset_right = 822.0
+offset_bottom = 286.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 45
+bbcode_enabled = true
+text = "[fill]Pregunta larga para ver cómo se formatea si es muy muy muy muyyyyyyyyyy larga[/fill]"

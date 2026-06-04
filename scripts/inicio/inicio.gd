@@ -25,7 +25,7 @@ func hide_character(id: String) -> void:
 	CharacterManager.hide_character(id)
 
 # funcion para cuando se clica un objeto interactuable
-func _on_clicked_object(type, id):
+func on_clicked_object(type, id):
 	if bloqueado:
 		return
 	# si es la 1ª vez que se clica el objeto se aumenta el contador y se guarda como obj clicado
