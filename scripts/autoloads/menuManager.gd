@@ -5,6 +5,8 @@ var menu_scene = preload("res://escenas/menu.tscn")
 var menu_instance
 var espera_menu = false
 var menu_abierto_espera = false
+var cursor = preload("res://arte/cursores/pointer.png")
+var cursor_previo: Resource = null
 
 signal cerrar_espera_menu
 
@@ -37,7 +39,20 @@ func toggle_menu():
 	var abrir = !menu_instance.visible
 	
 	if not abrir:
+		if Controlador.modo_actual == "puzzle":
+			var cursor_puzzle = load("res://arte/cursores/pointer.png")
+			Input.set_custom_mouse_cursor(cursor_puzzle, Input.CURSOR_ARROW)
+		else:
+			var cursor_exploracion = load("res://arte/cursores/cursor.png")
+			Input.set_custom_mouse_cursor(cursor_exploracion, Input.CURSOR_ARROW)
 		menu_instance.reset_tab_state()
+	else:
+		var escena_actual = get_tree().current_scene
+		if escena_actual and "puzzle" in escena_actual.name.to_lower():
+			cursor_previo = load("res://arte/cursores/pointer.png")
+		else:
+			cursor_previo = load("res://arte/cursores/cursor.png")
+		Input.set_custom_mouse_cursor(cursor, Input.CURSOR_ARROW)
 	
 	menu_instance.visible = abrir
 	get_tree().paused = abrir

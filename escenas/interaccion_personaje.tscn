@@ -1,0 +1,498 @@
+[gd_scene load_steps=104 format=3 uid="uid://fsn2o5ta3h3v"]
+
+[ext_resource type="Texture2D" uid="uid://dliebignbpfff" path="res://arte/menu/notebook.png" id="1_k30qf"]
+[ext_resource type="Script" path="res://scripts/interaccion_personaje/interaccion_personaje.gd" id="1_nnvi6"]
+[ext_resource type="Texture2D" uid="uid://cme88f78m6n0f" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0001.png" id="3_rtjhc"]
+[ext_resource type="Texture2D" uid="uid://btlgyaky3qpr3" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0002.png" id="4_wwfva"]
+[ext_resource type="Texture2D" uid="uid://duemonsr4c5jr" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0003.png" id="5_getyb"]
+[ext_resource type="Texture2D" uid="uid://br5fmt3y8344x" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0004.png" id="6_hg5bh"]
+[ext_resource type="Texture2D" uid="uid://b5n3s4jwbk0iq" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0005.png" id="7_y4ujj"]
+[ext_resource type="Texture2D" uid="uid://doxqhssbrx4g4" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0006.png" id="8_ox6rp"]
+[ext_resource type="Texture2D" uid="uid://bjvwrke0vevlg" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0007.png" id="9_efdpy"]
+[ext_resource type="Texture2D" uid="uid://xivtpp7gobmy" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0008.png" id="10_8qwip"]
+[ext_resource type="Texture2D" uid="uid://cokkh3noqajue" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0009.png" id="11_0pf6n"]
+[ext_resource type="Texture2D" uid="uid://bfpgggfeyb1wm" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0010.png" id="12_4dajr"]
+[ext_resource type="Texture2D" uid="uid://hssuiqng65gc" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0011.png" id="13_ankcy"]
+[ext_resource type="Texture2D" uid="uid://br7wmh6rxr370" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0012.png" id="14_2hroo"]
+[ext_resource type="Texture2D" uid="uid://dv0fvb8e8jh52" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0013.png" id="15_l5ssl"]
+[ext_resource type="Texture2D" uid="uid://chr8qywcf0dxn" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0014.png" id="16_71nf3"]
+[ext_resource type="Texture2D" uid="uid://bdasobb54ri1w" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0015.png" id="17_anukq"]
+[ext_resource type="Texture2D" uid="uid://18ut5qql2goi" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0016.png" id="18_3bkn6"]
+[ext_resource type="Texture2D" uid="uid://br7y6a6kthpb6" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0017.png" id="19_wd88h"]
+[ext_resource type="Texture2D" uid="uid://bw8vnr0syq5j0" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0018.png" id="20_2jc85"]
+[ext_resource type="Texture2D" uid="uid://c5t8u2hh7lykf" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0019.png" id="21_ihscn"]
+[ext_resource type="Texture2D" uid="uid://bwi6bmpymafxx" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0020.png" id="22_q1bds"]
+[ext_resource type="Texture2D" uid="uid://cvhsxe81p2x44" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0021.png" id="23_m6q15"]
+[ext_resource type="Texture2D" uid="uid://5r4oer02bd84" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0022.png" id="24_sqoql"]
+[ext_resource type="Texture2D" uid="uid://cehu51g7aoby3" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0023.png" id="25_f4pex"]
+[ext_resource type="Texture2D" uid="uid://4f3vwry22del" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0024.png" id="26_m6oic"]
+[ext_resource type="Texture2D" uid="uid://b8u3uxrta7neu" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0025.png" id="27_q1jhh"]
+[ext_resource type="Texture2D" uid="uid://bx4i03fesxybj" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0026.png" id="28_vrh57"]
+[ext_resource type="Texture2D" uid="uid://cov2dhhubvrnh" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0027.png" id="29_8loxa"]
+[ext_resource type="Texture2D" uid="uid://bgwdu5hdybijq" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0028.png" id="30_434kd"]
+[ext_resource type="Texture2D" uid="uid://br2cwdih8rv5g" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0029.png" id="31_fkt8p"]
+[ext_resource type="Texture2D" uid="uid://cri2dfsigt1g8" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0030.png" id="32_qyuxo"]
+[ext_resource type="Texture2D" uid="uid://cbwlulg8yuxow" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0031.png" id="33_mob58"]
+[ext_resource type="Texture2D" uid="uid://ctwgbb67ooi72" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0032.png" id="34_ll6ff"]
+[ext_resource type="Texture2D" uid="uid://ewmixoopfgvw" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0033.png" id="35_y0me2"]
+[ext_resource type="Texture2D" uid="uid://b8av53030e10x" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0034.png" id="36_aw4pt"]
+[ext_resource type="Texture2D" uid="uid://1h3q8m34bjj8" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0035.png" id="37_d4k0b"]
+[ext_resource type="Texture2D" uid="uid://co28sf8e5gtrv" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0036.png" id="38_npgj5"]
+[ext_resource type="Texture2D" uid="uid://docuke60eh2m" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0037.png" id="39_o35x2"]
+[ext_resource type="Texture2D" uid="uid://cgqta3trde5wx" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0038.png" id="40_kphqr"]
+[ext_resource type="Texture2D" uid="uid://c2byk50q6rb5g" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0039.png" id="41_jxtvu"]
+[ext_resource type="Texture2D" uid="uid://digsvvjotvfgg" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0040.png" id="42_ymxbq"]
+[ext_resource type="Texture2D" uid="uid://boshkg7h3bjqt" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0041.png" id="43_f50qm"]
+[ext_resource type="Texture2D" uid="uid://c8yipygmk31xx" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0042.png" id="44_6f2qh"]
+[ext_resource type="Texture2D" uid="uid://oly1pujexrta" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0043.png" id="45_htk32"]
+[ext_resource type="Texture2D" uid="uid://dj0sjoyevmowx" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0044.png" id="46_ef8t8"]
+[ext_resource type="Texture2D" uid="uid://54xr41toks8f" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0045.png" id="47_s4nhw"]
+[ext_resource type="Texture2D" uid="uid://mbght2icli0o" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0046.png" id="48_4wk2d"]
+[ext_resource type="Texture2D" uid="uid://c3ys0yerogpsa" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0047.png" id="49_b32og"]
+[ext_resource type="Texture2D" uid="uid://df1u5inas137m" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0048.png" id="50_5nxsu"]
+[ext_resource type="Texture2D" uid="uid://084wvvmelgkk" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0049.png" id="51_7hbrc"]
+[ext_resource type="Texture2D" uid="uid://dcooiibnt6jxy" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0050.png" id="52_qav0u"]
+[ext_resource type="Texture2D" uid="uid://bdgqtnngrl1ue" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0051.png" id="53_tpqqu"]
+[ext_resource type="Texture2D" uid="uid://c5uh6fxcw5dpn" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0052.png" id="54_2lgt0"]
+[ext_resource type="Texture2D" uid="uid://bfkstlab25lyf" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0053.png" id="55_hotry"]
+[ext_resource type="Texture2D" uid="uid://cmn1lg8jr0rw8" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0054.png" id="56_kkrf5"]
+[ext_resource type="Texture2D" uid="uid://behjgu4cxi5wr" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0055.png" id="57_1eae8"]
+[ext_resource type="Texture2D" uid="uid://mgrfm4uec1ou" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0056.png" id="58_1h523"]
+[ext_resource type="Texture2D" uid="uid://cqve1sy1yu1yl" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0057.png" id="59_b26k1"]
+[ext_resource type="Texture2D" uid="uid://oip34gj457px" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0058.png" id="60_ql8h2"]
+[ext_resource type="Texture2D" uid="uid://by6xxldji55i3" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0059.png" id="61_xfofk"]
+[ext_resource type="Texture2D" uid="uid://crb68qso6sith" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0060.png" id="62_2vn0h"]
+[ext_resource type="Texture2D" uid="uid://b6d7trd3m1wwp" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0061.png" id="63_6m8kw"]
+[ext_resource type="Texture2D" uid="uid://bmhqpqtgyg2wl" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0062.png" id="64_jtr6f"]
+[ext_resource type="Texture2D" uid="uid://dtfrsnm23lkq6" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0063.png" id="65_66dhh"]
+[ext_resource type="Texture2D" uid="uid://ctl4ij4k1svi2" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0064.png" id="66_wv3oj"]
+[ext_resource type="Texture2D" uid="uid://dfqak6abedwuk" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0065.png" id="67_tkk51"]
+[ext_resource type="Texture2D" uid="uid://dar0l4wl2coc3" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0066.png" id="68_tsyq2"]
+[ext_resource type="Texture2D" uid="uid://2t6ohlwmihhl" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0067.png" id="69_srswf"]
+[ext_resource type="Texture2D" uid="uid://x70tb3aadnm8" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0068.png" id="70_5rtcr"]
+[ext_resource type="Texture2D" uid="uid://cjf775rdeoxhq" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0069.png" id="71_8hr2s"]
+[ext_resource type="Texture2D" uid="uid://df4u8nq73o8p6" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0070.png" id="72_74usr"]
+[ext_resource type="Texture2D" uid="uid://bs0rwpr0bive1" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0071.png" id="73_j1rh3"]
+[ext_resource type="Texture2D" uid="uid://bj4ieec7jdf2b" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0072.png" id="74_idr1x"]
+[ext_resource type="Texture2D" uid="uid://c2bejiio11syd" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0073.png" id="75_rcsrb"]
+[ext_resource type="Texture2D" uid="uid://1y30hmwj4mrk" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0074.png" id="76_2yjv4"]
+[ext_resource type="Texture2D" uid="uid://byko5xcpxhsf1" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0075.png" id="77_j7npq"]
+[ext_resource type="Texture2D" uid="uid://dpqg1sk72lv2g" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0076.png" id="78_1m7th"]
+[ext_resource type="Texture2D" uid="uid://b3n5au470w6v5" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0077.png" id="79_63ewp"]
+[ext_resource type="Texture2D" uid="uid://caqcpu1amukvq" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0078.png" id="80_jge0j"]
+[ext_resource type="Texture2D" uid="uid://bnywl1kri23xh" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0079.png" id="81_pekc4"]
+[ext_resource type="Texture2D" uid="uid://c5igmp1a2k88m" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0080.png" id="82_jskxa"]
+[ext_resource type="Texture2D" uid="uid://c1fjg0na0j2dg" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0081.png" id="83_5ubxu"]
+[ext_resource type="Texture2D" uid="uid://g32tahjcwvof" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0082.png" id="84_s5oit"]
+[ext_resource type="Texture2D" uid="uid://kydgjr1ajtxa" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0083.png" id="85_f5nbp"]
+[ext_resource type="Texture2D" uid="uid://tc4k1hvj2j5f" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0084.png" id="86_a11yb"]
+[ext_resource type="Texture2D" uid="uid://bep43jypsd3w" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0085.png" id="87_pihqq"]
+[ext_resource type="Texture2D" uid="uid://bi8n43k5ngb7a" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0086.png" id="88_ak1lt"]
+[ext_resource type="Texture2D" uid="uid://bcymh0741vpoc" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0087.png" id="89_22iyd"]
+[ext_resource type="Texture2D" uid="uid://da72f7gcdpkyp" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0088.png" id="90_0tfsy"]
+[ext_resource type="Texture2D" uid="uid://ctj5bsg7y23pt" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0089.png" id="91_o4koj"]
+[ext_resource type="Texture2D" uid="uid://bdoc0dja61d4i" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0090.png" id="92_74gxr"]
+[ext_resource type="Texture2D" uid="uid://2ygg5352livj" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0091.png" id="93_8iudo"]
+[ext_resource type="Texture2D" uid="uid://jyidh5j7dosr" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0092.png" id="94_4e4ya"]
+[ext_resource type="Texture2D" uid="uid://kwxq4npo7o1f" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0093.png" id="95_3eqcx"]
+[ext_resource type="Texture2D" uid="uid://c763ia0olsnyt" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0094.png" id="96_sep66"]
+[ext_resource type="Texture2D" uid="uid://dgxj6p5lanak3" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0095.png" id="97_yslq5"]
+[ext_resource type="Texture2D" uid="uid://cp00skbosnr8q" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0096.png" id="98_jddqc"]
+[ext_resource type="Texture2D" uid="uid://c2rc6vsj16ggw" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0097.png" id="99_w8uqj"]
+[ext_resource type="Texture2D" uid="uid://hueuk2724f4" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0098.png" id="100_g08cf"]
+[ext_resource type="Texture2D" uid="uid://btt4nym68iye5" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0099.png" id="101_hnp34"]
+[ext_resource type="Texture2D" uid="uid://c6mb1vf2kcryy" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0100.png" id="102_aj3rj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lrxhf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_rtjhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wwfva")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_getyb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hg5bh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_y4ujj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ox6rp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_efdpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_8qwip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_0pf6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4dajr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ankcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_2hroo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_l5ssl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_71nf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_anukq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_3bkn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wd88h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_2jc85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ihscn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_q1bds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_m6q15")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_sqoql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_f4pex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_m6oic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_q1jhh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_vrh57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_8loxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_434kd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_fkt8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_qyuxo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_mob58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_ll6ff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_y0me2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_aw4pt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_d4k0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_npgj5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_o35x2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_kphqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_jxtvu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_ymxbq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_f50qm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_6f2qh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_htk32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ef8t8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_s4nhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_4wk2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_b32og")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_5nxsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_7hbrc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_qav0u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_tpqqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_2lgt0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_hotry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_kkrf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_1eae8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_1h523")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_b26k1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_ql8h2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_xfofk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_2vn0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_6m8kw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_jtr6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_66dhh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_wv3oj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_tkk51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_tsyq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_srswf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_5rtcr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_8hr2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_74usr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_j1rh3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_idr1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_rcsrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_2yjv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_j7npq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_1m7th")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_63ewp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_jge0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_pekc4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_jskxa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_5ubxu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_s5oit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_f5nbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_a11yb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_pihqq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_ak1lt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_22iyd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_0tfsy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_o4koj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_74gxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_8iudo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_4e4ya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_3eqcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_sep66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_yslq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_jddqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_w8uqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_g08cf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_hnp34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_aj3rj")
+}],
+"loop": true,
+"name": &"maga",
+"speed": 25.0
+}]
+
+[node name="interaccion_personaje" type="Node2D"]
+script = ExtResource("1_nnvi6")
+
+[node name="fondo" type="TextureRect" parent="."]
+offset_right = 1924.0
+offset_bottom = 1077.0
+
+[node name="fondo_osc" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 1
+color = Color(0, 0, 0, 0.462745)
+
+[node name="cuaderno" type="TextureRect" parent="."]
+offset_left = 216.0
+offset_top = 12.0
+offset_right = 2136.0
+offset_bottom = 1092.0
+texture = ExtResource("1_k30qf")
+
+[node name="dialogo1" type="Button" parent="cuaderno"]
+layout_mode = 0
+offset_left = 844.0
+offset_top = 203.0
+offset_right = 1550.0
+offset_bottom = 300.0
+theme_override_font_sizes/font_size = 50
+text = "Diálogo 1"
+
+[node name="dialogo2" type="Button" parent="cuaderno"]
+layout_mode = 0
+offset_left = 843.0
+offset_top = 369.0
+offset_right = 1549.0
+offset_bottom = 466.0
+theme_override_font_sizes/font_size = 50
+text = "Diálogo 2"
+
+[node name="dialogo3" type="Button" parent="cuaderno"]
+layout_mode = 0
+offset_left = 844.0
+offset_top = 523.0
+offset_right = 1550.0
+offset_bottom = 620.0
+theme_override_font_sizes/font_size = 50
+text = "Diálogo 3
+"
+
+[node name="deduccion1" type="Button" parent="cuaderno"]
+layout_mode = 0
+offset_left = 1170.0
+offset_top = 827.0
+offset_right = 1355.0
+offset_bottom = 936.0
+theme_override_font_sizes/font_size = 30
+text = "Deducción 1"
+
+[node name="deduccion2" type="Button" parent="cuaderno"]
+layout_mode = 0
+offset_left = 1367.0
+offset_top = 827.0
+offset_right = 1552.0
+offset_bottom = 936.0
+theme_override_font_sizes/font_size = 30
+text = "Deducción 2
+"
+
+[node name="salir" type="Button" parent="cuaderno"]
+layout_mode = 0
+offset_left = 881.0
+offset_top = 826.0
+offset_right = 1066.0
+offset_bottom = 935.0
+theme_override_font_sizes/font_size = 30
+text = "Salir"
+
+[node name="personaje" type="AnimatedSprite2D" parent="."]
+position = Vector2(415, 540)
+sprite_frames = SubResource("SpriteFrames_lrxhf")
+animation = &"maga"
+
+[connection signal="pressed" from="cuaderno/dialogo1" to="." method="_on_dialogo_1_pressed"]
+[connection signal="pressed" from="cuaderno/dialogo2" to="." method="_on_dialogo_2_pressed"]
+[connection signal="pressed" from="cuaderno/dialogo3" to="." method="_on_dialogo_3_pressed"]
+[connection signal="pressed" from="cuaderno/salir" to="." method="_on_salir_pressed"]

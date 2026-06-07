@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://c81pg3364quct"]
+
+[ext_resource type="Texture2D" uid="uid://d4etmh8lvs0uf" path="res://placeholders/simbolo_perfil.png" id="1_efqhk"]
+
+[node name="tipo_elemento" type="ColorRect"]
+custom_minimum_size = Vector2(765, 250)
+color = Color(0.562507, 0.700026, 0.89971, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 766.0
+offset_bottom = 268.0
+
+[node name="nombre" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Perfiles"
+horizontal_alignment = 1
+
+[node name="grid_perfiles" type="GridContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 190)
+layout_mode = 2
+theme_override_constants/h_separation = 70
+columns = 4
+
+[node name="icono" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 467.0
+offset_top = 4.0
+offset_right = 524.0
+offset_bottom = 55.0
+texture = ExtResource("1_efqhk")
+expand_mode = 1

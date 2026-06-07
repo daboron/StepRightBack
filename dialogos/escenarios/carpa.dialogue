@@ -7,7 +7,8 @@ Dueño del circo: ¡Para comenzar permitidme presentaros a las estrellas del esp
 do hide_character("duenyo")
 do video(video_presentacion)
 
-Samuel: (Al terminar la presentación casi todos se van detrás del escenario.)
+do cambiar_fondo(fondo_caja)
+Samuel: (Al terminar la presentación colocan una caja en el centro y casi todos se van detrás del escenario.)
 do show_character("maga", "default")
 ???: Es un placer estar aquí con vosotros, yo soy Adelaide, intentad no olvidarlo cuando os deje sin aliento.
 Adelaide: Para este número necesitaré la colaboración de nuestro jefe.
@@ -39,6 +40,7 @@ do despues_descubrimiento()
 => END
 
 ~ carpa2
+do cambiar_fondo(fondo_despues)
 Samuel: (Todo el mundo se encuentra consternado. Incluso Adelaide ha dejado caer la espada que llevaba en la mano.)
 Samuel: (Bueno, hay una persona que parece más viva que nunca.)
 do show_character("detective", "default_hot")
@@ -65,9 +67,64 @@ Claire: Samuel, necesito que vayas apuntando las cosas importantes. Así que ven
 Samuel: V-voy, pero yo el cadáver no quiero verlo.
 Claire: Está bien, céntrate en tomar nota entonces.
 Claire: Tiene una marca horizontal en el cuello, está bastante marcada.
+do marca(true)
 : [color=#3E8E41]Marca horizontal en el cuello ha sido añadida al cuaderno.[/color]
+do marca(false)
 Claire: Si nos fijamos en su cara, tiene unas marcas azuladas y moradas. Si no recuerdo mal, se llaman equimosis faciales.
+do equimosis(true)
 : [color=#3E8E41]Equimosis faciales han sido añadidas al cuaderno.[/color]
+do equimosis(false)
 Samuel: (Me tiembla la mano y me cuesta concentrarme.)
 Claire: No parece que tenga ningún daño más. Sacaremos conclusiones con esto.
+do hide_character("detective")
+do puzzle()
+=> END
+
+~ tutorial1
+do iluminacion1(true)
+Claire: En el cuaderno tenemos las cosas que podemos usar para resolver esto.
+do iluminacion1(false)
+do show_character("detective", "default_hot")
+Claire: Si quieres ver las pistas con más detalle puedes seguir consultándolas con Esc.
+do hide_character("detective")
+do iluminacion2(true)
+Claire: El otro lado es donde arrastramos las pruebas para formar una respuesta a la pregunta.
+do iluminacion2(false)
+do show_character("detective", "default_hot")
+do iluminacion3(true)
+Claire: Forma primero el inicio de la frase.
+do hide_character("detective")
+do iluminacion3(false)
+=> END
+
+~ tutorial2
+do show_character("detective", "default_hot")
+Claire: No trates de construir la casa por el tejado.
+do hide_character("detective")
+=> END
+
+~ tutorial3
+do show_character("detective", "default_hot")
+do iluminacion4(true)
+Claire: El tercer espacio tiene un símbolo distinto. Aquí se pueden añadir varias pruebas de distintos tipos para deducir cosas nuevas.
+Claire: Cuando sea tu respuesta final, pulsa el botón de verificar. Prometo que no me burlaré demasiado si fallas.
+Samuel: (Demasiado...)
+do hide_character("detective")
+do iluminacion4(false)
+=> END
+
+~ tutorial4
+do show_character("detective", "default_hot")
+Claire: Si al finalizar la deducción no estás satisfecho puedes pulsar sobre ella para repetirla y cambiar tu respuesta.
+do hide_character("detective")
+=> END
+
+~ carpa3
+Samuel: ¿Crees que el dueño murió asfixiado?
+do show_character("detective", "default_hot")
+Claire: Es lo que da a entender el cuerpo, si.
+Samuel: Pero estaba él solo dentro de la caja.
+Claire: No tenemos suficientes pistas para sacar más conclusiones. Investiguemos el escenario.
+do hide_character("detective")
+do escena_terminada()
 => END

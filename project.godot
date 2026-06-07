@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="StepRightBack"
-run/main_scene="res://escenas/inicio.tscn"
+run/main_scene="res://escenas/menu_inicio.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+boot_splash/image="res://arte/iconos/ICONO.png"
+config/icon="res://arte/iconos/ICONO.png"
 
 [autoload]
 
@@ -51,7 +52,7 @@ menu={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogos/escenarios/inicio.dialogue", "res://dialogos/escenarios/carpa.dialogue", "res://dialogos/puzzles.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogos/escenarios/inicio.dialogue", "res://dialogos/escenarios/carpa.dialogue", "res://dialogos/puzzles.dialogue", "res://dialogos/personajes.dialogue")
 
 [rendering]
 

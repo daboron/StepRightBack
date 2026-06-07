@@ -1450,13 +1450,13 @@ script = ExtResource("4_a5pns")
 id = "carpa_ini"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Carpa"]
-polygon = PackedVector2Array(-592, 39, -694, 108, -715, 141, -714, 214, -700, 266, -690, 378, -685, 385, -258, 396, -258, 296, -6, 296, -8, 222, -30, 217, -20, 175, -52, 165, -56, 137, -56, 121, -74, 127, -236, 136, -486, 92, -552, 62)
+polygon = PackedVector2Array(-592, 40, -698, 107, -715, 141, -724, 175, -718, 218, -706, 269, -698, 382, -683, 388, -257, 396, -255, 298, 0, 296, -3, 221, -9, 162, -20, 170, -45, 166, -57, 137, -45, 118, -71, 124, -236, 133, -487, 89, -550, 60)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Carpa"]
-polygon = PackedVector2Array(465, 392, 178, 393, 178, 75, 179, -7, 224, -8, 209, 42, 226, 62, 268, 65, 286, 51, 296, 5, 274, -25, 268, -62, 200, -85, 169, -82, 107, -91, 73, -55, 62, 5, 46, 48, -29, 60, -176, 71, -276, 68, -529, 4, -174, -223, 462, -221)
+polygon = PackedVector2Array(465, 392, 178, 394, 177, 75, 176, -6, 180, -9, 227, -13, 212, 40, 225, 57, 253.335, 61.1737, 270, 59, 285, 48, 292, 3, 272, -24, 264, -61, 198, -83, 171, -80, 125, -88, 115, -74, 102, -79, 76, -56, 68, -3, 47, 47, 56, 63, 42, 65, -36, 77, -130, 83, -245, 79, -276, 68, -529, 4, -174, -223, 462, -221)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Carpa"]
-polygon = PackedVector2Array(135, 132, 80, 183, 17, 216, 16, 291, 97, 293, 95, 393, 122, 394, 132, 341)
+polygon = PackedVector2Array(140, 137, 136, 128, 126, 138, 80, 182, 16, 214, 12, 297, 92, 298, 92, 395, 129, 395, 137, 364)
 
 [node name="Caja" type="StaticBody2D" parent="."]
 input_pickable = true
@@ -1464,10 +1464,10 @@ script = ExtResource("4_a5pns")
 id = "caja_ini"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Caja"]
-polygon = PackedVector2Array(1201, 520, 1199, 633, 1423, 633, 1443, 616, 1443, 588, 1449, 564, 1454, 524, 1452, 518)
+polygon = PackedVector2Array(1201, 520, 1199, 633, 1431, 633, 1443, 616, 1443, 587, 1449, 566, 1454, 525, 1451, 518)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Caja"]
-polygon = PackedVector2Array(1468, 518, 1546, 520, 1546, 628, 1488, 629, 1474, 611, 1480, 597, 1470, 571)
+polygon = PackedVector2Array(1467, 519, 1546, 520, 1546, 628, 1485, 628, 1476, 613, 1476, 601, 1471, 574)
 
 [node name="Farola" type="StaticBody2D" parent="."]
 input_pickable = true
@@ -1486,13 +1486,13 @@ script = ExtResource("4_a5pns")
 id = "banderines_ini"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Banderines"]
-polygon = PackedVector2Array(477, 39, 513, 84, 699, 183, 853, 256, 963, 307, 1216, 352, 1382, 345, 1408, 339, 1416, 306, 1417, 297, 1325, 305, 1210, 301, 915, 226, 546, 46, 490, 25)
+polygon = PackedVector2Array(477, 39, 513, 84, 699, 183, 853, 256, 963, 307, 1216, 352, 1382, 345, 1410, 338, 1412, 334, 1420, 302, 1419, 299, 1325, 305, 1210, 301, 915, 226, 546, 46, 490, 25)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Banderines"]
-polygon = PackedVector2Array(1581, 273, 1545, 288, 1510, 285, 1424, 298, 1420, 299, 1423, 301, 1466, 296, 1510, 299, 1519, 300, 1533, 322, 1578, 312, 1589, 308)
+polygon = PackedVector2Array(1584, 270, 1543, 287, 1511, 285, 1424, 298, 1420, 299, 1420, 301, 1467, 298, 1510, 300, 1517, 300, 1533, 322, 1578, 312, 1590, 308)
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Banderines"]
-polygon = PackedVector2Array(1586, 312, 1551, 330, 1539, 345, 1541, 354, 1546, 366, 1537, 385, 1519, 389, 1486, 391, 1478, 392, 1472, 434, 1533, 403, 1586, 352, 1590, 349, 1584, 332, 1585, 325, 1593, 326)
+polygon = PackedVector2Array(1591, 316, 1590, 309, 1548, 320, 1533, 323, 1535, 354, 1547, 366, 1538, 385, 1521, 391, 1486, 393, 1477, 390, 1472, 434, 1535, 402, 1586, 352, 1591, 348, 1585, 331, 1586, 329, 1597, 327)
 
 [node name="Cartel" type="StaticBody2D" parent="."]
 input_pickable = true
@@ -1500,9 +1500,10 @@ script = ExtResource("4_a5pns")
 id = "cartel_ini"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Cartel"]
-polygon = PackedVector2Array(128, 389, 124, 487, 133, 579, 385, 587, 379, 609, 178, 620, 157, 628, 179, 831, 395, 811, 394, 1094, 467, 1091, 462, 800, 720, 776, 732, 775, 699, 606, 767, 601, 752, 486, 742, 453, 730, 410, 469, 399, 464, 365, 430, 348, 403, 380, 405, 409)
+polygon = PackedVector2Array(128, 389, 124, 487, 133, 579, 385, 587, 379, 609, 178, 620, 157, 628, 179, 831, 395, 811, 394, 1094, 467, 1091, 462, 800, 720, 776, 732, 775, 699, 606, 756, 592, 746, 487, 736, 447, 730, 410, 469, 399, 464, 365, 430, 348, 403, 380, 405, 409)
 
 [node name="detective" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(959, 540)
 sprite_frames = SubResource("SpriteFrames_6fusk")
 animation = &"default_frio"
@@ -1517,6 +1518,7 @@ script = ExtResource("104_c326t")
 id = "duenyo"
 
 [node name="fortachon" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(962, 537)
 sprite_frames = SubResource("SpriteFrames_phgtx")
 animation = &"default_frio"

@@ -3,18 +3,29 @@ extends Node2D
 @onready var dialogo = preload ("res://dialogos/escenarios/inicio.dialogue")
 
 # contador de los objetos interactuados para continuar la escena
-var contador = 0
+#var contador = 0
 var bloqueado = true
+var cursor = preload("res://arte/cursores/cursor.png")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	SaveGame.load_game() # Por ahora que cargue la partida aquí
+	SaveGame.set_escena("res://escenas/inicio.tscn")
+	Controlador.modo_actual = "investigacion"
+	Input.set_custom_mouse_cursor(cursor, Input.CURSOR_ARROW)
 	MenuManager.cerrar_espera_menu.connect(cierra_cuaderno)
 	# personajes que salen en la escena
 	CharacterManager.register("detective", $detective)
 	CharacterManager.register("duenyo", $duenyo)
 	CharacterManager.register("fortachon", $fortachon)
 	# dialogo inicial
+	if Controlador.cargando_partida:
+		bloqueado = false
+		print("Carga de partida detectada. Control cedido al Controlador.")
+		return 
+
+	if SaveGame.game_data["contador_objetos_inicio"] > 0: 
+		bloqueado = false
+		return
 	DialogueManager.show_dialogue_balloon(dialogo, "inicio1")
 
 # funcion para hacer un personaje visible y reproducir su animación cuando habla
@@ -30,7 +41,7 @@ func on_clicked_object(type, id):
 		return
 	# si es la 1ª vez que se clica el objeto se aumenta el contador y se guarda como obj clicado
 	if !SaveGame.game_data_has(type, id):
-		contador += 1
+		SaveGame.game_data["contador_objetos_inicio"] += 1
 		SaveGame.game_data_add(type, id)
 	# cuando se clica uno de los objetos interactuables se reproduce su dialogo correspondiente
 	show_character("detective", "default_frio")
@@ -39,7 +50,7 @@ func on_clicked_object(type, id):
 # cuando se termina un dialogo de objeto interactuable se comprueba si ya se han investigado todos
 # los objetos para seguir con la historia
 func terminar_exploracion() -> void:
-	if contador == 5:
+	if SaveGame.game_data["contador_objetos_inicio"] == 5:
 		DialogueManager.show_dialogue_balloon(dialogo, "inicio2")
 
 #funcio para desbloquear los dialogos de los objetos al terminar el primer dialogo

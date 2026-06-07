@@ -1,3 +1,39 @@
 ~ puzzle1
-: Deducción del primer puzzle
+do show_character("detective", "default_hot")
+Claire: El cuerpo solo tiene dos cosas notorias. No hay rastro de sangre o cualquier otro daño.
+Samuel: Juraría que antes de entrar en la caja no se le veía nada.
+Samuel: ¿Cómo le ha podido pasar eso dentro de la caja?
+Claire: Eso ahora no es lo importante. Centrémonos enlo que nos dicen esas marcas sobre su muerte.
+Samuel: (Si lo único que tiene es una marca horizontal en el cuello y manchas azules en la cara la causa de la muerte tiene que haber sido…)
+- Envenenamiento
+	do result("envenenamiento")
+- Asfixia
+	do result("asfixia")
+- Apuñalamiento
+	do result("puñalada")
+do hide_character("detective")
+=> END
+
+
+
+
+
+
+
+~ fallo_generico_1
+do show_character("detective", "default_hot")
+Claire: ¿Estás probando cosas al tuntún? Eso le quita toda la gracia.
+do hide_character("detective")
+=> END
+
+~ fallo_generico_2
+do show_character("detective", "default_hot")
+Claire: Fascinante teoría, de verdad. Lástima que desafíe por completo las leyes de la lógica y el sentido común.
+do hide_character("detective")
+=> END
+
+~ fallo_generico_3
+do show_character("detective", "default_hot")
+Claire: Te doy un punto por creatividad pero mejor piénsalo de nuevo.
+do hide_character("detective")
 => END

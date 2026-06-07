@@ -9,6 +9,9 @@ func register(id: String, character: Character) -> void:
 	character.visibility(false)
 
 func show_character(id: String, anim := "default") -> void:
+	if not characters.has(id):
+		print("ADVERTENCIA: Se intentó mostrar a '" + id + "' pero no está registrado en esta escena.")
+		return
 	var c: Character = characters[id]
 	c.visibility(true)
 	c.play_anim(anim)

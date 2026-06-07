@@ -1,631 +1,18 @@
-[gd_scene load_steps=156 format=3 uid="uid://c8bhlp2vifkfi"]
+[gd_scene load_steps=5 format=3 uid="uid://c8bhlp2vifkfi"]
 
-[ext_resource type="Texture2D" uid="uid://b6grscmk54edw" path="res://arte/fondos/SET_Escenario.png" id="1_i0hck"]
 [ext_resource type="Script" path="res://scripts/carpa/carpa.gd" id="1_x5r4m"]
+[ext_resource type="Texture2D" uid="uid://o6sarbbaci1d" path="res://arte/fondos/fondos_personajes/SET_Escenario_after.png" id="2_gwjd7"]
 [ext_resource type="Script" path="res://scripts/clases/interactable_object.gd" id="2_h4fcr"]
-[ext_resource type="Texture2D" uid="uid://bbkf7qqq8uf86" path="res://arte/animaciones/maga/02_angry/maga_angry_0001.png" id="3_a31np"]
-[ext_resource type="Texture2D" uid="uid://cqgscr34pe28m" path="res://arte/animaciones/maga/02_angry/maga_angry_0002.png" id="4_opmv2"]
-[ext_resource type="Texture2D" uid="uid://bhrk743ll6q78" path="res://arte/animaciones/maga/02_angry/maga_angry_0003.png" id="5_iu3a8"]
-[ext_resource type="Texture2D" uid="uid://dji00c6qetm7y" path="res://arte/animaciones/maga/02_angry/maga_angry_0004.png" id="6_k0yqt"]
-[ext_resource type="Texture2D" uid="uid://dldwelhrsga6l" path="res://arte/animaciones/maga/02_angry/maga_angry_0005.png" id="7_3x0jm"]
-[ext_resource type="Texture2D" uid="uid://ctoh3mpy5wehy" path="res://arte/animaciones/maga/02_angry/maga_angry_0006.png" id="8_6fdf4"]
-[ext_resource type="Texture2D" uid="uid://drere7uerg7w7" path="res://arte/animaciones/maga/02_angry/maga_angry_0007.png" id="9_kl6ds"]
-[ext_resource type="Texture2D" uid="uid://ckdil5avsv6m2" path="res://arte/animaciones/maga/02_angry/maga_angry_0008.png" id="10_bwitn"]
-[ext_resource type="Texture2D" uid="uid://lh5pbyw07knd" path="res://arte/animaciones/maga/02_angry/maga_angry_0009.png" id="11_4rg61"]
-[ext_resource type="Texture2D" uid="uid://dbfsytmh8e466" path="res://arte/animaciones/maga/02_angry/maga_angry_0010.png" id="12_mw4bo"]
-[ext_resource type="Texture2D" uid="uid://dhhowk0hbfajp" path="res://arte/animaciones/maga/02_angry/maga_angry_0011.png" id="13_3nrcr"]
-[ext_resource type="Texture2D" uid="uid://dc7sl204s171q" path="res://arte/animaciones/maga/02_angry/maga_angry_0012.png" id="14_8tckk"]
-[ext_resource type="Texture2D" uid="uid://dr5tix6capnqn" path="res://arte/animaciones/maga/02_angry/maga_angry_0013.png" id="15_tqxdp"]
-[ext_resource type="Texture2D" uid="uid://dw4m1lvusosl6" path="res://arte/animaciones/maga/02_angry/maga_angry_0014.png" id="16_5wyah"]
-[ext_resource type="Texture2D" uid="uid://d356vrauunjmt" path="res://arte/animaciones/maga/02_angry/maga_angry_0015.png" id="17_tshbb"]
-[ext_resource type="Texture2D" uid="uid://cddv6bqf8r2ud" path="res://arte/animaciones/maga/02_angry/maga_angry_0016.png" id="18_yn4f4"]
-[ext_resource type="Texture2D" uid="uid://0gqa0qw3mjla" path="res://arte/animaciones/maga/02_angry/maga_angry_0017.png" id="19_vb572"]
-[ext_resource type="Texture2D" uid="uid://ddorcdoj8mjxk" path="res://arte/animaciones/maga/02_angry/maga_angry_0018.png" id="20_ma1wj"]
-[ext_resource type="Texture2D" uid="uid://0jbavi2tatkw" path="res://arte/animaciones/maga/02_angry/maga_angry_0019.png" id="21_j3x6n"]
-[ext_resource type="Texture2D" uid="uid://spl6bjknecm0" path="res://arte/animaciones/maga/02_angry/maga_angry_0020.png" id="22_6fm50"]
-[ext_resource type="Texture2D" uid="uid://b8u735mb6n74u" path="res://arte/animaciones/maga/02_angry/maga_angry_0021.png" id="23_sac1n"]
-[ext_resource type="Texture2D" uid="uid://cvbkw87qqc3of" path="res://arte/animaciones/maga/02_angry/maga_angry_0022.png" id="24_ithee"]
-[ext_resource type="Texture2D" uid="uid://d2seln1aky5sd" path="res://arte/animaciones/maga/02_angry/maga_angry_0023.png" id="25_4mcn4"]
-[ext_resource type="Texture2D" uid="uid://s8lxuhbtbpyt" path="res://arte/animaciones/maga/02_angry/maga_angry_0024.png" id="26_3cnqv"]
-[ext_resource type="Texture2D" uid="uid://vkg5304khted" path="res://arte/animaciones/maga/02_angry/maga_angry_0025.png" id="27_frqv3"]
-[ext_resource type="Texture2D" uid="uid://djwvv1701emjf" path="res://arte/animaciones/maga/02_angry/maga_angry_0026.png" id="28_u2c1c"]
-[ext_resource type="Texture2D" uid="uid://m6rblsc3qbl0" path="res://arte/animaciones/maga/02_angry/maga_angry_0027.png" id="29_gbi8h"]
-[ext_resource type="Texture2D" uid="uid://cbv63qycjab54" path="res://arte/animaciones/maga/02_angry/maga_angry_0028.png" id="30_wgqpc"]
-[ext_resource type="Texture2D" uid="uid://dripsva8x52wx" path="res://arte/animaciones/maga/02_angry/maga_angry_0029.png" id="31_8uepv"]
-[ext_resource type="Texture2D" uid="uid://cy5fwdvti6dhv" path="res://arte/animaciones/maga/02_angry/maga_angry_0030.png" id="32_ik2ff"]
-[ext_resource type="Texture2D" uid="uid://djp5olaqa6crg" path="res://arte/animaciones/maga/02_angry/maga_angry_0031.png" id="33_kwwr5"]
-[ext_resource type="Texture2D" uid="uid://bu1hrayqthqrp" path="res://arte/animaciones/maga/02_angry/maga_angry_0032.png" id="34_q5dn0"]
-[ext_resource type="Texture2D" uid="uid://rub5nlgyio60" path="res://arte/animaciones/maga/02_angry/maga_angry_0033.png" id="35_e7iwg"]
-[ext_resource type="Texture2D" uid="uid://cur7jnd0setsl" path="res://arte/animaciones/maga/02_angry/maga_angry_0034.png" id="36_54r13"]
-[ext_resource type="Texture2D" uid="uid://teqqmcadkh25" path="res://arte/animaciones/maga/02_angry/maga_angry_0035.png" id="37_153nk"]
-[ext_resource type="Texture2D" uid="uid://crlwos3vw7j5a" path="res://arte/animaciones/maga/02_angry/maga_angry_0036.png" id="38_etf0v"]
-[ext_resource type="Texture2D" uid="uid://de5jatdu8duxn" path="res://arte/animaciones/maga/02_angry/maga_angry_0037.png" id="39_0rtgc"]
-[ext_resource type="Texture2D" uid="uid://cbvnclp68bhel" path="res://arte/animaciones/maga/02_angry/maga_angry_0038.png" id="40_wjdww"]
-[ext_resource type="Texture2D" uid="uid://ct1nybr8gebai" path="res://arte/animaciones/maga/02_angry/maga_angry_0039.png" id="41_jv0si"]
-[ext_resource type="Texture2D" uid="uid://dkin77c0jroqt" path="res://arte/animaciones/maga/02_angry/maga_angry_0040.png" id="42_7i36s"]
-[ext_resource type="Texture2D" uid="uid://dkrwcp08fk6wo" path="res://arte/animaciones/maga/02_angry/maga_angry_0041.png" id="43_ntm6o"]
-[ext_resource type="Texture2D" uid="uid://dggqs5cfrjmng" path="res://arte/animaciones/maga/02_angry/maga_angry_0042.png" id="44_iy17d"]
-[ext_resource type="Texture2D" uid="uid://cghulvjh4iy3g" path="res://arte/animaciones/maga/02_angry/maga_angry_0043.png" id="45_avkjq"]
-[ext_resource type="Texture2D" uid="uid://bn16nvfsynent" path="res://arte/animaciones/maga/02_angry/maga_angry_0044.png" id="46_vl4xv"]
-[ext_resource type="Texture2D" uid="uid://d36ktnrs8cac2" path="res://arte/animaciones/maga/02_angry/maga_angry_0045.png" id="47_5nuhr"]
-[ext_resource type="Texture2D" uid="uid://dns3jgckknuww" path="res://arte/animaciones/maga/02_angry/maga_angry_0046.png" id="48_8kwhp"]
-[ext_resource type="Texture2D" uid="uid://caubgiy0uhn1t" path="res://arte/animaciones/maga/02_angry/maga_angry_0047.png" id="49_5rw54"]
-[ext_resource type="Texture2D" uid="uid://dh33v8c8bqtih" path="res://arte/animaciones/maga/02_angry/maga_angry_0048.png" id="50_bih3n"]
-[ext_resource type="Texture2D" uid="uid://d0u734knnmlq" path="res://arte/animaciones/maga/02_angry/maga_angry_0049.png" id="51_ws1uc"]
-[ext_resource type="Texture2D" uid="uid://bih7hni03ost2" path="res://arte/animaciones/maga/02_angry/maga_angry_0050.png" id="52_r8far"]
-[ext_resource type="Texture2D" uid="uid://cme88f78m6n0f" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0001.png" id="53_m5jn2"]
-[ext_resource type="Texture2D" uid="uid://btlgyaky3qpr3" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0002.png" id="54_glsr1"]
-[ext_resource type="Texture2D" uid="uid://duemonsr4c5jr" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0003.png" id="55_wsayc"]
-[ext_resource type="Texture2D" uid="uid://br5fmt3y8344x" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0004.png" id="56_vc1u0"]
-[ext_resource type="Texture2D" uid="uid://b5n3s4jwbk0iq" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0005.png" id="57_r8ekq"]
-[ext_resource type="Texture2D" uid="uid://doxqhssbrx4g4" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0006.png" id="58_tgkjh"]
-[ext_resource type="Texture2D" uid="uid://bjvwrke0vevlg" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0007.png" id="59_5v1fs"]
-[ext_resource type="Texture2D" uid="uid://xivtpp7gobmy" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0008.png" id="60_be6o0"]
-[ext_resource type="Texture2D" uid="uid://cokkh3noqajue" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0009.png" id="61_q6oin"]
-[ext_resource type="Texture2D" uid="uid://bfpgggfeyb1wm" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0010.png" id="62_m1deg"]
-[ext_resource type="Texture2D" uid="uid://hssuiqng65gc" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0011.png" id="63_yorj8"]
-[ext_resource type="Texture2D" uid="uid://br7wmh6rxr370" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0012.png" id="64_1utuo"]
-[ext_resource type="Texture2D" uid="uid://dv0fvb8e8jh52" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0013.png" id="65_pgjox"]
-[ext_resource type="Texture2D" uid="uid://chr8qywcf0dxn" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0014.png" id="66_em6ou"]
-[ext_resource type="Texture2D" uid="uid://bdasobb54ri1w" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0015.png" id="67_dn85x"]
-[ext_resource type="Texture2D" uid="uid://18ut5qql2goi" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0016.png" id="68_pecqq"]
-[ext_resource type="Texture2D" uid="uid://br7y6a6kthpb6" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0017.png" id="69_epkat"]
-[ext_resource type="Texture2D" uid="uid://bw8vnr0syq5j0" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0018.png" id="70_1t87v"]
-[ext_resource type="Texture2D" uid="uid://c5t8u2hh7lykf" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0019.png" id="71_bon65"]
-[ext_resource type="Texture2D" uid="uid://bwi6bmpymafxx" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0020.png" id="72_p11ak"]
-[ext_resource type="Texture2D" uid="uid://cvhsxe81p2x44" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0021.png" id="73_vtpa0"]
-[ext_resource type="Texture2D" uid="uid://5r4oer02bd84" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0022.png" id="74_lui4t"]
-[ext_resource type="Texture2D" uid="uid://cehu51g7aoby3" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0023.png" id="75_acswk"]
-[ext_resource type="Texture2D" uid="uid://4f3vwry22del" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0024.png" id="76_rdp12"]
-[ext_resource type="Texture2D" uid="uid://b8u3uxrta7neu" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0025.png" id="77_3caoy"]
-[ext_resource type="Texture2D" uid="uid://bx4i03fesxybj" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0026.png" id="78_erahf"]
-[ext_resource type="Texture2D" uid="uid://cov2dhhubvrnh" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0027.png" id="79_vv5ku"]
-[ext_resource type="Texture2D" uid="uid://bgwdu5hdybijq" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0028.png" id="80_as3ii"]
-[ext_resource type="Texture2D" uid="uid://br2cwdih8rv5g" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0029.png" id="81_6a1ah"]
-[ext_resource type="Texture2D" uid="uid://cri2dfsigt1g8" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0030.png" id="82_v1s7v"]
-[ext_resource type="Texture2D" uid="uid://cbwlulg8yuxow" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0031.png" id="83_52llg"]
-[ext_resource type="Texture2D" uid="uid://ctwgbb67ooi72" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0032.png" id="84_yelvt"]
-[ext_resource type="Texture2D" uid="uid://ewmixoopfgvw" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0033.png" id="85_5cu8a"]
-[ext_resource type="Texture2D" uid="uid://b8av53030e10x" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0034.png" id="86_bwwyv"]
-[ext_resource type="Texture2D" uid="uid://1h3q8m34bjj8" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0035.png" id="87_0h2rq"]
-[ext_resource type="Texture2D" uid="uid://co28sf8e5gtrv" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0036.png" id="88_hs8b6"]
-[ext_resource type="Texture2D" uid="uid://docuke60eh2m" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0037.png" id="89_uwa0d"]
-[ext_resource type="Texture2D" uid="uid://cgqta3trde5wx" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0038.png" id="90_q7cfl"]
-[ext_resource type="Texture2D" uid="uid://c2byk50q6rb5g" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0039.png" id="91_xmhuk"]
-[ext_resource type="Texture2D" uid="uid://digsvvjotvfgg" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0040.png" id="92_12n0s"]
-[ext_resource type="Texture2D" uid="uid://boshkg7h3bjqt" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0041.png" id="93_3ewdj"]
-[ext_resource type="Texture2D" uid="uid://c8yipygmk31xx" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0042.png" id="94_6pcnq"]
-[ext_resource type="Texture2D" uid="uid://oly1pujexrta" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0043.png" id="95_7ghep"]
-[ext_resource type="Texture2D" uid="uid://dj0sjoyevmowx" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0044.png" id="96_l4iam"]
-[ext_resource type="Texture2D" uid="uid://54xr41toks8f" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0045.png" id="97_ru1yl"]
-[ext_resource type="Texture2D" uid="uid://mbght2icli0o" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0046.png" id="98_vwc5p"]
-[ext_resource type="Texture2D" uid="uid://c3ys0yerogpsa" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0047.png" id="99_qoa2s"]
-[ext_resource type="Texture2D" uid="uid://df1u5inas137m" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0048.png" id="100_vrn8i"]
-[ext_resource type="Texture2D" uid="uid://084wvvmelgkk" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0049.png" id="101_jpelb"]
-[ext_resource type="Texture2D" uid="uid://dcooiibnt6jxy" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0050.png" id="102_0n3ir"]
-[ext_resource type="Texture2D" uid="uid://bdgqtnngrl1ue" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0051.png" id="103_vacy5"]
-[ext_resource type="Texture2D" uid="uid://c5uh6fxcw5dpn" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0052.png" id="104_ix8f4"]
-[ext_resource type="Texture2D" uid="uid://bfkstlab25lyf" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0053.png" id="105_oat8c"]
-[ext_resource type="Texture2D" uid="uid://cmn1lg8jr0rw8" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0054.png" id="106_w2cka"]
-[ext_resource type="Texture2D" uid="uid://behjgu4cxi5wr" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0055.png" id="107_jbrky"]
-[ext_resource type="Texture2D" uid="uid://mgrfm4uec1ou" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0056.png" id="108_5hyjp"]
-[ext_resource type="Texture2D" uid="uid://cqve1sy1yu1yl" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0057.png" id="109_eb1aa"]
-[ext_resource type="Texture2D" uid="uid://oip34gj457px" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0058.png" id="110_7oaj3"]
-[ext_resource type="Texture2D" uid="uid://by6xxldji55i3" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0059.png" id="111_t8ffo"]
-[ext_resource type="Texture2D" uid="uid://crb68qso6sith" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0060.png" id="112_10ld5"]
-[ext_resource type="Texture2D" uid="uid://b6d7trd3m1wwp" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0061.png" id="113_5bu8m"]
-[ext_resource type="Texture2D" uid="uid://bmhqpqtgyg2wl" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0062.png" id="114_7ak34"]
-[ext_resource type="Texture2D" uid="uid://dtfrsnm23lkq6" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0063.png" id="115_pm8ru"]
-[ext_resource type="Texture2D" uid="uid://ctl4ij4k1svi2" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0064.png" id="116_scmnt"]
-[ext_resource type="Texture2D" uid="uid://dfqak6abedwuk" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0065.png" id="117_pfmae"]
-[ext_resource type="Texture2D" uid="uid://dar0l4wl2coc3" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0066.png" id="118_8uvye"]
-[ext_resource type="Texture2D" uid="uid://2t6ohlwmihhl" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0067.png" id="119_188ov"]
-[ext_resource type="Texture2D" uid="uid://x70tb3aadnm8" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0068.png" id="120_vapc5"]
-[ext_resource type="Texture2D" uid="uid://cjf775rdeoxhq" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0069.png" id="121_sdob3"]
-[ext_resource type="Texture2D" uid="uid://df4u8nq73o8p6" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0070.png" id="122_ukh3c"]
-[ext_resource type="Texture2D" uid="uid://bs0rwpr0bive1" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0071.png" id="123_wk460"]
-[ext_resource type="Texture2D" uid="uid://bj4ieec7jdf2b" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0072.png" id="124_xp76i"]
-[ext_resource type="Texture2D" uid="uid://c2bejiio11syd" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0073.png" id="125_hm5f2"]
-[ext_resource type="Texture2D" uid="uid://1y30hmwj4mrk" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0074.png" id="126_78pqe"]
-[ext_resource type="Texture2D" uid="uid://byko5xcpxhsf1" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0075.png" id="127_xh32l"]
-[ext_resource type="Texture2D" uid="uid://dpqg1sk72lv2g" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0076.png" id="128_k5ivh"]
-[ext_resource type="Texture2D" uid="uid://b3n5au470w6v5" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0077.png" id="129_p0oik"]
-[ext_resource type="Texture2D" uid="uid://caqcpu1amukvq" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0078.png" id="130_ay8cx"]
-[ext_resource type="Texture2D" uid="uid://bnywl1kri23xh" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0079.png" id="131_dqhe8"]
-[ext_resource type="Texture2D" uid="uid://c5igmp1a2k88m" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0080.png" id="132_6hyed"]
-[ext_resource type="Texture2D" uid="uid://c1fjg0na0j2dg" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0081.png" id="133_qi386"]
-[ext_resource type="Texture2D" uid="uid://g32tahjcwvof" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0082.png" id="134_mxru5"]
-[ext_resource type="Texture2D" uid="uid://kydgjr1ajtxa" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0083.png" id="135_mpqtg"]
-[ext_resource type="Texture2D" uid="uid://tc4k1hvj2j5f" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0084.png" id="136_cangk"]
-[ext_resource type="Texture2D" uid="uid://bep43jypsd3w" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0085.png" id="137_jkw6m"]
-[ext_resource type="Texture2D" uid="uid://bi8n43k5ngb7a" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0086.png" id="138_reqor"]
-[ext_resource type="Texture2D" uid="uid://bcymh0741vpoc" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0087.png" id="139_qehu5"]
-[ext_resource type="Texture2D" uid="uid://da72f7gcdpkyp" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0088.png" id="140_sfc3l"]
-[ext_resource type="Texture2D" uid="uid://ctj5bsg7y23pt" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0089.png" id="141_48v0m"]
-[ext_resource type="Texture2D" uid="uid://bdoc0dja61d4i" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0090.png" id="142_k13rr"]
-[ext_resource type="Texture2D" uid="uid://2ygg5352livj" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0091.png" id="143_j16no"]
-[ext_resource type="Texture2D" uid="uid://jyidh5j7dosr" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0092.png" id="144_oi5t8"]
-[ext_resource type="Texture2D" uid="uid://kwxq4npo7o1f" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0093.png" id="145_ulrfh"]
-[ext_resource type="Texture2D" uid="uid://c763ia0olsnyt" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0094.png" id="146_17gis"]
-[ext_resource type="Texture2D" uid="uid://dgxj6p5lanak3" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0095.png" id="147_87tji"]
-[ext_resource type="Texture2D" uid="uid://cp00skbosnr8q" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0096.png" id="148_qoh5s"]
-[ext_resource type="Texture2D" uid="uid://c2rc6vsj16ggw" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0097.png" id="149_s8u4s"]
-[ext_resource type="Texture2D" uid="uid://hueuk2724f4" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0098.png" id="150_lilyl"]
-[ext_resource type="Texture2D" uid="uid://btt4nym68iye5" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0099.png" id="151_g5m7n"]
-[ext_resource type="Texture2D" uid="uid://c6mb1vf2kcryy" path="res://arte/animaciones/maga/01_neutral/maga_neutral_0100.png" id="152_lr2av"]
-[ext_resource type="Script" path="res://scripts/clases/character.gd" id="153_5tsbo"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_4glsk"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_a31np")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_opmv2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_iu3a8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_k0yqt")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_3x0jm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_6fdf4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_kl6ds")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_bwitn")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_4rg61")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_mw4bo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_3nrcr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_8tckk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_tqxdp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_5wyah")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_tshbb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_yn4f4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_vb572")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_ma1wj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_j3x6n")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_6fm50")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_sac1n")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_ithee")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_4mcn4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_3cnqv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("27_frqv3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("28_u2c1c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("29_gbi8h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("30_wgqpc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_8uepv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("32_ik2ff")
-}, {
-"duration": 1.0,
-"texture": ExtResource("33_kwwr5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("34_q5dn0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("35_e7iwg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("36_54r13")
-}, {
-"duration": 1.0,
-"texture": ExtResource("37_153nk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("38_etf0v")
-}, {
-"duration": 1.0,
-"texture": ExtResource("39_0rtgc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("40_wjdww")
-}, {
-"duration": 1.0,
-"texture": ExtResource("41_jv0si")
-}, {
-"duration": 1.0,
-"texture": ExtResource("42_7i36s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("43_ntm6o")
-}, {
-"duration": 1.0,
-"texture": ExtResource("44_iy17d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("45_avkjq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("46_vl4xv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("47_5nuhr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("48_8kwhp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("49_5rw54")
-}, {
-"duration": 1.0,
-"texture": ExtResource("50_bih3n")
-}, {
-"duration": 1.0,
-"texture": ExtResource("51_ws1uc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("52_r8far")
-}],
-"loop": true,
-"name": &"enfado",
-"speed": 25.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("53_m5jn2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("54_glsr1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("55_wsayc")
-}, {
-"duration": 1.0,
-"texture": ExtResource("56_vc1u0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("57_r8ekq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("58_tgkjh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("59_5v1fs")
-}, {
-"duration": 1.0,
-"texture": ExtResource("60_be6o0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("61_q6oin")
-}, {
-"duration": 1.0,
-"texture": ExtResource("62_m1deg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("63_yorj8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("64_1utuo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("65_pgjox")
-}, {
-"duration": 1.0,
-"texture": ExtResource("66_em6ou")
-}, {
-"duration": 1.0,
-"texture": ExtResource("67_dn85x")
-}, {
-"duration": 1.0,
-"texture": ExtResource("68_pecqq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("69_epkat")
-}, {
-"duration": 1.0,
-"texture": ExtResource("70_1t87v")
-}, {
-"duration": 1.0,
-"texture": ExtResource("71_bon65")
-}, {
-"duration": 1.0,
-"texture": ExtResource("72_p11ak")
-}, {
-"duration": 1.0,
-"texture": ExtResource("73_vtpa0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("74_lui4t")
-}, {
-"duration": 1.0,
-"texture": ExtResource("75_acswk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("76_rdp12")
-}, {
-"duration": 1.0,
-"texture": ExtResource("77_3caoy")
-}, {
-"duration": 1.0,
-"texture": ExtResource("78_erahf")
-}, {
-"duration": 1.0,
-"texture": ExtResource("79_vv5ku")
-}, {
-"duration": 1.0,
-"texture": ExtResource("80_as3ii")
-}, {
-"duration": 1.0,
-"texture": ExtResource("81_6a1ah")
-}, {
-"duration": 1.0,
-"texture": ExtResource("82_v1s7v")
-}, {
-"duration": 1.0,
-"texture": ExtResource("83_52llg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("84_yelvt")
-}, {
-"duration": 1.0,
-"texture": ExtResource("85_5cu8a")
-}, {
-"duration": 1.0,
-"texture": ExtResource("86_bwwyv")
-}, {
-"duration": 1.0,
-"texture": ExtResource("87_0h2rq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("88_hs8b6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("89_uwa0d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("90_q7cfl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("91_xmhuk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("92_12n0s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("93_3ewdj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("94_6pcnq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("95_7ghep")
-}, {
-"duration": 1.0,
-"texture": ExtResource("96_l4iam")
-}, {
-"duration": 1.0,
-"texture": ExtResource("97_ru1yl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("98_vwc5p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("99_qoa2s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("100_vrn8i")
-}, {
-"duration": 1.0,
-"texture": ExtResource("101_jpelb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("102_0n3ir")
-}, {
-"duration": 1.0,
-"texture": ExtResource("103_vacy5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("104_ix8f4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("105_oat8c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("106_w2cka")
-}, {
-"duration": 1.0,
-"texture": ExtResource("107_jbrky")
-}, {
-"duration": 1.0,
-"texture": ExtResource("108_5hyjp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("109_eb1aa")
-}, {
-"duration": 1.0,
-"texture": ExtResource("110_7oaj3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("111_t8ffo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("112_10ld5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("113_5bu8m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("114_7ak34")
-}, {
-"duration": 1.0,
-"texture": ExtResource("115_pm8ru")
-}, {
-"duration": 1.0,
-"texture": ExtResource("116_scmnt")
-}, {
-"duration": 1.0,
-"texture": ExtResource("117_pfmae")
-}, {
-"duration": 1.0,
-"texture": ExtResource("118_8uvye")
-}, {
-"duration": 1.0,
-"texture": ExtResource("119_188ov")
-}, {
-"duration": 1.0,
-"texture": ExtResource("120_vapc5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("121_sdob3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("122_ukh3c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("123_wk460")
-}, {
-"duration": 1.0,
-"texture": ExtResource("124_xp76i")
-}, {
-"duration": 1.0,
-"texture": ExtResource("125_hm5f2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("126_78pqe")
-}, {
-"duration": 1.0,
-"texture": ExtResource("127_xh32l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("128_k5ivh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("129_p0oik")
-}, {
-"duration": 1.0,
-"texture": ExtResource("130_ay8cx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("131_dqhe8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("132_6hyed")
-}, {
-"duration": 1.0,
-"texture": ExtResource("133_qi386")
-}, {
-"duration": 1.0,
-"texture": ExtResource("134_mxru5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("135_mpqtg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("136_cangk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("137_jkw6m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("138_reqor")
-}, {
-"duration": 1.0,
-"texture": ExtResource("139_qehu5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("140_sfc3l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("141_48v0m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("142_k13rr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("143_j16no")
-}, {
-"duration": 1.0,
-"texture": ExtResource("144_oi5t8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("145_ulrfh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("146_17gis")
-}, {
-"duration": 1.0,
-"texture": ExtResource("147_87tji")
-}, {
-"duration": 1.0,
-"texture": ExtResource("148_qoh5s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("149_s8u4s")
-}, {
-"duration": 1.0,
-"texture": ExtResource("150_lilyl")
-}, {
-"duration": 1.0,
-"texture": ExtResource("151_g5m7n")
-}, {
-"duration": 1.0,
-"texture": ExtResource("152_lr2av")
-}],
-"loop": true,
-"name": &"neutral",
-"speed": 25.0
-}]
+[ext_resource type="Script" path="res://scripts/clases/interactable_character.gd" id="5_3ggri"]
 
 [node name="carpa" type="Node2D"]
 script = ExtResource("1_x5r4m")
 
 [node name="fondo" type="TextureRect" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 mouse_filter = 2
-texture = ExtResource("1_i0hck")
+texture = ExtResource("2_gwjd7")
 
 [node name="espada" type="StaticBody2D" parent="."]
 input_pickable = true
@@ -633,7 +20,7 @@ script = ExtResource("2_h4fcr")
 id = "espada"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="espada"]
-polygon = PackedVector2Array(1367, 892, 1468, 862, 1455, 860, 1460, 854, 1487, 857, 1502, 852, 1507, 843, 1522, 842, 1533, 845, 1536, 856, 1531, 863, 1510, 863, 1520, 866, 1513, 872, 1506, 874, 1490, 872, 1371, 901, 1362, 898)
+polygon = PackedVector2Array(1346, 874, 1432, 857, 1442, 859, 1456, 847, 1481, 843, 1489, 836, 1502, 829, 1530, 829, 1551, 840, 1550, 858, 1548, 865, 1548, 869, 1540, 873, 1532, 884, 1517, 883, 1507, 885, 1380, 923, 1339, 903)
 
 [node name="guirnalda" type="StaticBody2D" parent="."]
 input_pickable = true
@@ -641,7 +28,7 @@ script = ExtResource("2_h4fcr")
 id = "guirnalda"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="guirnalda"]
-polygon = PackedVector2Array(951, 803, 985, 796, 1057, 794, 1116, 792, 1137, 804, 1139, 834, 1132, 853, 1076, 859, 1038, 860, 919, 851, 889, 844, 886, 825, 889, 812, 901, 806)
+polygon = PackedVector2Array(951, 803, 985, 796, 1057, 794, 1116, 792, 1137, 804, 1139, 834, 1132, 853, 1125, 857, 1112, 847, 1091, 846, 1073, 856, 1038, 860, 919, 851, 889, 844, 886, 825, 889, 812, 901, 806)
 
 [node name="caja_magica" type="StaticBody2D" parent="."]
 input_pickable = true
@@ -649,10 +36,10 @@ script = ExtResource("2_h4fcr")
 id = "caja_magica"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="caja_magica"]
-polygon = PackedVector2Array(856, 213, 1176, 213, 1176, 879, 1147, 879, 1146, 796, 1125, 785, 889, 786, 819, 822, 806, 822, 803, 187, 819, 187)
+polygon = PackedVector2Array(856, 213, 1176, 213, 1176, 879, 1132, 879, 1131, 868, 1127, 858, 1134, 855, 1141, 835, 1139, 803, 1119, 790, 1107, 787, 892, 804, 885, 815, 882, 789, 819, 822, 806, 822, 803, 187, 819, 187)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="caja_magica"]
-polygon = PackedVector2Array(805, 826, 805, 911, 821, 911, 862, 880, 883, 863, 881, 791, 820, 822, 805, 823)
+polygon = PackedVector2Array(805, 826, 805, 911, 821, 911, 862, 880, 910, 879, 918, 853, 886, 846, 881, 791, 820, 822, 805, 823)
 
 [node name="gradas" type="StaticBody2D" parent="."]
 input_pickable = true
@@ -663,7 +50,7 @@ id = "gradas"
 polygon = PackedVector2Array(1478, 702, 1478, 683, 1493, 674, 1493, 629, 1508, 622, 1509, 582, 1521, 578, 1825, 582, 1826, 574, 1833, 573, 1834, 549, 1854, 549, 1854, 528, 1860, 528, 1861, 505, 1920, 505, 1920, 729, 1898, 727, 1770, 718, 1575, 706)
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="gradas"]
-polygon = PackedVector2Array(473, 702, 473, 683, 456, 674, 456, 628, 438, 622, 438, 580, 424, 578, 126, 581, 126, 574, 119, 573, 119, 552, 117, 547, 97, 546, 97, 530, 95, 528, 89, 528, 89, 505, 85, 504, 29, 504, 28, 504, 27, 537, 24, 548, 15, 549, 0, 549, 0, 733, 28, 730, 47, 729, 180, 718, 277, 712, 403, 706, 472, 703, 473, 703)
+polygon = PackedVector2Array(369, 653, 357, 656, 345, 655, 331, 647, 328, 611, 331, 584, 326, 579, 126, 581, 126, 574, 119, 573, 119, 552, 117, 547, 97, 546, 97, 530, 95, 528, 89, 528, 89, 505, 85, 504, 29, 504, 28, 504, 27, 537, 24, 548, 15, 549, 0, 549, 0, 733, 28, 730, 47, 729, 180, 718, 277, 712, 373, 707, 376, 686, 372, 663)
 
 [node name="backstage" type="StaticBody2D" parent="."]
 input_pickable = true
@@ -671,15 +58,31 @@ script = ExtResource("2_h4fcr")
 id = "backstage"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="backstage"]
-polygon = PackedVector2Array(606, 0, 1343, 0, 1346, 690, 1298, 670, 1185, 670, 1186, 196, 858, 196, 817, 169, 799, 166, 789, 167, 784, 663, 784, 671, 638, 670, 609, 671)
+polygon = PackedVector2Array(606, 0, 1343, 0, 1346, 690, 1298, 670, 1179, 671, 1178, 212, 857, 212, 821, 185, 801, 185, 801, 190, 803, 655, 803, 671, 638, 670, 609, 671)
 
-[node name="maga" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(959, 540)
-sprite_frames = SubResource("SpriteFrames_4glsk")
-animation = &"enfado"
-script = ExtResource("153_5tsbo")
+[node name="llave" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("2_h4fcr")
+id = "llave"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="llave"]
+polygon = PackedVector2Array(1392, 995, 1366, 986, 1356, 976, 1358, 966, 1365, 960, 1383, 953, 1401, 959, 1414, 962, 1441, 973, 1454, 987, 1436, 1004)
+
+[node name="cadaver" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("2_h4fcr")
+id = "cadaver"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="cadaver"]
+polygon = PackedVector2Array(1116, 1063, 1145, 1064, 1184, 1056, 1223, 1033, 1224, 1018, 1221, 1003, 1204, 981, 1206, 969, 1201, 952, 1171, 922, 1129, 891, 1131, 881, 1131, 873, 1128, 863, 1122, 855, 1112, 848, 1101, 847, 1092, 846, 1074, 856, 1066, 857, 1051, 859, 1005, 878, 985, 876, 964, 870, 946, 870, 944, 859, 943, 854, 940, 853, 925, 853, 920, 854, 916, 863, 913, 875, 913, 880, 915, 889, 913, 896, 911, 915, 911, 926, 911, 932, 928, 949, 930, 956, 890, 988, 863, 994, 840, 991, 815, 983, 789, 947, 747, 936, 707, 948, 672, 974, 655, 991, 664, 1009, 666, 1019, 680, 1041, 691, 1069, 704, 1080, 779, 1080, 793, 1071, 804, 1054, 811, 1042, 873, 1050, 871, 1067, 893, 1066, 927, 1068, 953, 1069, 965, 1077, 970, 1080, 1114, 1080, 1107, 1074, 1095, 1061, 1100, 1059)
+
+[node name="maga" type="StaticBody2D" parent="."]
+input_pickable = true
+script = ExtResource("5_3ggri")
 id = "maga"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="maga"]
+polygon = PackedVector2Array(473, 926, 450, 933, 424, 937, 399, 936, 388, 927, 388, 906, 383, 890, 382, 864, 381, 844, 368, 729, 374, 706, 377, 687, 371, 655, 369, 652, 357, 655, 345, 654, 331, 646, 329, 611, 332, 584, 338, 565, 339, 547, 335, 546, 335, 520, 330, 511, 333, 496, 341, 483, 344, 453, 338, 425, 332, 404, 333, 366, 350, 355, 361, 350, 366, 337, 354, 309, 348, 287, 354, 260, 373, 242, 371, 227, 373, 212, 391, 205, 417, 205, 432, 212, 440, 220, 467, 245, 485, 265, 495, 297, 501, 328, 520, 357, 537, 387, 544, 420, 533, 477, 525, 499, 499, 503, 504, 533, 518, 587, 527, 701, 492, 788, 470, 851, 473, 895)
 
 [connection signal="input_event" from="espada" to="espada" method="_on_input_event"]
 [connection signal="mouse_entered" from="espada" to="espada" method="_on_mouse_entered"]
@@ -696,3 +99,12 @@ id = "maga"
 [connection signal="input_event" from="backstage" to="backstage" method="_on_input_event"]
 [connection signal="mouse_entered" from="backstage" to="backstage" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="backstage" to="backstage" method="_on_mouse_exited"]
+[connection signal="input_event" from="llave" to="llave" method="_on_input_event"]
+[connection signal="mouse_entered" from="llave" to="llave" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="llave" to="llave" method="_on_mouse_exited"]
+[connection signal="input_event" from="cadaver" to="cadaver" method="_on_input_event"]
+[connection signal="mouse_entered" from="cadaver" to="cadaver" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="cadaver" to="cadaver" method="_on_mouse_exited"]
+[connection signal="input_event" from="maga" to="maga" method="_on_input_event"]
+[connection signal="mouse_entered" from="maga" to="maga" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="maga" to="maga" method="_on_mouse_exited"]

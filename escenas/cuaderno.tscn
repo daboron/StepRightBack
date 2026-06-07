@@ -1,12 +1,431 @@
-[gd_scene load_steps=3 format=3 uid="uid://cnf8tm6enkmth"]
+[gd_scene load_steps=105 format=3 uid="uid://cnf8tm6enkmth"]
 
 [ext_resource type="Texture2D" uid="uid://dliebignbpfff" path="res://arte/menu/notebook.png" id="1_426ti"]
 [ext_resource type="Script" path="res://scripts/cuaderno/cuaderno.gd" id="1_euvpb"]
+[ext_resource type="Texture2D" uid="uid://dmsev2jf18j2s" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0001.png" id="3_3gxea"]
+[ext_resource type="Texture2D" uid="uid://hvvvpn7l3ms3" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0002.png" id="4_r75wk"]
+[ext_resource type="Texture2D" uid="uid://dwghot15i4y7t" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0003.png" id="5_dqrxp"]
+[ext_resource type="Texture2D" uid="uid://dhbfmt1w5vsf7" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0004.png" id="6_xcv85"]
+[ext_resource type="Texture2D" uid="uid://cu6cbnpyeb42t" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0005.png" id="7_p5kkk"]
+[ext_resource type="Texture2D" uid="uid://croxyy4lom2ff" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0006.png" id="8_nrvkl"]
+[ext_resource type="Texture2D" uid="uid://dcp00i0by3tmh" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0007.png" id="9_o5q1k"]
+[ext_resource type="Texture2D" uid="uid://dsewt7hbvft1v" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0008.png" id="10_prbs3"]
+[ext_resource type="Texture2D" uid="uid://cj3xrqb8ijn1m" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0009.png" id="11_ltndd"]
+[ext_resource type="Texture2D" uid="uid://b0x55vegwrg70" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0010.png" id="12_v0ugp"]
+[ext_resource type="Texture2D" uid="uid://bbkys5i1r1hmx" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0011.png" id="13_lr5ia"]
+[ext_resource type="Texture2D" uid="uid://csm4flshxfbcn" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0012.png" id="14_pjd05"]
+[ext_resource type="Texture2D" uid="uid://bndj7agye3jn0" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0013.png" id="15_gtrbd"]
+[ext_resource type="Texture2D" uid="uid://bimkmg6fff44o" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0014.png" id="16_lafyf"]
+[ext_resource type="Texture2D" uid="uid://dod1bclnidx0s" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0015.png" id="17_ra0pn"]
+[ext_resource type="Texture2D" uid="uid://bkogg5w6lfnhi" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0016.png" id="18_fd2l5"]
+[ext_resource type="Texture2D" uid="uid://dcbymlbndx80j" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0017.png" id="19_x52ng"]
+[ext_resource type="Texture2D" uid="uid://q7c0lj2afktx" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0018.png" id="20_mtjtn"]
+[ext_resource type="Texture2D" uid="uid://dw6a0b1r4o6rd" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0019.png" id="21_aojh7"]
+[ext_resource type="Texture2D" uid="uid://ehx4w4h0f0mc" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0020.png" id="22_xexgc"]
+[ext_resource type="Texture2D" uid="uid://tk280r2uhp7k" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0021.png" id="23_76qly"]
+[ext_resource type="Texture2D" uid="uid://cagg3cedvrsgq" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0022.png" id="24_8to3o"]
+[ext_resource type="Texture2D" uid="uid://diymjx24m0p5l" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0023.png" id="25_ybm0e"]
+[ext_resource type="Texture2D" uid="uid://bmwavo4nbvx3b" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0024.png" id="26_sj7v2"]
+[ext_resource type="Texture2D" uid="uid://7ugrjw2d1e03" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0025.png" id="27_jl4b3"]
+[ext_resource type="Texture2D" uid="uid://bqpbht5dgx0nw" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0026.png" id="28_52wlv"]
+[ext_resource type="Texture2D" uid="uid://bfg3jmped7oo5" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0027.png" id="29_58qs5"]
+[ext_resource type="Texture2D" uid="uid://n7rdu4lbcsa5" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0028.png" id="30_eouqy"]
+[ext_resource type="Texture2D" uid="uid://b0vmidgwq4pw7" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0029.png" id="31_7ewjh"]
+[ext_resource type="Texture2D" uid="uid://dqlp7wbe4pc16" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0030.png" id="32_6gtdp"]
+[ext_resource type="Texture2D" uid="uid://b5idyncajv885" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0031.png" id="33_nfokg"]
+[ext_resource type="Texture2D" uid="uid://cnbcu5txe1jp8" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0032.png" id="34_eykc0"]
+[ext_resource type="Texture2D" uid="uid://bun46endaj038" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0033.png" id="35_av78i"]
+[ext_resource type="Texture2D" uid="uid://cnp46h5a5iyfc" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0034.png" id="36_2xuk6"]
+[ext_resource type="Texture2D" uid="uid://depiqmojetb6n" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0035.png" id="37_xbmw6"]
+[ext_resource type="Texture2D" uid="uid://cmvhm3q1kom2w" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0036.png" id="38_wgxne"]
+[ext_resource type="Texture2D" uid="uid://vg1fpb30q3j4" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0037.png" id="39_78o6l"]
+[ext_resource type="Texture2D" uid="uid://cem6dqa670vre" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0038.png" id="40_80fxg"]
+[ext_resource type="Texture2D" uid="uid://bbs0yk1whnofx" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0039.png" id="41_6h13t"]
+[ext_resource type="Texture2D" uid="uid://cv00yucffdqco" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0040.png" id="42_t56fe"]
+[ext_resource type="Texture2D" uid="uid://b7s3hmt2263jj" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0041.png" id="43_y0sdt"]
+[ext_resource type="Texture2D" uid="uid://xr6ee5em7uce" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0042.png" id="44_07x1o"]
+[ext_resource type="Texture2D" uid="uid://clx7f0ghlva85" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0043.png" id="45_y7g8r"]
+[ext_resource type="Texture2D" uid="uid://dxr7s3827lq1w" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0044.png" id="46_vehv4"]
+[ext_resource type="Texture2D" uid="uid://car5u4hjl6qnb" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0045.png" id="47_xfrlj"]
+[ext_resource type="Texture2D" uid="uid://cs43ahdo4y80h" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0046.png" id="48_rsni4"]
+[ext_resource type="Texture2D" uid="uid://duvbtlhlyn2qd" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0047.png" id="49_4kily"]
+[ext_resource type="Texture2D" uid="uid://ctlslig7dp0fj" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0048.png" id="50_cvnhx"]
+[ext_resource type="Texture2D" uid="uid://cn4kmrkmbwcbt" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0049.png" id="51_ivnkv"]
+[ext_resource type="Texture2D" uid="uid://bimkc23r8q682" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0050.png" id="52_valk0"]
+[ext_resource type="Texture2D" uid="uid://dc8fr18fblf1i" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0051.png" id="53_j5415"]
+[ext_resource type="Texture2D" uid="uid://dei437aswyh6q" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0052.png" id="54_qwxq4"]
+[ext_resource type="Texture2D" uid="uid://cb3a4d42j02yl" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0053.png" id="55_w6pxc"]
+[ext_resource type="Texture2D" uid="uid://d0eryrf4egcby" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0054.png" id="56_5irfu"]
+[ext_resource type="Texture2D" uid="uid://cutw38xpwsh06" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0055.png" id="57_kqchc"]
+[ext_resource type="Texture2D" uid="uid://chu75lw7xiukw" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0056.png" id="58_2qg2p"]
+[ext_resource type="Texture2D" uid="uid://dcbpsbpra6sd8" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0057.png" id="59_egpp3"]
+[ext_resource type="Texture2D" uid="uid://cogguwlj073uw" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0058.png" id="60_65ya8"]
+[ext_resource type="Texture2D" uid="uid://dllj00rtogejh" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0059.png" id="61_i6h1q"]
+[ext_resource type="Texture2D" uid="uid://dhgmtp85vuokh" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0060.png" id="62_g2j4n"]
+[ext_resource type="Texture2D" uid="uid://c2ii7d14ukmyt" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0061.png" id="63_wlxc6"]
+[ext_resource type="Texture2D" uid="uid://cikg0w5pu7xn1" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0062.png" id="64_xpwbl"]
+[ext_resource type="Texture2D" uid="uid://gvvwihpeq8my" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0063.png" id="65_h4jlq"]
+[ext_resource type="Texture2D" uid="uid://dvrr7trn6pooa" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0064.png" id="66_64pqn"]
+[ext_resource type="Texture2D" uid="uid://d0chtgl2s3g7y" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0065.png" id="67_msquf"]
+[ext_resource type="Texture2D" uid="uid://c3ttxxi4xmyh8" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0066.png" id="68_tu0ek"]
+[ext_resource type="Texture2D" uid="uid://b5sb3ns7ohxud" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0067.png" id="69_1u062"]
+[ext_resource type="Texture2D" uid="uid://c3x440ybjthqn" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0068.png" id="70_svnc1"]
+[ext_resource type="Texture2D" uid="uid://plkup7fx1t1h" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0069.png" id="71_r4mml"]
+[ext_resource type="Texture2D" uid="uid://cblfpt1pxraj5" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0070.png" id="72_ukb70"]
+[ext_resource type="Texture2D" uid="uid://dub1m5dw6tb7x" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0071.png" id="73_ny514"]
+[ext_resource type="Texture2D" uid="uid://c435tmerw5208" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0072.png" id="74_rphph"]
+[ext_resource type="Texture2D" uid="uid://dk7g30mw6loaj" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0073.png" id="75_61qnx"]
+[ext_resource type="Texture2D" uid="uid://cex0or27566vl" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0074.png" id="76_l7vhn"]
+[ext_resource type="Texture2D" uid="uid://r04f0enrl7r8" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0075.png" id="77_hke77"]
+[ext_resource type="Texture2D" uid="uid://y0ieixcnt2cb" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0076.png" id="78_tavgc"]
+[ext_resource type="Texture2D" uid="uid://j145s00lh8a0" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0077.png" id="79_mou7j"]
+[ext_resource type="Texture2D" uid="uid://cr4a0l8ivyw22" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0078.png" id="80_r0gb1"]
+[ext_resource type="Texture2D" uid="uid://cibrxhdfaujm" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0079.png" id="81_orgbs"]
+[ext_resource type="Texture2D" uid="uid://q3e5hqi368hc" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0080.png" id="82_o1e17"]
+[ext_resource type="Texture2D" uid="uid://bhbp6at20ejwe" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0081.png" id="83_miewk"]
+[ext_resource type="Texture2D" uid="uid://dw08ys5nri2gg" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0082.png" id="84_h3kyl"]
+[ext_resource type="Texture2D" uid="uid://jtxva205pybe" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0083.png" id="85_qajyl"]
+[ext_resource type="Texture2D" uid="uid://bffa185gnuly3" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0084.png" id="86_bxj4l"]
+[ext_resource type="Texture2D" uid="uid://b04khjq158osl" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0085.png" id="87_x0by2"]
+[ext_resource type="Texture2D" uid="uid://spy7007yfiuq" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0086.png" id="88_iu4xk"]
+[ext_resource type="Texture2D" uid="uid://drxkhr60ym2yo" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0087.png" id="89_ka2hx"]
+[ext_resource type="Texture2D" uid="uid://d14cg4dfqnow6" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0088.png" id="90_i0oqv"]
+[ext_resource type="Texture2D" uid="uid://3ihadullwkvb" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0089.png" id="91_bbm2y"]
+[ext_resource type="Texture2D" uid="uid://lv6ryqc4ldv3" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0090.png" id="92_pwvoi"]
+[ext_resource type="Texture2D" uid="uid://ckxabijjb8g8" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0091.png" id="93_nntnc"]
+[ext_resource type="Texture2D" uid="uid://uflrdr482ush" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0092.png" id="94_huo44"]
+[ext_resource type="Texture2D" uid="uid://nq56biwwkth7" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0093.png" id="95_6wtvk"]
+[ext_resource type="Texture2D" uid="uid://ckawy00gxt62s" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0094.png" id="96_gcp2q"]
+[ext_resource type="Texture2D" uid="uid://xssmkhqns0b1" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0095.png" id="97_g576y"]
+[ext_resource type="Texture2D" uid="uid://d2fmkhptddxg2" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0096.png" id="98_5s65p"]
+[ext_resource type="Texture2D" uid="uid://ct6ph3fnr38o2" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0097.png" id="99_8qil3"]
+[ext_resource type="Texture2D" uid="uid://0hl8ji102gxi" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0098.png" id="100_pubds"]
+[ext_resource type="Texture2D" uid="uid://bw6iwsh1kbgou" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0099.png" id="101_spab7"]
+[ext_resource type="Texture2D" uid="uid://di8gndbmxonx1" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0100.png" id="102_eq55p"]
+[ext_resource type="Script" path="res://scripts/clases/character.gd" id="103_c46h2"]
 
-[node name="cuaderno" type="Node2D"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_qvopl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_3gxea")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_r75wk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_dqrxp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xcv85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_p5kkk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_nrvkl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_o5q1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_prbs3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ltndd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_v0ugp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_lr5ia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_pjd05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_gtrbd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_lafyf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ra0pn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_fd2l5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_x52ng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_mtjtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_aojh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xexgc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_76qly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_8to3o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ybm0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_sj7v2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_jl4b3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_52wlv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_58qs5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_eouqy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_7ewjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_6gtdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_nfokg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_eykc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_av78i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_2xuk6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_xbmw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_wgxne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_78o6l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_80fxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_6h13t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_t56fe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_y0sdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_07x1o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_y7g8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_vehv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_xfrlj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_rsni4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_4kily")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_cvnhx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_ivnkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_valk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_j5415")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_qwxq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_w6pxc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_5irfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_kqchc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_2qg2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_egpp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_65ya8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_i6h1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_g2j4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_wlxc6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_xpwbl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_h4jlq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_64pqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_msquf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_tu0ek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_1u062")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_svnc1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_r4mml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_ukb70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_ny514")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_rphph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_61qnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_l7vhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_hke77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_tavgc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_mou7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_r0gb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_orgbs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_o1e17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_miewk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_h3kyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_qajyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_bxj4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_x0by2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_iu4xk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_ka2hx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_i0oqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_bbm2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_pwvoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_nntnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_huo44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_6wtvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_gcp2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_g576y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_5s65p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_8qil3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_pubds")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_spab7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_eq55p")
+}],
+"loop": true,
+"name": &"default_hot",
+"speed": 25.0
+}]
+
+[node name="cuaderno" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_euvpb")
 
+[node name="fondo_osc" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.462745)
+
 [node name="cuaderno" type="TextureRect" parent="."]
+layout_mode = 0
 offset_left = -671.0
 offset_top = 2.0
 offset_right = 1249.0
@@ -21,105 +440,143 @@ offset_right = 1597.0
 offset_bottom = 1012.0
 theme_override_constants/separation = 20
 
-[node name="perfiles" type="ColorRect" parent="cuaderno/elementos"]
-custom_minimum_size = Vector2(0, 250)
-layout_mode = 2
-color = Color(0.562507, 0.700026, 0.89971, 1)
-
-[node name="VBoxContainer" type="VBoxContainer" parent="cuaderno/elementos/perfiles"]
-layout_mode = 2
-offset_right = 766.0
-offset_bottom = 268.0
-
-[node name="nombre" type="Label" parent="cuaderno/elementos/perfiles/VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "Perfiles"
-horizontal_alignment = 1
-
-[node name="grid_perfiles" type="GridContainer" parent="cuaderno/elementos/perfiles/VBoxContainer"]
-custom_minimum_size = Vector2(0, 190)
-layout_mode = 2
-columns = 5
-
-[node name="acciones" type="ColorRect" parent="cuaderno/elementos"]
-custom_minimum_size = Vector2(0, 250)
-layout_mode = 2
-color = Color(0.685534, 0.644447, 0.952288, 1)
-
-[node name="VBoxContainer" type="VBoxContainer" parent="cuaderno/elementos/acciones"]
-layout_mode = 2
-offset_right = 766.0
-offset_bottom = 268.0
-
-[node name="nombre" type="Label" parent="cuaderno/elementos/acciones/VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "Acciones"
-horizontal_alignment = 1
-
-[node name="grid_perfiles" type="GridContainer" parent="cuaderno/elementos/acciones/VBoxContainer"]
-layout_mode = 2
-columns = 5
-
-[node name="objetos" type="ColorRect" parent="cuaderno/elementos"]
-custom_minimum_size = Vector2(0, 250)
-layout_mode = 2
-color = Color(0.966654, 0.532161, 0.702165, 1)
-
-[node name="VBoxContainer" type="VBoxContainer" parent="cuaderno/elementos/objetos"]
-layout_mode = 2
-offset_right = 766.0
-offset_bottom = 268.0
-
-[node name="nombre" type="Label" parent="cuaderno/elementos/objetos/VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "Objetos"
-horizontal_alignment = 1
-
-[node name="grid_perfiles" type="GridContainer" parent="cuaderno/elementos/objetos/VBoxContainer"]
-layout_mode = 2
-columns = 5
-
-[node name="lugares" type="ColorRect" parent="cuaderno/elementos"]
-custom_minimum_size = Vector2(0, 250)
-layout_mode = 2
-color = Color(0.365801, 0.778954, 0.6689, 1)
-
-[node name="VBoxContainer" type="VBoxContainer" parent="cuaderno/elementos/lugares"]
-layout_mode = 2
-offset_right = 766.0
-offset_bottom = 268.0
-
-[node name="nombre" type="Label" parent="cuaderno/elementos/lugares/VBoxContainer"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
-text = "Lugares"
-horizontal_alignment = 1
-
-[node name="grid_perfiles" type="GridContainer" parent="cuaderno/elementos/lugares/VBoxContainer"]
-layout_mode = 2
-columns = 5
-
 [node name="area_deduccion" type="ColorRect" parent="."]
+layout_mode = 0
 offset_left = 1010.0
 offset_top = 33.0
 offset_right = 1875.0
 offset_bottom = 1046.0
+mouse_filter = 2
 color = Color(0.703808, 0.703808, 0.703808, 1)
 
 [node name="pregunta" type="RichTextLabel" parent="area_deduccion"]
-layout_mode = 0
-offset_left = 49.0
-offset_top = 62.0
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+offset_left = 29.0
+offset_top = 28.0
 offset_right = 822.0
-offset_bottom = 286.0
+offset_bottom = 168.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 45
 bbcode_enabled = true
-text = "[fill]Pregunta larga para ver cómo se formatea si es muy muy muy muyyyyyyyyyy larga[/fill]"
+text = "[fill][center]Pregunta larga para ver cómo se formatea si es muy muy  larga[/center][/fill]"
+
+[node name="GridContainer" type="GridContainer" parent="area_deduccion"]
+layout_mode = 0
+offset_left = 368.0
+offset_top = 186.0
+offset_right = 583.0
+offset_bottom = 931.0
+
+[node name="aceptar" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1685.0
+offset_top = 931.0
+offset_right = 1859.0
+offset_bottom = 1029.0
+theme_override_font_sizes/font_size = 40
+text = "Verificar"
+
+[node name="iluminacion1" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 33.0
+offset_right = 1875.0
+offset_bottom = 1046.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.286275)
+
+[node name="tutorial1" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1028.0
+offset_top = 385.0
+offset_right = 1728.0
+offset_bottom = 606.0
+mouse_filter = 2
+color = Color(0.306923, 0.306923, 0.306923, 1)
+
+[node name="texto_tutorial" type="RichTextLabel" parent="tutorial1"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 33.0
+offset_right = 653.0
+offset_bottom = 500.0
+theme_override_font_sizes/normal_font_size = 35
+text = "En el cuaderno tenemos las cosas que podemos usar para resolver esto."
+
+[node name="iluminacion2" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 957.0
+offset_bottom = 1080.0
+mouse_filter = 2
+color = Color(0, 0, 0, 0.286275)
+
+[node name="tutorial2" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 195.0
+offset_top = 385.0
+offset_right = 895.0
+offset_bottom = 606.0
+mouse_filter = 2
+color = Color(0.306923, 0.306923, 0.306923, 1)
+
+[node name="texto_tutorial" type="RichTextLabel" parent="tutorial2"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 33.0
+offset_right = 653.0
+offset_bottom = 500.0
+theme_override_font_sizes/normal_font_size = 35
+text = "El otro lado es donde arrastramos las pruebas para formar una respuesta a la pregunta."
+
+[node name="tutorial3" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 631.0
+offset_top = 832.0
+offset_right = 1331.0
+offset_bottom = 1074.0
+color = Color(0.306923, 0.306923, 0.306923, 1)
+
+[node name="texto_tutorial" type="RichTextLabel" parent="tutorial3"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 33.0
+offset_right = 653.0
+offset_bottom = 500.0
+theme_override_font_sizes/normal_font_size = 35
+text = "Las pruebas se clasifican en distintos tipos y se colocan en los huecos de su mismo tipo."
+
+[node name="iluminacion3" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1318.0
+offset_top = 229.0
+offset_right = 1558.0
+offset_bottom = 569.0
+mouse_filter = 2
+color = Color(1, 1, 0.886275, 0.286275)
+
+[node name="iluminacion4" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 1340.0
+offset_top = 686.0
+offset_right = 1528.0
+offset_bottom = 830.0
+mouse_filter = 2
+color = Color(1, 1, 0.886275, 0.286275)
+
+[node name="detective" type="AnimatedSprite2D" parent="."]
+visible = false
+position = Vector2(959, 540)
+sprite_frames = SubResource("SpriteFrames_qvopl")
+animation = &"default_hot"
+script = ExtResource("103_c46h2")
+id = "detective"
+
+[connection signal="pressed" from="aceptar" to="." method="_on_aceptar_pressed"]

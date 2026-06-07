@@ -1,10 +1,10 @@
 extends Node
 
-var objetos = {
+var pistas = {
 	"marca_horizontal": {
 		"fases": {
 			1: {
-				"imagen": preload("res://arte/fotos/02_PROTAGONIST_POLAROID.png"),
+				"imagen": preload("res://arte/objetos/marca_horizontal.png"),
 				"nombre": "Marca horizontal",
 				"informacion": "placeholder"
 			}
@@ -13,7 +13,7 @@ var objetos = {
 	"equimosis_faciales": {
 		"fases": {
 			1: {
-				"imagen": preload("res://arte/fotos/01_DETECTIVE_POLAROID.png"),
+				"imagen": preload("res://arte/objetos/equimosis_faciales.png"),
 				"nombre": "Equimosis faciales",
 				"informacion": "placeholder"
 			}
@@ -157,29 +157,101 @@ var lugares = {
 	}
 }
 
+var acciones = {
+	"murio": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/verbos/puzzle1/murio.png"),
+				"nombre": "Murió por"
+			}
+		}
+	},
+	"sorprendio": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/verbos/puzzle1/sorprendio.png"),
+				"nombre": "Se sorprendió por"
+			}
+		}
+	}
+}
+
 var puzzles = {
 	"dialogos": preload("res://dialogos/puzzles.dialogue"),
-	"puzzle1": {
-		"pregunta": "¿Cuál fue la causa de la muerte?",
-		"elementos": {
-			"perfiles": ["protagonista", "detective", "dueño"],
-			"verbos": ["murió por", "se sorprendió por"],
-			"objetos": ["marca_horizontal", "equimosis_faciales"]
-		},
-		"plantilla": ["perfil", "verbo", "deduccion"],
-		"deducciones": {
-			"causa_muerte": {
-				"dialogo": "puzzle1",
-				"requisitos_activacion": ["marca_horizontal", "equimosis_faciales"]
+	"texto_fallos": [
+		"fallo_generico_1",
+		"fallo_generico_2",
+		"fallo_generico_3"
+	],
+	"puzzles": {
+		"puzzle1": {
+			"pregunta": "¿Cuál fue la causa de la muerte?",
+			"elementos": {
+				"perfiles": ["protagonista", "detective", "duenyo"],
+				"acciones": ["murio", "sorprendio"],
+				"pistas": ["marca_horizontal", "equimosis_faciales"]
+			},
+			"plantilla": [
+				{"tipo": "perfiles", "flecha": true},
+				{"tipo": "acciones", "flecha": true},
+				{"tipo": "deduccion", "flecha": false}
+			],
+			"deducciones": {
+				"causa_muerte": {
+					"dialogo": "puzzle1",
+					"requisitos_activacion": ["marca_horizontal", "equimosis_faciales"],
+					"envenenamiento": preload("res://arte/deducciones/puzzle1/envenenamiento.png"),
+					"asfixia": preload("res://arte/deducciones/puzzle1/asfixia.png"),
+					"puñalada": preload("res://arte/deducciones/puzzle1/apuñalamiento.png")
+				}
+			},
+			"solucion": ["duenyo", "murio", "asfixia"],
+			"dialogo_solucion": {
+				"dialogo": preload("res://dialogos/escenarios/carpa.dialogue"),
+				"nombre_dialogo": "carpa3"
 			}
-		},
-		"solucion": ["duenyo", "murió por", "asfixia"]
+		}
+	}
+}
+
+var simbolos = {
+	"perfiles": preload("res://arte/iconos/perfil_bn.png"),
+	"acciones": preload("res://arte/iconos/action_bn.png"),
+	"deduccion": preload("res://arte/iconos/deduction_bn.png"),
+	"pistas": preload("res://arte/iconos/object_bn.png"),
+	"lugares": preload("res://arte/iconos/place_bn.png")
+}
+
+var dialogos = {
+	"dialogo": preload("res://dialogos/personajes.dialogue"),
+	"personajes": {
+		"maga": {
+			"dialogos": {
+				"dialogo1": {
+					"nombre": "placeholder",
+					"dialogo": "maga1"
+				},
+				"dialogo2": {
+					"nombre": "placeholder2",
+					"dialogo": "maga2"
+				},
+				"dialogo3": {
+					"nombre": "placeholder3",
+					"dialogo": "maga3"
+				}
+			},
+			"deducciones": {
+				#aqui van los puzzles y sus condiciones de acctivacion
+				"deduccion1": {},
+				"deduccion2": {}
+			}
+		}
 	}
 }
 
 func get_objeto(id_objeto: String, fase: int) -> Dictionary:
 	var resultado = {}
-	var data = objetos.get(id_objeto, {}).get("fases", {})
+	var data = pistas.get(id_objeto, {}).get("fases", {})
 	for i in range(1, fase + 1):
 		if data.has(i):
 			for key in data[i]:
@@ -203,3 +275,22 @@ func get_lugar(id_lugar: String, fase: int) -> Dictionary:
 			for key in data[i]:
 				resultado[key] = data[i][key]
 	return resultado
+
+func get_elemento(tipo: String, id: String, fase: int = 99) -> Dictionary:
+	var categoria = get(tipo)
+	if categoria == null:
+		return {}
+	var resultado := {}
+	if not categoria.has(id):
+		return resultado
+	var fases = categoria[id]["fases"]
+	for i in range(1, fase + 1):
+		if fases.has(i):
+			resultado.merge(fases[i], true)
+	return resultado
+
+func get_puzzle(id: String) -> Dictionary:
+	return puzzles["puzzles"].get(id, {})
+
+func get_dialogo(id: String) -> Dictionary:
+	return dialogos["personajes"].get(id, {})

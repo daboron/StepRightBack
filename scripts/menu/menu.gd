@@ -7,7 +7,7 @@ extends CanvasLayer
 @onready var lugares = $cuaderno/inventario/Lugares
 const item_ui = preload("res://escenas/ui/item_ui.tscn")
 var current_tab = null
-var tab_tweens = {}  
+var tab_tweens = {}
 
 func _ready() -> void:
 	protagonista.visibility(true)
@@ -68,6 +68,7 @@ func select_menu(selected_menu):
 	var text = $cuaderno/log
 	text.clear()
 	$cuaderno/salir.visible = false
+	$cuaderno/guardar.visible = false
 	$cuaderno/inventario.visible = false
 	objetos.visible = false
 	perfiles.visible = false
@@ -128,6 +129,7 @@ func select_menu(selected_menu):
 				lugares.add_child(inventory_item)
 		"PanelAjustes":
 			print("Ajustes")
+			$cuaderno/guardar.visible = true
 			$cuaderno/salir.visible = true
 		"PanelNotas":
 			print("Notas")
@@ -140,10 +142,6 @@ func abrir():
 	visible = true
 func cerrar():
 	visible = false
-
-func _on_salir_pressed() -> void:
-	SaveGame.save_game()
-	get_tree().quit()
 
 func mostrar_detalle(datos):
 	$detalle.visible = true
@@ -160,3 +158,13 @@ func mostrar_detalle(datos):
 func _on_cerrar_pressed() -> void:
 	$detalle.visible = false
 	$bloqueador_clic.visible = false
+
+
+func _on_guardar_pressed() -> void:
+	SaveGame.save_game()
+
+func _on_salir_pressed() -> void:
+	SaveGame.save_game()
+	cerrar()
+	get_tree().paused = false
+	get_tree().change_scene_to_file("res://escenas/menu_inicio.tscn")
