@@ -1,6 +1,7 @@
 [gd_scene load_steps=2 format=3 uid="uid://c81pg3364quct"]
 
-[ext_resource type="Texture2D" uid="uid://d4etmh8lvs0uf" path="res://placeholders/simbolo_perfil.png" id="1_efqhk"]
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tj6jc"]
+load_path = "res://.godot/imported/simbolo_perfil.png-5fb960cf6d8384ee632aa99b4ef977db.ctex"
 
 [node name="tipo_elemento" type="ColorRect"]
 custom_minimum_size = Vector2(765, 250)
@@ -30,5 +31,5 @@ offset_left = 467.0
 offset_top = 4.0
 offset_right = 524.0
 offset_bottom = 55.0
-texture = ExtResource("1_efqhk")
+texture = SubResource("CompressedTexture2D_tj6jc")
 expand_mode = 1

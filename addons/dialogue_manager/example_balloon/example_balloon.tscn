@@ -1,8 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://73jm5qjy52vq"]
+[gd_scene load_steps=13 format=3 uid="uid://73jm5qjy52vq"]
 
 [ext_resource type="Script" path="res://addons/dialogue_manager/example_balloon/example_balloon.gd" id="1_36de5"]
 [ext_resource type="PackedScene" uid="uid://ckvgyvclnwggo" path="res://addons/dialogue_manager/dialogue_label.tscn" id="2_a8ve6"]
+[ext_resource type="Texture2D" uid="uid://dywaw4ug53s16" path="res://arte/menu/caja_dialogo.png" id="2_wa2w1"]
 [ext_resource type="Script" path="res://addons/dialogue_manager/dialogue_reponses_menu.gd" id="3_72ixx"]
+[ext_resource type="FontFile" uid="uid://ductrel012o8m" path="res://fuentes/BerkshireSwash-Regular.ttf" id="3_b1uf1"]
+[ext_resource type="FontFile" uid="uid://dcpjqwfuklm5q" path="res://fuentes/Fredoka-Regular.ttf" id="5_3vcbc"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_spyqn"]
 bg_color = Color(0, 0, 0, 1)
@@ -63,6 +66,9 @@ MarginContainer/constants/margin_right = 30
 MarginContainer/constants/margin_top = 15
 Panel/styles/panel = SubResource("StyleBoxFlat_uy0d5")
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3k034"]
+texture = ExtResource("2_wa2w1")
+
 [node name="ExampleBalloon" type="CanvasLayer"]
 layer = 100
 script = ExtResource("1_36de5")
@@ -85,32 +91,39 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 21.0
-offset_top = -183.0
+offset_top = -241.0
 offset_right = -19.0
 offset_bottom = -19.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxTexture_3k034")
 
 [node name="Dialogue" type="MarginContainer" parent="Balloon/Panel"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 71.0
+offset_top = -10.0
+offset_right = 7.0
+offset_bottom = -10.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Balloon/Panel/Dialogue"]
 layout_mode = 2
+theme_override_constants/separation = 60
 
 [node name="CharacterLabel" type="RichTextLabel" parent="Balloon/Panel/Dialogue/VBoxContainer"]
 unique_name_in_owner = true
-modulate = Color(1, 1, 1, 0.501961)
 layout_mode = 2
 mouse_filter = 1
-theme_override_font_sizes/normal_font_size = 27
+theme_override_colors/default_color = Color(1, 0.878431, 0.623529, 1)
+theme_override_fonts/normal_font = ExtResource("3_b1uf1")
+theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
-text = "Character"
+text = "Claire"
 fit_content = true
 scroll_active = false
 
@@ -118,7 +131,9 @@ scroll_active = false
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/normal_font_size = 25
+theme_override_colors/default_color = Color(0.956863, 0.92549, 0.847059, 1)
+theme_override_fonts/normal_font = ExtResource("5_3vcbc")
+theme_override_font_sizes/normal_font_size = 28
 text = "Dialogue..."
 
 [node name="Responses" type="MarginContainer" parent="Balloon"]

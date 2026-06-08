@@ -16,6 +16,7 @@ func show_character(id: String, anim := "default") -> void:
 	c.visibility(true)
 	c.play_anim(anim)
 	set_active(id)
+	SaveGame.set_personaje_escena(id, anim)
 
 func set_active(id: String) -> void:
 	if !active_characters.has(id):
@@ -35,6 +36,7 @@ func update_layout() -> void:
 func hide_character(id: String) -> void:
 	characters[id].visibility(false)
 	active_characters.erase(id)
+	SaveGame.eliminar_personaje_escena(id)
 	update_layout()
 
 func clear() -> void:

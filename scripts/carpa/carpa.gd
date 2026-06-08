@@ -5,6 +5,8 @@ var cursor = preload("res://arte/cursores/cursor.png")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	SaveGame.set_escena("res://escenas/carpa.tscn")
+	Controlador.guardado = true
 	await Controlador.fade_in()
 	Controlador.modo_actual = "investigacion"
 	Input.set_custom_mouse_cursor(cursor, Input.CURSOR_ARROW)
@@ -28,4 +30,3 @@ func on_clicked_character(character_node: InteractableCharacter):
 			get_parent().remove_child(self)
 		arbol_actual.root.add_child(nueva_escena)
 		arbol_actual.current_scene = nueva_escena
-		#queue_free()

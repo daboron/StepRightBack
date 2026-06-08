@@ -13,6 +13,7 @@ config_version=5
 config/name="StepRightBack"
 run/main_scene="res://escenas/menu_inicio.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
+boot_splash/show_image=false
 boot_splash/image="res://arte/iconos/ICONO.png"
 config/icon="res://arte/iconos/ICONO.png"
 
@@ -32,6 +33,7 @@ CharacterManager="*res://scripts/autoloads/charactersManager.gd"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/mode=3
+window/stretch/mode="canvas_items"
 
 [editor_plugins]
 

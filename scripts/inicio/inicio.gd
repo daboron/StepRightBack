@@ -51,10 +51,12 @@ func on_clicked_object(type, id):
 # los objetos para seguir con la historia
 func terminar_exploracion() -> void:
 	if SaveGame.game_data["contador_objetos_inicio"] == 5:
+		Controlador.guardado = false
 		DialogueManager.show_dialogue_balloon(dialogo, "inicio2")
 
 #funcio para desbloquear los dialogos de los objetos al terminar el primer dialogo
 func dialogo_inicial_terminado() -> void:
+	Controlador.guardado = true
 	bloqueado = false
 
 func esperando_cuaderno() -> void:
@@ -78,4 +80,4 @@ func cierra_cuaderno() -> void:
 	DialogueManager.show_dialogue_balloon(dialogo, "inicio3")
 
 func fin_escena() -> void:
-	Controlador.cambio_escena("res://escenas/carpa_ini.tscn")
+	Controlador.cambio_escena_precargada("res://escenas/carpa_ini.tscn")

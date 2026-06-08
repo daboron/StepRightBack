@@ -1,5 +1,5 @@
 ~ inicio1
-: [color=#3E8E41]Exterior del circo, media tarde.[/color]
+{{" "}}: [color=#A4B2C1]Exterior del circo, media tarde.[/color]
 Samuel: Aún no me creo que me invitaras aquí.
 do show_character("detective", "default_frio")
 Claire: ¿Qué tiene de malo?
@@ -9,32 +9,32 @@ Samuel: Dime que no hay nada raro esta vez.
 Claire: Eso ya se verá. 
 Claire: Aún queda tiempo para que empiece, así que podemos aprovechar para mirar un poco los alrededores. 
 Samuel: (Eso no me tranquiliza para nada.)
-: [color=#3E8E41]Haz click sobre los diferentes objetos del escenario para interactuar con ellos.[/color]
+{{" "}}: [color=#A4B2C1]Haz click sobre los diferentes objetos del escenario para interactuar con ellos.[/color]
 do hide_character("detective")
 do dialogo_inicial_terminado()
 => END
 
 ~ inicio2
 do show_character("duenyo", "default")
-: ...
+{{" "}}: ...
 ???: Veo que os interesa mi circo.
 Samuel: Solo estábamos mirando.
 do show_character("detective", "default_frio")
 Claire: Estamos comprobando que todo está en orden.
 do show_character("duenyo", "laught")
-Dueño del circo: Entonces lo dejo en vuestras manos. Pero aseguraros de disfrutar el espectáculo también.
+Dueño: Entonces lo dejo en vuestras manos. Pero aseguraros de disfrutar el espectáculo también.
 Samuel: (Se está quedando con nosotros.)
 do show_character("detective", "default_frio")
 Claire: ¿Puede contarnos algo sobre el espectáculo de hoy?
 do show_character("duenyo", "default")
-Dueño del circo: Diría que el plato fuerte de la noche es el truco de magia. Aunque, por supuesto, todas las actuaciones merecerán la pena.
+Dueño: Diría que el plato fuerte de la noche es el truco de magia. Aunque, por supuesto, todas las actuaciones merecerán la pena.
 do hide_character("detective")
 do show_character("fortachon", "default_frio")
 ???: Jefe, le necesitamos dentro un momento.
-Dueño del circo: ¿Ha pasado algo?
+Dueño: ¿Ha pasado algo?
 ???: Adelaide dice que ha tenido un problema.
-Dueño del circo: Entiendo, ya voy.
-Dueño del circo: Si me disculpan, nos veremos después.
+Dueño: Entiendo, ya voy.
+Dueño: Si me disculpan, nos veremos después.
 Samuel: Hasta luego, que vaya bien.
 do hide_character("duenyo")
 do hide_character("fortachon")
@@ -43,7 +43,6 @@ Claire: Creo que eso es todo por ahora. Vamos a revisar todo lo que sabemos.
 Claire: Asegúrate de apuntar todas las cosas que puedan ser importantes, así podremos revisarlas después.
 do esperando_cuaderno()
 do hide_character("detective")
-# do prueba_dialogolog()
 => END
 
 ~ inicio3
@@ -51,7 +50,7 @@ Samuel: (Hemos estado un rato distraídos.)
 do show_character("detective", "default_frio")
 Claire: Por ahora eso está bien.
 do show_character("duenyo", "default")
-Dueño del circo: Va a comenzar el espectáculo, pueden ir pasando a la carpa.
+Dueño: Va a comenzar el espectáculo, pueden ir pasando a la carpa.
 Samuel: (Todo el mundo está comenzando a entrar de forma animada)
 do hide_character("duenyo")
 do show_character("detective", "default_frio")
@@ -69,7 +68,6 @@ Samuel: ¿Por qué querrías levantarla?
 Claire: Para mirar qué hacen dentro.
 do hide_character("detective")
 do terminar_exploracion()
-#do prueba_dialogolog()
 => END
 
 ~ cartel_ini
@@ -78,7 +76,6 @@ Claire: No parece tener nada interesante.
 Samuel: (No le hagas caso, señor cartel. Yo recordaré tu amabilidad)
 do hide_character("detective")
 do terminar_exploracion()
-#do prueba_dialogolog()
 => END
 
 ~ caja_ini
@@ -89,7 +86,6 @@ Samuel: No parece que use una llave, quizá está cerrada con clavos.
 Claire: Qué poco interesante.
 do hide_character("detective")
 do terminar_exploracion()
-#do prueba_dialogolog()
 => END
 
 ~ banderines_ini
@@ -99,7 +95,6 @@ Samuel: Disculpe, disfrutaré de cosas más “adultas” como venir al circo.
 Claire: Touche.
 do hide_character("detective")
 do terminar_exploracion()
-#do prueba_dialogolog()
 => END
 
 ~ farola_ini
@@ -107,5 +102,4 @@ Claire: Por ahora no son muy útiles.
 Samuel: Cuando esté más oscuro, lo agradecerás.
 do hide_character("detective")
 do terminar_exploracion()
-#do prueba_dialogolog()
 => END

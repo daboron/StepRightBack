@@ -4,6 +4,7 @@ extends Node
 var bbcode_regex := RegEx.new()
 var log: Array = []
 const MAX := 200
+var ruta_del_dialogo_actual: String = ""
 
 func _ready():
 	bbcode_regex.compile("\\[.*?\\]")
@@ -13,23 +14,32 @@ func _ready():
 
 func _on_dialogue_started(resource: DialogueResource):
 	if resource and resource.resource_path != "":
+		ruta_del_dialogo_actual = resource.resource_path
 		SaveGame.game_data["dialogo_activo"] = resource.resource_path
 
 func _on_dialogue_line(line: DialogueLine):
 	var character := ""
 	var text := ""
 
-	if line.character != "":
+	if line.character != " ":
 		character = str(line.character) + ": "
 
 	text = clean_text(line.text)
 	add_line(character, text)
 	
-	#if "resource_path" in line and line.resource_path != "":
-		#SaveGame.game_data["dialogo_activo"] = line.resource_path
+	if ruta_del_dialogo_actual == "" and SaveGame.game_data["dialogo_activo"] != "":
+		ruta_del_dialogo_actual = SaveGame.game_data["dialogo_activo"]
 	
-	#SaveGame.game_data["dialogo_activo"] = line.next_id.split("@")[0]
+	if ruta_del_dialogo_actual != "":
+		SaveGame.game_data["dialogo_activo"] = ruta_del_dialogo_actual
+	
+	SaveGame.game_data["dialogo_activo"] = ruta_del_dialogo_actual
 	SaveGame.game_data["dialogo_linea_id"] = line.id
+
+func _on_dialogue_finished(resource: DialogueResource = null):
+	ruta_del_dialogo_actual = ""
+	SaveGame.game_data["dialogo_activo"] = ""
+	SaveGame.game_data["dialogo_linea_id"] = ""
 
 func add_line(character: String, text: String):
 	log.append({
@@ -48,8 +58,3 @@ func get_log() -> Array:
 
 func clear():
 	log.clear()
-
-func _on_dialogue_finished(resource: DialogueResource = null):
-	#SaveGame.game_data["dialogo_activo"] = ""
-	#SaveGame.game_data["dialogo_linea_id"] = ""
-	pass

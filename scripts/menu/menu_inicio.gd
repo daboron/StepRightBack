@@ -17,13 +17,17 @@ func _ready() -> void:
 	else:
 		boton_continuar.disabled = true
 
-
 func _on_continuar_pressed() -> void:
 	Controlador.cargar_partida_guardada()
-
 
 func _on_nueva_pressed() -> void:
 	#empezamos a precargar la escena siguiente
 	ResourceLoader.load_threaded_request("res://escenas/inicio.tscn")
 	SaveGame.new_game()
 	Controlador.cambio_escena("res://escenas/inicio.tscn")
+
+func _on_ajustes_pressed() -> void:
+	Controlador.cambio_escena("res://escenas/ajustes_inicio.tscn")
+
+func _on_salir_pressed() -> void:
+	get_tree().quit()

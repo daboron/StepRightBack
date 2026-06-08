@@ -29,7 +29,6 @@ func _actualizar_pantalla() -> void:
 	# 2. Actualizar el Personaje
 	if id_personaje_recibido != "":
 		var sprite = $personaje
-		#var nombre_animacion = id_personaje_recibido + "_idle"
 		
 		if sprite.sprite_frames.has_animation(id_personaje_recibido):
 			sprite.play(id_personaje_recibido)

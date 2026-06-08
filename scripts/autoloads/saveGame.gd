@@ -11,7 +11,8 @@ var game_data : Dictionary = {
 	"objetos": {},
 	"perfiles": {},
 	"lugares": {},
-	"contador_objetos_inicio": 0
+	"contador_objetos_inicio": 0,
+	"personajes_visibles": {}
 }
 
 func game_data_add(place, obj, fase := 1) -> void:
@@ -19,6 +20,13 @@ func game_data_add(place, obj, fase := 1) -> void:
 
 func set_escena(escena) -> void:
 	game_data["escena"] = escena
+
+func set_personaje_escena(personaje: String, estado: String) -> void:
+	game_data["personajes_visibles"][personaje] = estado
+
+func eliminar_personaje_escena(personaje: String) -> void:
+	if game_data["personajes_visibles"].has(personaje):
+		game_data["personajes_visibles"].erase(personaje)
 
 func game_data_has(place, obj) -> bool:
 	return game_data[place].has(obj)
@@ -49,7 +57,8 @@ func new_game() -> void:
 		"objetos": {},
 		"perfiles": {},
 		"lugares": {},
-		"contador_objetos_inicio": 0
+		"contador_objetos_inicio": 0,
+		"personajes_visibles": {}
 	}
 	#para borrar el archivo generado con la partida
 	DirAccess.remove_absolute(save_path)

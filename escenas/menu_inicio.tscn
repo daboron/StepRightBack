@@ -12,20 +12,40 @@ offset_bottom = 40.0
 texture = ExtResource("1_no7lj")
 
 [node name="continuar" type="Button" parent="."]
-offset_left = 773.0
-offset_top = 310.0
-offset_right = 1399.0
-offset_bottom = 436.0
+offset_left = 777.0
+offset_top = 259.0
+offset_right = 1403.0
+offset_bottom = 385.0
 theme_override_font_sizes/font_size = 60
 text = "Continuar partida"
 
 [node name="nueva" type="Button" parent="."]
-offset_left = 770.0
-offset_top = 500.0
-offset_right = 1396.0
-offset_bottom = 626.0
+offset_left = 774.0
+offset_top = 449.0
+offset_right = 1400.0
+offset_bottom = 575.0
 theme_override_font_sizes/font_size = 60
 text = "Nueva partida"
 
+[node name="ajustes" type="Button" parent="."]
+offset_left = 771.0
+offset_top = 635.0
+offset_right = 1397.0
+offset_bottom = 761.0
+theme_override_font_sizes/font_size = 60
+text = "Ajustes
+"
+
+[node name="salir" type="Button" parent="."]
+offset_left = 771.0
+offset_top = 809.0
+offset_right = 1397.0
+offset_bottom = 935.0
+theme_override_font_sizes/font_size = 60
+text = "Salir del juego
+"
+
 [connection signal="pressed" from="continuar" to="." method="_on_continuar_pressed"]
 [connection signal="pressed" from="nueva" to="." method="_on_nueva_pressed"]
+[connection signal="pressed" from="ajustes" to="." method="_on_ajustes_pressed"]
+[connection signal="pressed" from="salir" to="." method="_on_salir_pressed"]

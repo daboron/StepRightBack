@@ -1,4 +1,4 @@
-[gd_scene load_steps=75 format=3 uid="uid://b4w7roti5al5k"]
+[gd_scene load_steps=76 format=3 uid="uid://b4w7roti5al5k"]
 
 [ext_resource type="Script" path="res://scripts/menu/menu.gd" id="1_yfi57"]
 [ext_resource type="Texture2D" uid="uid://b1s4bpy1vyqh3" path="res://arte/animaciones/protagonista/02_cold/protagonista_notebook_cold_0001.png" id="2_y6gkb"]
@@ -54,6 +54,7 @@
 [ext_resource type="Script" path="res://scripts/clases/character.gd" id="52_q4opr"]
 [ext_resource type="Texture2D" uid="uid://dliebignbpfff" path="res://arte/menu/notebook.png" id="53_8dmn3"]
 [ext_resource type="Texture2D" uid="uid://dyd7byn8iifly" path="res://arte/fondos/SET_Exterior.png" id="54_2hy4r"]
+[ext_resource type="FontFile" uid="uid://42d7i3nkyple" path="res://fuentes/PatrickHand-Regular.ttf" id="54_byme8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jguvv"]
 animations = [{
@@ -299,25 +300,60 @@ offset_left = 836.0
 offset_top = 168.0
 offset_right = 1590.0
 offset_bottom = 997.0
+theme_override_fonts/normal_font = ExtResource("54_byme8")
 theme_override_font_sizes/normal_font_size = 30
 
-[node name="guardar" type="Button" parent="cuaderno"]
-visible = false
+[node name="resolucion_text" type="Label" parent="cuaderno"]
 layout_mode = 0
-offset_left = 908.0
-offset_top = 176.0
-offset_right = 1176.0
-offset_bottom = 295.0
+offset_left = 909.0
+offset_top = 183.0
+offset_right = 1192.0
+offset_bottom = 246.0
+theme_override_colors/font_color = Color(0.227451, 0.156863, 0.101961, 1)
+theme_override_fonts/font = ExtResource("54_byme8")
+theme_override_font_sizes/font_size = 35
+text = "Resolución de pantalla:"
+
+[node name="resolucion" type="OptionButton" parent="cuaderno"]
+layout_mode = 0
+offset_left = 1227.0
+offset_top = 177.0
+offset_right = 1481.0
+offset_bottom = 245.0
+
+[node name="modo_pantalla_text" type="Label" parent="cuaderno"]
+layout_mode = 0
+offset_left = 912.0
+offset_top = 299.0
+offset_right = 1195.0
+offset_bottom = 362.0
+theme_override_colors/font_color = Color(0.227451, 0.156863, 0.101961, 1)
+theme_override_fonts/font = ExtResource("54_byme8")
+theme_override_font_sizes/font_size = 35
+text = "Modo de pantalla:"
+
+[node name="modo_pantalla" type="OptionButton" parent="cuaderno"]
+layout_mode = 0
+offset_left = 1226.0
+offset_top = 294.0
+offset_right = 1480.0
+offset_bottom = 362.0
+
+[node name="guardar" type="Button" parent="cuaderno"]
+layout_mode = 0
+offset_left = 900.0
+offset_top = 483.0
+offset_right = 1168.0
+offset_bottom = 602.0
 theme_override_font_sizes/font_size = 35
 text = "Guardar"
 
 [node name="salir" type="Button" parent="cuaderno"]
-visible = false
 layout_mode = 0
-offset_left = 1253.0
-offset_top = 177.0
-offset_right = 1522.0
-offset_bottom = 296.0
+offset_left = 1241.0
+offset_top = 483.0
+offset_right = 1510.0
+offset_bottom = 602.0
 theme_override_font_sizes/font_size = 35
 text = "Guardar y salir"
 
@@ -329,7 +365,7 @@ offset_top = 178.0
 offset_right = 1608.0
 offset_bottom = 1030.0
 
-[node name="Objetos" type="GridContainer" parent="cuaderno/inventario"]
+[node name="Pistas" type="GridContainer" parent="cuaderno/inventario"]
 layout_mode = 0
 offset_left = 22.0
 offset_right = 791.0

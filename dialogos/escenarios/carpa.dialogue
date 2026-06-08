@@ -1,9 +1,9 @@
 ~ carpa1
 do show_character("duenyo", "default")
-Dueño del circo: ¡Adelante todos, pasen y vean las maravillas de nuestro espectáculo!
+Dueño: ¡Adelante todos, pasen y vean las maravillas de nuestro espectáculo!
 Samuel: (Todo el mundo ha entrado ya, se les ve muy animados. El escenario está iluminado llamándo la atención de todo el mundo.)
 do show_character("duenyo", "laught")
-Dueño del circo: ¡Para comenzar permitidme presentaros a las estrellas del espectáculo!
+Dueño: ¡Para comenzar permitidme presentaros a las estrellas del espectáculo!
 do hide_character("duenyo")
 do video(video_presentacion)
 
@@ -13,13 +13,13 @@ do show_character("maga", "default")
 ???: Es un placer estar aquí con vosotros, yo soy Adelaide, intentad no olvidarlo cuando os deje sin aliento.
 Adelaide: Para este número necesitaré la colaboración de nuestro jefe.
 do show_character("duenyo", "laught")
-Dueño del circo: Espero salir entero esta vez. 
+Dueño: Espero salir entero esta vez. 
 Samuel: (El público comienza a reírse.)
 do show_character("maga", "default")
 Adelaide: Haré todo lo posible.
 Adelaide: Ahora entre en la caja, si es tan amable.
 do hide_character("duenyo")
-Samuel: (El dueño del circo entra con tranquilidad en la gran caja que han colocado en el centro del escenario.)
+Samuel: (El Dueño entra con tranquilidad en la gran caja que han colocado en el centro del escenario.)
 Adelaide: Se trata de un truco clásico.
 do espada_visibility(true)
 Adelaide: Clavaré las espadas en la caja y veremos si nuestro querido jefe sale como un colador o no.
@@ -68,11 +68,11 @@ Samuel: V-voy, pero yo el cadáver no quiero verlo.
 Claire: Está bien, céntrate en tomar nota entonces.
 Claire: Tiene una marca horizontal en el cuello, está bastante marcada.
 do marca(true)
-: [color=#3E8E41]Marca horizontal en el cuello ha sido añadida al cuaderno.[/color]
+{{" "}}: [color=#A4B2C1]Marca horizontal en el cuello ha sido añadida al cuaderno.[/color]
 do marca(false)
 Claire: Si nos fijamos en su cara, tiene unas marcas azuladas y moradas. Si no recuerdo mal, se llaman equimosis faciales.
 do equimosis(true)
-: [color=#3E8E41]Equimosis faciales han sido añadidas al cuaderno.[/color]
+{{" "}}: [color=#A4B2C1]Equimosis faciales han sido añadidas al cuaderno.[/color]
 do equimosis(false)
 Samuel: (Me tiembla la mano y me cuesta concentrarme.)
 Claire: No parece que tenga ningún daño más. Sacaremos conclusiones con esto.
@@ -106,7 +106,8 @@ do hide_character("detective")
 ~ tutorial3
 do show_character("detective", "default_hot")
 do iluminacion4(true)
-Claire: El tercer espacio tiene un símbolo distinto. Aquí se pueden añadir varias pruebas de distintos tipos para deducir cosas nuevas.
+Claire: El tercer espacio tiene un símbolo distinto. Aquí se pueden añadir 2 pruebas de distintos tipos para deducir cosas nuevas.
+Claire: Prueba a añadir las 2 cosas que hemos descubierto del cadáver.
 Claire: Cuando sea tu respuesta final, pulsa el botón de verificar. Prometo que no me burlaré demasiado si fallas.
 Samuel: (Demasiado...)
 do hide_character("detective")
@@ -126,5 +127,6 @@ Claire: Es lo que da a entender el cuerpo, si.
 Samuel: Pero estaba él solo dentro de la caja.
 Claire: No tenemos suficientes pistas para sacar más conclusiones. Investiguemos el escenario.
 do hide_character("detective")
+{{" "}}: [color=#A4B2C1]Ahora puedes guardar la partida desde el cuaderno.[/color]
 do escena_terminada()
 => END
