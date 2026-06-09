@@ -181,6 +181,7 @@ func _on_aceptar_pressed() -> void:
 	# 5. Comparamos los dos arrays matemáticamente
 	if respuesta_jugador == solucion_correcta:
 		print("¡RESOLUCIÓN CORRECTA! El puzzle se ha completado.")
+		Controlador.modo = "investigacion"
 		puzzle_terminado.emit(datos_puzzle["dialogo_solucion"])
 		queue_free()
 	else:

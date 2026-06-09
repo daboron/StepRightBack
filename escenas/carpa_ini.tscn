@@ -2499,38 +2499,43 @@ color = Color(0, 0, 0, 1)
 
 [node name="duenyo" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(959, 542)
+position = Vector2(960, 1080)
 sprite_frames = SubResource("SpriteFrames_uvco6")
+offset = Vector2(0, -540)
 script = ExtResource("203_ukujk")
 id = "duenyo"
 
 [node name="maga" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(959, 540)
+position = Vector2(960, 1080)
 sprite_frames = SubResource("SpriteFrames_4uskp")
+offset = Vector2(0, -540)
 script = ExtResource("203_ukujk")
 id = "maga"
 
 [node name="payasa" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(959, 540)
+position = Vector2(960, 1080)
 sprite_frames = SubResource("SpriteFrames_b1yh3")
 animation = &"triste"
+offset = Vector2(0, -540)
 script = ExtResource("203_ukujk")
 id = "payasa"
 
 [node name="trapecista" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(959, 540)
+position = Vector2(960, 1080)
 sprite_frames = SubResource("SpriteFrames_rukq4")
+offset = Vector2(0, -540)
 script = ExtResource("203_ukujk")
 id = "trapecista"
 
 [node name="fortachon" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(962, 537)
+position = Vector2(960, 1080)
 sprite_frames = SubResource("SpriteFrames_ls5w2")
 animation = &"preocupado"
+offset = Vector2(0, -540)
 script = ExtResource("203_ukujk")
 
 [node name="espada" type="ColorRect" parent="."]
@@ -2604,8 +2609,9 @@ mouse_filter = 2
 
 [node name="detective" type="AnimatedSprite2D" parent="CanvasLayer"]
 visible = false
-position = Vector2(959, 540)
+position = Vector2(960, 1080)
 sprite_frames = SubResource("SpriteFrames_k0vra")
 animation = &"default_hot"
+offset = Vector2(0, -540)
 script = ExtResource("203_ukujk")
 id = "detective"

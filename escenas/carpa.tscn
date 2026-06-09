@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://f2vabrioi8ve"]
+[gd_scene load_steps=7 format=3 uid="uid://c8bhlp2vifkfi"]
 
 [ext_resource type="Script" path="res://scripts/carpa/carpa.gd" id="1_x5r4m"]
 [ext_resource type="Texture2D" uid="uid://o6sarbbaci1d" path="res://arte/fondos/fondos_personajes/SET_Escenario_after.png" id="2_gwjd7"]

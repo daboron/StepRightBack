@@ -1503,26 +1503,29 @@ id = "cartel_ini"
 polygon = PackedVector2Array(128, 389, 124, 487, 133, 579, 385, 587, 379, 609, 178, 620, 157, 628, 179, 831, 395, 811, 394, 1094, 467, 1091, 462, 800, 720, 776, 732, 775, 699, 606, 756, 592, 746, 487, 736, 447, 730, 410, 469, 399, 464, 365, 430, 348, 403, 380, 405, 409)
 
 [node name="detective" type="AnimatedSprite2D" parent="."]
-visible = false
-position = Vector2(959, 540)
+position = Vector2(960, 1080)
 sprite_frames = SubResource("SpriteFrames_6fusk")
 animation = &"default_frio"
+offset = Vector2(0, -540)
 script = ExtResource("104_c326t")
 id = "detective"
 
 [node name="duenyo" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(959, 542)
+position = Vector2(960, 1080)
 sprite_frames = SubResource("SpriteFrames_t0fhc")
+offset = Vector2(0, -540)
 script = ExtResource("104_c326t")
 id = "duenyo"
 
 [node name="fortachon" type="AnimatedSprite2D" parent="."]
 visible = false
-position = Vector2(962, 537)
+position = Vector2(960, 1080)
 sprite_frames = SubResource("SpriteFrames_phgtx")
 animation = &"default_frio"
+offset = Vector2(0, -540)
 script = ExtResource("104_c326t")
+id = "fortachon"
 
 [node name="placeHolder" type="CenterContainer" parent="."]
 visible = false

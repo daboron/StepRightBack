@@ -31,8 +31,11 @@ Dueño: Diría que el plato fuerte de la noche es el truco de magia. Aunque, por
 do hide_character("detective")
 do show_character("fortachon", "default_frio")
 ???: Jefe, le necesitamos dentro un momento.
+do show_character("duenyo", "default")
 Dueño: ¿Ha pasado algo?
+do show_character("fortachon", "default_frio")
 ???: Adelaide dice que ha tenido un problema.
+do show_character("duenyo", "default")
 Dueño: Entiendo, ya voy.
 Dueño: Si me disculpan, nos veremos después.
 Samuel: Hasta luego, que vaya bien.

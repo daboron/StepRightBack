@@ -21,8 +21,7 @@ func _on_continuar_pressed() -> void:
 	Controlador.cargar_partida_guardada()
 
 func _on_nueva_pressed() -> void:
-	#empezamos a precargar la escena siguiente
-	ResourceLoader.load_threaded_request("res://escenas/inicio.tscn")
+	Controlador.dentro_juego = true
 	SaveGame.new_game()
 	Controlador.cambio_escena("res://escenas/inicio.tscn")
 

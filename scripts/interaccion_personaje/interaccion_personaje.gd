@@ -20,7 +20,7 @@ func configurar_escena_interaccion(id: String, fondo: Texture2D) -> void:
 		_actualizar_pantalla()
 
 func _actualizar_pantalla() -> void:
-	dialogo = DataBase.dialogos["dialogo"]
+	dialogo = DataBase.dialogos_personajes["dialogo"]
 	
 	# 1. Actualizar el Fondo
 	if textura_fondo_recibida != null:

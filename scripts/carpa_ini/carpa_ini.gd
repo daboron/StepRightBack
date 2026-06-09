@@ -11,6 +11,7 @@ var cursor = preload("res://arte/cursores/cursor.png")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	Controlador.dentro_juego = true #Solo prueba
 	SaveGame.set_escena("res://escenas/carpa_ini.tscn")
 	Controlador.modo = "investigacion"
 	Input.set_custom_mouse_cursor(cursor, Input.CURSOR_ARROW)

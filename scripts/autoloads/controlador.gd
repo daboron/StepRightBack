@@ -8,6 +8,16 @@ var modo: String = "investigacion"
 var tutorial = false
 var escena = null
 var guardado = false
+var modo_pantalla: int = 0
+var resolucion_pantalla: int = 0
+var dentro_juego = false
+
+const RESOLUCIONES = {
+	0: Vector2i(1920, 1080),
+	1: Vector2i(1600, 900),
+	2: Vector2i(1280, 720),
+	3: Vector2i(1024, 576)
+}
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -20,6 +30,17 @@ func _ready() -> void:
 	fade_rect.anchor_right = 1
 	fade_rect.anchor_bottom = 1
 	add_child(fade_rect)
+	
+	var modo_inicial = DisplayServer.window_get_mode()
+	if modo_inicial == DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN or modo_inicial == DisplayServer.WINDOW_MODE_FULLSCREEN:
+		modo_pantalla = 1
+	else:
+		modo_pantalla = 0
+	var tamanyo_actual = DisplayServer.window_get_size()
+	for index in RESOLUCIONES:
+		if RESOLUCIONES[index] == tamanyo_actual:
+			resolucion_pantalla = index
+			break
 
 func cambio_escena_precargada(escena) -> void:
 	CharacterManager.clear()
@@ -55,6 +76,7 @@ func set_tutorial(estado) -> void:
 	tutorial = estado
 
 func cargar_partida_guardada() -> void:
+	dentro_juego = true
 	SaveGame.load_game()
 	print(SaveGame.game_data)
 	var escena_guardada = SaveGame.game_data["escena"]
@@ -74,7 +96,7 @@ func cargar_partida_guardada() -> void:
 		for personaje in perfiles_guardados.keys():
 			var estado = perfiles_guardados[personaje]
 			
-			if CharacterManager.characters.has(personaje):
+			if CharacterManager.personajes.has(personaje):
 				if estado == "oculto":
 					CharacterManager.hide_character(personaje) # O como lo maneje tu manager
 				else:
@@ -92,3 +114,20 @@ func cargar_partida_guardada() -> void:
 		await fade_in(0.5)
 	else:
 		print("No hay escena guardada en el archivo")
+
+
+func cambiar_modo_pantalla(index: int) -> void:
+	modo_pantalla = index
+	if index == 0:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED)
+		cambiar_resolucion(resolucion_pantalla)
+	elif index == 1:
+		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_EXCLUSIVE_FULLSCREEN)
+
+func cambiar_resolucion(index: int) -> void:
+	resolucion_pantalla = index
+	if RESOLUCIONES.has(index):
+		var nueva_res = RESOLUCIONES[index]
+		DisplayServer.window_set_size(nueva_res)
+		var centro = DisplayServer.screen_get_position() + (DisplayServer.screen_get_size() / 2)
+		DisplayServer.window_set_position(centro - (nueva_res / 2))

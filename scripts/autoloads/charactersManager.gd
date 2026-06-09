@@ -28,10 +28,10 @@ func set_active(id: String) -> void:
 
 func update_layout() -> void:
 	if personajes_activos.size() == 1:
-		personajes[personajes_activos[0]].set_base_position(Vector2(960, 540))
+		personajes[personajes_activos[0]].set_base_position(Vector2(960, 1080))
 	elif personajes_activos.size() == 2:
-		personajes[personajes_activos[0]].set_base_position(Vector2(600, 540))
-		personajes[personajes_activos[1]].set_base_position(Vector2(1320, 540))
+		personajes[personajes_activos[0]].set_base_position(Vector2(600, 1080))
+		personajes[personajes_activos[1]].set_base_position(Vector2(1320, 1080))
 
 func hide_character(id: String) -> void:
 	personajes[id].visibility(false)

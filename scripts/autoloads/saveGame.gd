@@ -12,7 +12,9 @@ var game_data : Dictionary = {
 	"perfiles": {},
 	"lugares": {},
 	"contador_objetos_inicio": 0,
-	"personajes_visibles": {}
+	"personajes_visibles": {},
+	"modo_pantalla": 0,
+	"resolucion_pantalla": 0
 }
 
 func game_data_add(place, obj, fase := 1) -> void:
@@ -35,6 +37,8 @@ func existe_partida() -> bool:
 	return FileAccess.file_exists(save_path)
 
 func save_game() -> void:
+	game_data["modo_pantalla"] = Controlador.modo_pantalla
+	game_data["resolucion_pantalla"] = Controlador.resolucion_pantalla
 	var save_file = FileAccess.open(save_path, FileAccess.WRITE)
 	save_file.store_var(game_data)
 	save_file = null
@@ -47,6 +51,9 @@ func load_game() -> void:
 		game_data = save_file.get_var()
 		save_file = null
 		print("Se ha cargado la partida guardada")
+		
+	Controlador.cambiar_modo_pantalla(game_data["modo_pantalla"])
+	Controlador.cambiar_resolucion(game_data["resolucion_pantalla"])
 
 func new_game() -> void:
 	game_data = {
@@ -58,7 +65,9 @@ func new_game() -> void:
 		"perfiles": {},
 		"lugares": {},
 		"contador_objetos_inicio": 0,
-		"personajes_visibles": {}
+		"personajes_visibles": {},
+		"modo_pantalla": 0,
+		"resolucion_pantalla": 0
 	}
 	#para borrar el archivo generado con la partida
 	DirAccess.remove_absolute(save_path)
