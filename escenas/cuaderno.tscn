@@ -1,7 +1,7 @@
 [gd_scene load_steps=105 format=3 uid="uid://cnf8tm6enkmth"]
 
 [ext_resource type="Texture2D" uid="uid://dliebignbpfff" path="res://arte/menu/notebook.png" id="1_426ti"]
-[ext_resource type="Script" path="res://scripts/cuaderno/cuaderno.gd" id="1_euvpb"]
+[ext_resource type="Script" path="res://scripts/cuaderno/puzzle.gd" id="1_euvpb"]
 [ext_resource type="Texture2D" uid="uid://dmsev2jf18j2s" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0001.png" id="3_3gxea"]
 [ext_resource type="Texture2D" uid="uid://hvvvpn7l3ms3" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0002.png" id="4_r75wk"]
 [ext_resource type="Texture2D" uid="uid://dwghot15i4y7t" path="res://arte/animaciones/detective/01_hot/protagonista_neutral_hot_0003.png" id="5_dqrxp"]

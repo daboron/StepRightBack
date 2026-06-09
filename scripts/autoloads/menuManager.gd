@@ -1,10 +1,8 @@
-# Por revisar
 extends Node
 
 var menu_scene = preload("res://escenas/menu.tscn")
 var menu_instance
-var espera_menu = false
-var menu_abierto_espera = false
+var esperando_cierre_de_menu = false
 var cursor = preload("res://arte/cursores/pointer.png")
 var cursor_previo: Resource = null
 
@@ -16,35 +14,22 @@ func _ready() -> void:
 	get_tree().root.call_deferred("add_child", menu_instance)
 	menu_instance.visible = false
 
-	# detectar nuevos nodos añadidos
-	get_tree().node_added.connect(_on_node_added)
-
-func _on_node_added(node):
-	if node is CanvasLayer:
-		if "dialog" in node.name.to_lower() or "balloon" in node.name.to_lower():
-			node.add_to_group("dialogue_ui")
-
 func _input(event):
 	if event.is_action_pressed("menu"):
 		toggle_menu()
-		if espera_menu == true :
-			if menu_abierto_espera == false:
-				menu_abierto_espera = true
-			else:
-				espera_menu = false
-				menu_abierto_espera = false
-				cerrar_espera_menu.emit()
 
 func toggle_menu():
 	var abrir = !menu_instance.visible
 	
+	if not abrir and esperando_cierre_de_menu:
+		esperando_cierre_de_menu = false
+		cerrar_espera_menu.emit()
+
 	if not abrir:
-		if Controlador.modo_actual == "puzzle":
-			var cursor_puzzle = load("res://arte/cursores/pointer.png")
-			Input.set_custom_mouse_cursor(cursor_puzzle, Input.CURSOR_ARROW)
+		if Controlador.modo == "puzzle":
+			Input.set_custom_mouse_cursor(load("res://arte/cursores/pointer.png"), Input.CURSOR_ARROW)
 		else:
-			var cursor_exploracion = load("res://arte/cursores/cursor.png")
-			Input.set_custom_mouse_cursor(cursor_exploracion, Input.CURSOR_ARROW)
+			Input.set_custom_mouse_cursor(load("res://arte/cursores/cursor.png"), Input.CURSOR_ARROW)
 		menu_instance.reset_tab_state()
 	else:
 		var escena_actual = get_tree().current_scene
@@ -61,36 +46,16 @@ func toggle_menu():
 		menu_instance._init_first_tab()
 
 	for node in get_tree().root.get_children():
-		ocultar_dialogue_layers(node, abrir)
+		gestionar_visibilidad_dialogos(node, abrir)
 
-func ocultar_dialogue_layers(node, abrir):
-	if node is CanvasLayer:
-		# ocultamos cualquier CanvasLayer que no sea el menú
-		if node != menu_instance:
-			node.visible = not abrir
-
-	for child in node.get_children():
-		ocultar_dialogue_layers(child, abrir)
-
-func ocultar_canvas_dialogo(node, abrir):
-	if node is CanvasLayer:
-		# DialogueManager suele poner el balloon dentro de CanvasLayer
-		if "dialog" in node.name.to_lower() or "balloon" in node.name.to_lower():
-			node.visible = not abrir
+func gestionar_visibilidad_dialogos(node, menu_abierto):
+	if node is CanvasLayer and node != menu_instance:
+		var nombre = node.name.to_lower()
+		if "dialog" in nombre or "balloon" in nombre:
+			node.visible = not menu_abierto
 
 	for child in node.get_children():
-		ocultar_canvas_dialogo(child, abrir)
+		gestionar_visibilidad_dialogos(child, menu_abierto)
 
-func ocultar_dialogo_recursivo(node, abrir):
-	# Si es CanvasLayer (el diálogo lo es casi seguro)
-	if node is CanvasLayer:
-		# heurística: ocultamos si parece UI de diálogo
-		# (DialogueManager normalmente tiene nombre o hijos típicos)
-		if "dialog" in node.name.to_lower() or node.get_child_count() > 0:
-			node.visible = !abrir
-
-	for child in node.get_children():
-		ocultar_dialogo_recursivo(child, abrir)
-
-func esperaMenu(escena) -> void:
-	espera_menu = true
+func activar_espera_menu() -> void:
+	esperando_cierre_de_menu = true

@@ -4,12 +4,12 @@ var id_elemento: String
 var tipo_elemento: String
 
 # Bandera de control definitiva
-var fue_aceptado: bool = false
+var colocado: bool = false
 
 func _get_drag_data(_at_position: Vector2) -> Variant:
 	# Cada vez que iniciamos un arrastre, reiniciamos el estado a falso
 	#Input.set_default_cursor_shape(Input.CURSOR_ARROW)
-	fue_aceptado = false
+	colocado = false
 	
 	var data = {
 		"id": id_elemento,
@@ -34,11 +34,11 @@ func _get_drag_data(_at_position: Vector2) -> Variant:
 
 func restaurar_presencia() -> void:
 	self.modulate.a = 1.0
-	fue_aceptado = false
+	colocado = false
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_DRAG_END:
 		# Si el arrastre terminó y NINGÚN slot válido cambió esta variable a true...
-		if not fue_aceptado:
+		if not colocado:
 			# Significa que cayó en el vacío gris. Volvemos a casa.
 			restaurar_presencia()

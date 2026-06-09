@@ -10,7 +10,7 @@ var cursor = preload("res://arte/cursores/cursor.png")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	SaveGame.set_escena("res://escenas/inicio.tscn")
-	Controlador.modo_actual = "investigacion"
+	Controlador.modo = "investigacion"
 	Input.set_custom_mouse_cursor(cursor, Input.CURSOR_ARROW)
 	MenuManager.cerrar_espera_menu.connect(cierra_cuaderno)
 	# personajes que salen en la escena
@@ -18,11 +18,6 @@ func _ready() -> void:
 	CharacterManager.register("duenyo", $duenyo)
 	CharacterManager.register("fortachon", $fortachon)
 	# dialogo inicial
-	if Controlador.cargando_partida:
-		bloqueado = false
-		print("Carga de partida detectada. Control cedido al Controlador.")
-		return 
-
 	if SaveGame.game_data["contador_objetos_inicio"] > 0: 
 		bloqueado = false
 		return
@@ -69,7 +64,7 @@ func esperando_cuaderno() -> void:
 	SaveGame.game_data_add("perfiles", "forzudo")
 	SaveGame.game_data_add("lugares", "exterior")
 	$placeHolder.visible = true
-	MenuManager.esperaMenu("inicio")
+	MenuManager.activar_espera_menu()
 
 #Para quitar el cartel de aviso
 func _input(event) -> void:

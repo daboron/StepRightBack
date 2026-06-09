@@ -222,7 +222,7 @@ var simbolos = {
 	"lugares": preload("res://arte/iconos/place_bn.png")
 }
 
-var dialogos = {
+var dialogos_personajes = {
 	"dialogo": preload("res://dialogos/personajes.dialogue"),
 	"personajes": {
 		"maga": {
@@ -293,4 +293,4 @@ func get_puzzle(id: String) -> Dictionary:
 	return puzzles["puzzles"].get(id, {})
 
 func get_dialogo(id: String) -> Dictionary:
-	return dialogos["personajes"].get(id, {})
+	return dialogos_personajes["personajes"].get(id, {})

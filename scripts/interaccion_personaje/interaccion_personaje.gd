@@ -8,7 +8,7 @@ var cursor_hand = preload("res://arte/cursores/pointer.png")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Controlador.modo_actual = "puzzle"
+	Controlador.modo = "puzzle"
 	Input.set_custom_mouse_cursor(cursor_hand, Input.CURSOR_ARROW)
 	_actualizar_pantalla()
 
@@ -54,17 +54,17 @@ func _on_dialogo_3_pressed() -> void:
 
 
 func _on_salir_pressed() -> void:
-	print("Escena: ", Controlador.escena_investigacion_guardada)
-	if Controlador.escena_investigacion_guardada != null:
+	print("Escena: ", Controlador.escena)
+	if Controlador.escena != null:
 		# Recuperamos la escena guardada del Controlador
-		var mapa_original = Controlador.escena_investigacion_guardada
+		var mapa_original = Controlador.escena
 		
 		# La volvemos a meter al árbol de juego
 		get_tree().root.add_child(mapa_original)
 		get_tree().current_scene = mapa_original
 		
 		# Limpiamos la variable global
-		Controlador.escena_investigacion_guardada = null
+		Controlador.escena = null
 		
 		# Destruimos la escena de interacción porque ya no la necesitamos
 		queue_free()

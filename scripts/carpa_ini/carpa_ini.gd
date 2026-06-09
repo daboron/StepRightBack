@@ -12,7 +12,7 @@ var cursor = preload("res://arte/cursores/cursor.png")
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	SaveGame.set_escena("res://escenas/carpa_ini.tscn")
-	Controlador.modo_actual = "investigacion"
+	Controlador.modo = "investigacion"
 	Input.set_custom_mouse_cursor(cursor, Input.CURSOR_ARROW)
 	#await Controlador.fade_in()
 	CharacterManager.register("detective", $CanvasLayer/detective)
@@ -24,9 +24,6 @@ func _ready() -> void:
 	fondos.append(fondo)
 	fondos.append(fondo_caja)
 	fondos.append(fondo_despues)
-	if Controlador.cargando_partida:
-		print("Carga de partida detectada. Control cedido al Controlador.")
-		return 
 	DialogueManager.show_dialogue_balloon(dialogo, "carpa1")
 	call_deferred("cargar_videos")
 

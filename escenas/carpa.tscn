@@ -1,12 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://c8bhlp2vifkfi"]
+[gd_scene load_steps=7 format=3 uid="uid://f2vabrioi8ve"]
 
 [ext_resource type="Script" path="res://scripts/carpa/carpa.gd" id="1_x5r4m"]
 [ext_resource type="Texture2D" uid="uid://o6sarbbaci1d" path="res://arte/fondos/fondos_personajes/SET_Escenario_after.png" id="2_gwjd7"]
 [ext_resource type="Script" path="res://scripts/clases/interactable_object.gd" id="2_h4fcr"]
+[ext_resource type="Texture2D" uid="uid://b6grscmk54edw" path="res://arte/fondos/SET_Escenario.png" id="2_judua"]
+[ext_resource type="Resource" uid="uid://bnga8w7wflxj5" path="res://dialogos/escenarios/carpa.dialogue" id="3_2knoo"]
 [ext_resource type="Script" path="res://scripts/clases/interactable_character.gd" id="5_3ggri"]
 
 [node name="carpa" type="Node2D"]
 script = ExtResource("1_x5r4m")
+id = "carpa"
+fondo_interaccion = ExtResource("2_judua")
+dialogo = ExtResource("3_2knoo")
 
 [node name="fondo" type="TextureRect" parent="."]
 offset_right = 1920.0

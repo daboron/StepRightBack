@@ -1,11 +1,12 @@
 extends CanvasLayer
 
+# Para animacion de fundido a negro
 @onready var fade_rect := ColorRect.new()
 var tween: Tween
-var modo_actual: String = "investigacion"
+
+var modo: String = "investigacion"
 var tutorial = false
-var escena_investigacion_guardada = null
-var cargando_partida: bool = false
+var escena = null
 var guardado = false
 
 # Called when the node enters the scene tree for the first time.
@@ -58,7 +59,6 @@ func cargar_partida_guardada() -> void:
 	print(SaveGame.game_data)
 	var escena_guardada = SaveGame.game_data["escena"]
 	if escena_guardada != null:
-		cargando_partida = true 
 		
 		await fade_out(0.5)
 		await get_tree().change_scene_to_file(escena_guardada)
@@ -90,6 +90,5 @@ func cargar_partida_guardada() -> void:
 			DialogueManager.show_dialogue_balloon(resource, linea_id)
 		
 		await fade_in(0.5)
-		cargando_partida = false
 	else:
 		print("No hay escena guardada en el archivo")

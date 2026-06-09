@@ -2,27 +2,27 @@
 extends Node
 
 #Para comprobar el último objeto del que se ha entrado y del que se ha salido
-var object_in = null
-var object_out = null
+var objeto_entra = null
+var objeto_sale = null
 
 func entered(object):
-	object_in = object
+	objeto_entra = object
 	cursor_type()
 
 func exited(object):
-	object_out = object
+	objeto_sale = object
 	cursor_type()
 
 func cursor_type():
 	var cursor
 	# Objeto interactuable 
-	if object_in == object_out:
+	if objeto_entra == objeto_sale:
 		#cursor = load("res://arte/cursores/cursor.png")
 		Input.set_default_cursor_shape(Input.CURSOR_ARROW)
 		#Input.set_custom_mouse_cursor(cursor, Input.CURSOR_ARROW)
-		object_out = null
+		objeto_sale = null
 	# Objeto interactuable no clicado
-	elif !SaveGame.game_data["objetos_clicados"].has(object_in):
+	elif !SaveGame.game_data["objetos_clicados"].has(objeto_entra):
 		Input.set_default_cursor_shape(Input.CURSOR_POINTING_HAND)
 		cursor = load("res://arte/cursores/lens.png")
 		var hotspot = Vector2(cursor.get_width() / 2, cursor.get_height() / 2)

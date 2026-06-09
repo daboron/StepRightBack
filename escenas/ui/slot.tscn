@@ -1,7 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bumqxa6p5hre2"]
+[gd_scene load_steps=4 format=3 uid="uid://c5bsffeeebql7"]
 
 [ext_resource type="Texture2D" uid="uid://bq1w5jv7cgqc8" path="res://arte/fotos/01_DETECTIVE_POLAROID.png" id="1_sv8uy"]
-[ext_resource type="Script" path="res://scripts/cuaderno/slot.gd" id="1_uvolh"]
+[ext_resource type="Script" path="res://scripts/cuaderno/hueco.gd" id="1_uvolh"]
 [ext_resource type="Texture2D" uid="uid://c5uwl1sxodosg" path="res://arte/iconos/flecha.png" id="3_uykfb"]
 
 [node name="elemento" type="VBoxContainer"]

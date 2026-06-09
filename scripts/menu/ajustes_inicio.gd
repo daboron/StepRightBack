@@ -12,7 +12,7 @@ const RESOLUCIONES = {
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Controlador.modo_actual = "investigacion"
+	Controlador.modo = "investigacion"
 	Input.set_custom_mouse_cursor(cursor, Input.CURSOR_ARROW)
 	_preparar_selector_modo()
 	_preparar_selector_resolucion()

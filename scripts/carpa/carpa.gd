@@ -1,14 +1,17 @@
 extends Node2D
+class_name scene
 
-@onready var fondo_interaccion = preload("res://arte/fondos/SET_Escenario.png")
+@export var id: String = ""
+@export var fondo_interaccion: Texture2D
+@export var dialogo: Resource
+
 var cursor = preload("res://arte/cursores/cursor.png")
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	SaveGame.set_escena("res://escenas/carpa.tscn")
 	Controlador.guardado = true
 	await Controlador.fade_in()
-	Controlador.modo_actual = "investigacion"
+	Controlador.modo = "investigacion"
 	Input.set_custom_mouse_cursor(cursor, Input.CURSOR_ARROW)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -25,7 +28,7 @@ func on_clicked_character(character_node: InteractableCharacter):
 		var nueva_escena = character_node.escena_cuaderno.instantiate()
 		nueva_escena.configurar_escena_interaccion(character_node.id, fondo_interaccion)
 		var arbol_actual = get_tree()
-		Controlador.escena_investigacion_guardada = self
+		Controlador.escena = self
 		if get_parent():
 			get_parent().remove_child(self)
 		arbol_actual.root.add_child(nueva_escena)

@@ -7,7 +7,7 @@ var cursor = preload("res://arte/cursores/cursor.png")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Controlador.modo_actual = "investigacion"
+	Controlador.modo = "investigacion"
 	Input.set_custom_mouse_cursor(cursor, Input.CURSOR_ARROW)
 	if SaveGame.existe_partida():
 		SaveGame.load_game()
