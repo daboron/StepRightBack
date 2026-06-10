@@ -1,4 +1,4 @@
-[gd_scene load_steps=615 format=3 uid="uid://dbepnw6eby15u"]
+[gd_scene load_steps=665 format=3 uid="uid://dbepnw6eby15u"]
 
 [ext_resource type="Script" path="res://scripts/carpa_ini/carpa_ini.gd" id="1_aawux"]
 [ext_resource type="Texture2D" uid="uid://b6grscmk54edw" path="res://arte/fondos/SET_Escenario.png" id="2_lx60s"]
@@ -208,55 +208,105 @@
 [ext_resource type="Texture2D" uid="uid://jmbj3un3c474" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0001.png" id="304_muikx"]
 [ext_resource type="Texture2D" uid="uid://g5sg5ylejsaw" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0002.png" id="305_57yxr"]
 [ext_resource type="Texture2D" uid="uid://6smxawe1bb60" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0003.png" id="306_0vnaw"]
+[ext_resource type="Texture2D" uid="uid://ndbkqbt6xqru" path="res://arte/animaciones/maga/03_sad/maga_sad_0001.png" id="306_q7yd0"]
+[ext_resource type="Texture2D" uid="uid://htu6hetf0ui1" path="res://arte/animaciones/maga/03_sad/maga_sad_0002.png" id="307_c7gng"]
 [ext_resource type="Texture2D" uid="uid://dsyld8erlgv0a" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0004.png" id="307_q4xaq"]
+[ext_resource type="Texture2D" uid="uid://cadxdqdbhreqb" path="res://arte/animaciones/maga/03_sad/maga_sad_0003.png" id="308_7dl8a"]
 [ext_resource type="Texture2D" uid="uid://ccukettcb5oj4" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0005.png" id="308_615o2"]
+[ext_resource type="Texture2D" uid="uid://8jljgh1sly5s" path="res://arte/animaciones/maga/03_sad/maga_sad_0004.png" id="309_rwqes"]
 [ext_resource type="Texture2D" uid="uid://dcdjt07idy2md" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0006.png" id="309_shkqr"]
 [ext_resource type="Texture2D" uid="uid://dewnmipcnla16" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0007.png" id="310_wyp2x"]
+[ext_resource type="Texture2D" uid="uid://bkbifkl0jfysm" path="res://arte/animaciones/maga/03_sad/maga_sad_0005.png" id="310_xabhr"]
+[ext_resource type="Texture2D" uid="uid://bamwmp0kpxtqa" path="res://arte/animaciones/maga/03_sad/maga_sad_0006.png" id="311_cj0un"]
 [ext_resource type="Texture2D" uid="uid://btdhx7gtieg4c" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0008.png" id="311_d02n4"]
 [ext_resource type="Texture2D" uid="uid://wot5d3p2g1u7" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0009.png" id="312_87xbk"]
+[ext_resource type="Texture2D" uid="uid://d1mf0hqbtiem0" path="res://arte/animaciones/maga/03_sad/maga_sad_0007.png" id="312_pmmff"]
 [ext_resource type="Texture2D" uid="uid://eo4qscy0vcj" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0010.png" id="313_0gcyd"]
+[ext_resource type="Texture2D" uid="uid://bi2qkl0x54gyh" path="res://arte/animaciones/maga/03_sad/maga_sad_0008.png" id="313_gxpji"]
 [ext_resource type="Texture2D" uid="uid://cgc1frpbsvt2j" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0011.png" id="314_syj1q"]
+[ext_resource type="Texture2D" uid="uid://dcbb3ytdwng1s" path="res://arte/animaciones/maga/03_sad/maga_sad_0009.png" id="314_x8kbo"]
 [ext_resource type="Texture2D" uid="uid://bfjam4s5aahv4" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0012.png" id="315_j2qk3"]
+[ext_resource type="Texture2D" uid="uid://dwp47iv7lydv4" path="res://arte/animaciones/maga/03_sad/maga_sad_0010.png" id="315_m5dw1"]
 [ext_resource type="Texture2D" uid="uid://dn3b8c14r8hhm" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0013.png" id="316_dp83k"]
+[ext_resource type="Texture2D" uid="uid://cc42fuanx0bx5" path="res://arte/animaciones/maga/03_sad/maga_sad_0011.png" id="316_rqsw1"]
+[ext_resource type="Texture2D" uid="uid://0keh06dadgws" path="res://arte/animaciones/maga/03_sad/maga_sad_0012.png" id="317_8syaq"]
 [ext_resource type="Texture2D" uid="uid://cmbm6kdeldq5v" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0014.png" id="317_isn6i"]
 [ext_resource type="Texture2D" uid="uid://lmiuhro52bw4" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0015.png" id="318_6atv2"]
+[ext_resource type="Texture2D" uid="uid://cejriob1tyudd" path="res://arte/animaciones/maga/03_sad/maga_sad_0013.png" id="318_yh136"]
+[ext_resource type="Texture2D" uid="uid://uj4d2tt212b4" path="res://arte/animaciones/maga/03_sad/maga_sad_0014.png" id="319_ivq4o"]
 [ext_resource type="Texture2D" uid="uid://bkds0rsbnx3jp" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0016.png" id="319_pedbp"]
 [ext_resource type="Texture2D" uid="uid://bavbn3jwhhubp" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0017.png" id="320_60cbh"]
+[ext_resource type="Texture2D" uid="uid://glk0viqs1tou" path="res://arte/animaciones/maga/03_sad/maga_sad_0015.png" id="320_qcse8"]
 [ext_resource type="Texture2D" uid="uid://djpjb4ot4cxku" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0018.png" id="321_4jo4u"]
+[ext_resource type="Texture2D" uid="uid://l6mibvyaae4n" path="res://arte/animaciones/maga/03_sad/maga_sad_0016.png" id="321_de4br"]
 [ext_resource type="Texture2D" uid="uid://cik2bgwnlls4x" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0019.png" id="322_hy8q0"]
+[ext_resource type="Texture2D" uid="uid://cruludx7c5y82" path="res://arte/animaciones/maga/03_sad/maga_sad_0017.png" id="322_p3yfu"]
 [ext_resource type="Texture2D" uid="uid://dp2oahhmhh0kg" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0020.png" id="323_fvopo"]
+[ext_resource type="Texture2D" uid="uid://crkiput823fm3" path="res://arte/animaciones/maga/03_sad/maga_sad_0018.png" id="323_x0p54"]
 [ext_resource type="Texture2D" uid="uid://cqqql1y1g8kqa" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0021.png" id="324_6a8y6"]
+[ext_resource type="Texture2D" uid="uid://dvdjyk35f2c44" path="res://arte/animaciones/maga/03_sad/maga_sad_0019.png" id="324_j6msa"]
+[ext_resource type="Texture2D" uid="uid://dv0t26r0d7q0g" path="res://arte/animaciones/maga/03_sad/maga_sad_0020.png" id="325_6rxxv"]
 [ext_resource type="Texture2D" uid="uid://58uu50ujk8bs" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0022.png" id="325_f3q2m"]
+[ext_resource type="Texture2D" uid="uid://cx6mb284jjfod" path="res://arte/animaciones/maga/03_sad/maga_sad_0021.png" id="326_ale8h"]
 [ext_resource type="Texture2D" uid="uid://bvkw0kjs1jjn" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0023.png" id="326_mr01e"]
+[ext_resource type="Texture2D" uid="uid://qcehujyg6nsw" path="res://arte/animaciones/maga/03_sad/maga_sad_0022.png" id="327_7jcs6"]
 [ext_resource type="Texture2D" uid="uid://cmjycydmqc54m" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0024.png" id="327_eyqr3"]
+[ext_resource type="Texture2D" uid="uid://die5noqrce4kb" path="res://arte/animaciones/maga/03_sad/maga_sad_0023.png" id="328_0xksa"]
 [ext_resource type="Texture2D" uid="uid://cf0tdvt52jc2n" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0025.png" id="328_jdiy3"]
 [ext_resource type="Texture2D" uid="uid://1jk8i0dkm13r" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0026.png" id="329_2aj1l"]
+[ext_resource type="Texture2D" uid="uid://b80jd1uypv2a8" path="res://arte/animaciones/maga/03_sad/maga_sad_0024.png" id="329_7j83j"]
+[ext_resource type="Texture2D" uid="uid://chkwv5liyl426" path="res://arte/animaciones/maga/03_sad/maga_sad_0025.png" id="330_np1kd"]
 [ext_resource type="Texture2D" uid="uid://dnp2ois5auruh" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0027.png" id="330_y5fga"]
 [ext_resource type="Texture2D" uid="uid://cx14yhps7x87d" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0028.png" id="331_3aag5"]
+[ext_resource type="Texture2D" uid="uid://cxhka2bow6m6h" path="res://arte/animaciones/maga/03_sad/maga_sad_0026.png" id="331_u8mp1"]
 [ext_resource type="Texture2D" uid="uid://1gt2wvoijyx1" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0029.png" id="332_jm1we"]
+[ext_resource type="Texture2D" uid="uid://dka1mceeafw1t" path="res://arte/animaciones/maga/03_sad/maga_sad_0027.png" id="332_xathp"]
+[ext_resource type="Texture2D" uid="uid://cwr11glm2v5n8" path="res://arte/animaciones/maga/03_sad/maga_sad_0028.png" id="333_ci5vi"]
 [ext_resource type="Texture2D" uid="uid://c261qpl5wi0b3" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0030.png" id="333_ihlhv"]
 [ext_resource type="Texture2D" uid="uid://djv0h3mg0d0se" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0031.png" id="334_8pe22"]
+[ext_resource type="Texture2D" uid="uid://brgiywx6ibwsm" path="res://arte/animaciones/maga/03_sad/maga_sad_0029.png" id="334_pitfk"]
 [ext_resource type="Texture2D" uid="uid://fluuhlopfruw" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0032.png" id="335_2eig6"]
+[ext_resource type="Texture2D" uid="uid://dppgapp6kx7c8" path="res://arte/animaciones/maga/03_sad/maga_sad_0030.png" id="335_xh24d"]
+[ext_resource type="Texture2D" uid="uid://lyn0qfbkymim" path="res://arte/animaciones/maga/03_sad/maga_sad_0031.png" id="336_fwpj6"]
 [ext_resource type="Texture2D" uid="uid://i8rui842mqup" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0033.png" id="336_o5dpd"]
+[ext_resource type="Texture2D" uid="uid://52k0iy6b1be" path="res://arte/animaciones/maga/03_sad/maga_sad_0032.png" id="337_0gy4m"]
 [ext_resource type="Texture2D" uid="uid://7yr6wlx3uudo" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0034.png" id="337_fxjou"]
+[ext_resource type="Texture2D" uid="uid://crydwsx56mawf" path="res://arte/animaciones/maga/03_sad/maga_sad_0033.png" id="338_fs3sc"]
 [ext_resource type="Texture2D" uid="uid://h47t06p5fpoi" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0035.png" id="338_p7xum"]
+[ext_resource type="Texture2D" uid="uid://ddb8nhf7im4go" path="res://arte/animaciones/maga/03_sad/maga_sad_0034.png" id="339_bmw1x"]
 [ext_resource type="Texture2D" uid="uid://dbex1ci88p0tx" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0036.png" id="339_sfd0c"]
 [ext_resource type="Texture2D" uid="uid://e2w5bhtyhg1x" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0037.png" id="340_myol1"]
+[ext_resource type="Texture2D" uid="uid://ccry254nfdywn" path="res://arte/animaciones/maga/03_sad/maga_sad_0035.png" id="340_rygol"]
 [ext_resource type="Texture2D" uid="uid://6ynebh5mbvqi" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0038.png" id="341_84kw0"]
+[ext_resource type="Texture2D" uid="uid://biutevytbfftq" path="res://arte/animaciones/maga/03_sad/maga_sad_0036.png" id="341_ay1ni"]
 [ext_resource type="Texture2D" uid="uid://cvhsq53mw8v5" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0039.png" id="342_pbsti"]
+[ext_resource type="Texture2D" uid="uid://7cwgn1pg8k36" path="res://arte/animaciones/maga/03_sad/maga_sad_0037.png" id="342_y6j4t"]
+[ext_resource type="Texture2D" uid="uid://co1am6h12vbas" path="res://arte/animaciones/maga/03_sad/maga_sad_0038.png" id="343_j6en4"]
 [ext_resource type="Texture2D" uid="uid://bxmvuae4bc0tx" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0040.png" id="343_m5w6q"]
+[ext_resource type="Texture2D" uid="uid://d8dmnseix5mu" path="res://arte/animaciones/maga/03_sad/maga_sad_0039.png" id="344_biply"]
 [ext_resource type="Texture2D" uid="uid://da0i74q3uvotv" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0041.png" id="344_urh7j"]
 [ext_resource type="Texture2D" uid="uid://blbbs4yitkaem" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0042.png" id="345_cvo4t"]
+[ext_resource type="Texture2D" uid="uid://t3ccwao5ew3k" path="res://arte/animaciones/maga/03_sad/maga_sad_0040.png" id="345_xd8nn"]
+[ext_resource type="Texture2D" uid="uid://dxerc7k2k8ouv" path="res://arte/animaciones/maga/03_sad/maga_sad_0041.png" id="346_s3ifr"]
 [ext_resource type="Texture2D" uid="uid://dq6h86esnmk66" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0043.png" id="346_v6tmr"]
+[ext_resource type="Texture2D" uid="uid://u85ujla4lm26" path="res://arte/animaciones/maga/03_sad/maga_sad_0042.png" id="347_njelf"]
 [ext_resource type="Texture2D" uid="uid://b0g6uyeavjamc" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0044.png" id="347_ujrb0"]
 [ext_resource type="Texture2D" uid="uid://7vfx5b5k6i61" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0045.png" id="348_6uvpe"]
+[ext_resource type="Texture2D" uid="uid://bdkhunbo0vqtl" path="res://arte/animaciones/maga/03_sad/maga_sad_0043.png" id="348_jjg4a"]
+[ext_resource type="Texture2D" uid="uid://c0y2e0rrppv4a" path="res://arte/animaciones/maga/03_sad/maga_sad_0044.png" id="349_a4djd"]
 [ext_resource type="Texture2D" uid="uid://d3maxy7cfu0p4" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0046.png" id="349_u5cih"]
+[ext_resource type="Texture2D" uid="uid://kh28mlrgenw8" path="res://arte/animaciones/maga/03_sad/maga_sad_0045.png" id="350_0edau"]
 [ext_resource type="Texture2D" uid="uid://bsaliubpyeait" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0047.png" id="350_ali3q"]
+[ext_resource type="Texture2D" uid="uid://ckpe6dhm3y57i" path="res://arte/animaciones/maga/03_sad/maga_sad_0046.png" id="351_bep3v"]
 [ext_resource type="Texture2D" uid="uid://c21npwl0txax5" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0048.png" id="351_n06om"]
 [ext_resource type="Texture2D" uid="uid://kygreo6rwvb1" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0049.png" id="352_1vlbb"]
+[ext_resource type="Texture2D" uid="uid://csbrkdw8hqxiq" path="res://arte/animaciones/maga/03_sad/maga_sad_0047.png" id="352_lwiaq"]
 [ext_resource type="Texture2D" uid="uid://bt2js7hh0nivj" path="res://arte/animaciones/jefe/02_laugh/jefe_laugh_0050.png" id="353_lh1f5"]
+[ext_resource type="Texture2D" uid="uid://4uyr2bcsw3q6" path="res://arte/animaciones/maga/03_sad/maga_sad_0048.png" id="353_wgeq4"]
 [ext_resource type="Texture2D" uid="uid://bbkf7qqq8uf86" path="res://arte/animaciones/maga/02_angry/maga_angry_0001.png" id="354_fv1ff"]
+[ext_resource type="Texture2D" uid="uid://b3bjposm5efhy" path="res://arte/animaciones/maga/03_sad/maga_sad_0049.png" id="354_ll8ic"]
 [ext_resource type="Texture2D" uid="uid://cqgscr34pe28m" path="res://arte/animaciones/maga/02_angry/maga_angry_0002.png" id="355_gub2x"]
+[ext_resource type="Texture2D" uid="uid://baffhemqrd8th" path="res://arte/animaciones/maga/03_sad/maga_sad_0050.png" id="355_kmf52"]
 [ext_resource type="Texture2D" uid="uid://bhrk743ll6q78" path="res://arte/animaciones/maga/02_angry/maga_angry_0003.png" id="356_ioa38"]
 [ext_resource type="Texture2D" uid="uid://dji00c6qetm7y" path="res://arte/animaciones/maga/02_angry/maga_angry_0004.png" id="357_16t16"]
 [ext_resource type="Texture2D" uid="uid://dldwelhrsga6l" path="res://arte/animaciones/maga/02_angry/maga_angry_0005.png" id="358_prlfk"]
@@ -1533,6 +1583,161 @@ animations = [{
 "loop": true,
 "name": &"enfado",
 "speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("306_q7yd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("307_c7gng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("308_7dl8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("309_rwqes")
+}, {
+"duration": 1.0,
+"texture": ExtResource("310_xabhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("311_cj0un")
+}, {
+"duration": 1.0,
+"texture": ExtResource("312_pmmff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("313_gxpji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("314_x8kbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("315_m5dw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("316_rqsw1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("317_8syaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("318_yh136")
+}, {
+"duration": 1.0,
+"texture": ExtResource("319_ivq4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("320_qcse8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("321_de4br")
+}, {
+"duration": 1.0,
+"texture": ExtResource("322_p3yfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("323_x0p54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("324_j6msa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("325_6rxxv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("326_ale8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("327_7jcs6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("328_0xksa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("329_7j83j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("330_np1kd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("331_u8mp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("332_xathp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("333_ci5vi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("334_pitfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("335_xh24d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("336_fwpj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("337_0gy4m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("338_fs3sc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("339_bmw1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("340_rygol")
+}, {
+"duration": 1.0,
+"texture": ExtResource("341_ay1ni")
+}, {
+"duration": 1.0,
+"texture": ExtResource("342_y6j4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("343_j6en4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("344_biply")
+}, {
+"duration": 1.0,
+"texture": ExtResource("345_xd8nn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("346_s3ifr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("347_njelf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("348_jjg4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("349_a4djd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("350_0edau")
+}, {
+"duration": 1.0,
+"texture": ExtResource("351_bep3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("352_lwiaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("353_wgeq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("354_ll8ic")
+}, {
+"duration": 1.0,
+"texture": ExtResource("355_kmf52")
+}],
+"loop": true,
+"name": &"triste",
+"speed": 25.0
 }]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_b1yh3"]
@@ -2506,9 +2711,9 @@ script = ExtResource("203_ukujk")
 id = "duenyo"
 
 [node name="maga" type="AnimatedSprite2D" parent="."]
-visible = false
 position = Vector2(960, 1080)
 sprite_frames = SubResource("SpriteFrames_4uskp")
+animation = &"triste"
 offset = Vector2(0, -540)
 script = ExtResource("203_ukujk")
 id = "maga"

@@ -14,10 +14,10 @@ Samuel: (Si lo único que tiene es una marca horizontal en el cuello y manchas a
 do hide_character("detective")
 => END
 
-
-
-
-
+~ puzzle2
+do show_character("detective", "default_hot")
+Claire: 
+=> END
 
 
 ~ fallo_generico_1

@@ -1,5 +1,5 @@
 extends Node2D
-@onready var dialogo = preload ("res://dialogos/escenarios/carpa.dialogue")
+@onready var dialogo = preload ("res://dialogos/escenarios/carpa_ini.dialogue")
 
 @onready var video_presentacion = $presentacion
 @onready var video_descubrimiento = $descubrimiento

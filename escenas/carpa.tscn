@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://o6sarbbaci1d" path="res://arte/fondos/fondos_personajes/SET_Escenario_after.png" id="2_gwjd7"]
 [ext_resource type="Script" path="res://scripts/clases/interactable_object.gd" id="2_h4fcr"]
 [ext_resource type="Texture2D" uid="uid://b6grscmk54edw" path="res://arte/fondos/SET_Escenario.png" id="2_judua"]
-[ext_resource type="Resource" uid="uid://bnga8w7wflxj5" path="res://dialogos/escenarios/carpa.dialogue" id="3_2knoo"]
+[ext_resource type="Resource" uid="uid://bnga8w7wflxj5" path="res://dialogos/escenarios/carpa_ini.dialogue" id="3_2knoo"]
 [ext_resource type="Script" path="res://scripts/clases/interactable_character.gd" id="5_3ggri"]
 
 [node name="carpa" type="Node2D"]

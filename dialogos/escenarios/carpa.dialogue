@@ -1,132 +1,62 @@
+~ espada
+Samuel: Ten cuidado con eso.
+Claire: No te preocupes no me voy a hacer daño.
+Samuel: Eso no es lo que me preocupa.
+Claire: En realidad es bastante ligera y no parece muy afilada.
+Samuel: Cualquier cosa puede ser un arma en tus manos.
+{{" "}}: [color=#A4B2C1]Espada ha sido añadida al cuaderno.[/color]
+=> END
+
+~ guirnalda
+Claire: ...
+Samuel: (Se ha quedado mirando la guirnalda concentrada.)
+Samuel: ¿Es bonita verdad?
+Claire: Es rara.
+Samuel: (Parece que le ha gustado mucho.)
+{{" "}}: [color=#A4B2C1]Guirnalda ha sido añadida al cuaderno.[/color]
+=> END
+
+~ caja_magica
+Claire: Está intacta por dentro salvo por esos pequeños agujeros al fondo.
+Samuel: Se ve que Adelaide cuida bien las cosas que usa para sus espectáculos.
+Claire: ¿Eso es en lo que te fijas?
+Samuel: Yo también tengo mi cuaderno impoluto, respeto esas cosas.
+{{" "}}: [color=#A4B2C1]Caja magica ha sido añadida al cuaderno.[/color]
+=> END
+
+~ gradas
+Samuel: Antes todos los asientos estaban llenos de gente.
+Samuel: Que lástima.
+Claire: Ahora se está más traqnuilo.
+=> END
+
+~ backstage
+Samuel: Es bastante pequeña la zona de aquí atrás.
+Claire: Aquí no han podido caber los otros tres durante el truco de mágia.
+Claire: Pero no recuerdo verlos sentados con el público tampoco.
+=> END
+
+~ llave
+Samuel: ¿Y esto?
+Claire: ¿Será la llave de las cajas de fuera?
+Samuel: ¿Sigues con eso?
+Forzudo: Disculpad, esa es la llave del despacho del jefe.
+Claire: Que rápido la has reconocido.
+Forzudo: Bueno, está junto a su cuerpo. Es normal pensar que se le haya caído.
+Claire: Justo yo estaba a punto de decir lo mismo, pero no sabemos cuál es su despacho para comprobarlo.
+Samuel: (Creo que no le ha hecho gracia que se le adelantaran.)
+Forzudo: Os acompaño hasta allí, así podéis preguntarme lo que haga falta.
+Claire: Vale, cuando hayamos visto suficiente, iremos.
+{{" "}}: [color=#A4B2C1]Ahora al clicar sobre los lugares del cuaderno podrás visitarlos.[/color]
+=> END
+
+~ cadaver
+Claire: No le veo nada más interesante a parte de lo que ya hemos comentado.
+Samuel: Mejor, no quiero verlo.
+Claire: En cuanto llegue la policía se lo llevará y no tendrás que preocuparte.
+Samuel: (¿Por qué ha tenido que pasar esto?)
+=> END
+
+#Al finalizar el puzzle
 ~ carpa1
-do show_character("duenyo", "default")
-Dueño: ¡Adelante todos, pasen y vean las maravillas de nuestro espectáculo!
-Samuel: (Todo el mundo ha entrado ya, se les ve muy animados. El escenario está iluminado llamándo la atención de todo el mundo.)
-do show_character("duenyo", "laught")
-Dueño: ¡Para comenzar permitidme presentaros a las estrellas del espectáculo!
-do hide_character("duenyo")
-do video(video_presentacion)
-
-do cambiar_fondo(fondo_caja)
-Samuel: (Al terminar la presentación colocan una caja en el centro y casi todos se van detrás del escenario.)
-do show_character("maga", "default")
-???: Es un placer estar aquí con vosotros, yo soy Adelaide, intentad no olvidarlo cuando os deje sin aliento.
-Adelaide: Para este número necesitaré la colaboración de nuestro jefe.
-do show_character("duenyo", "laught")
-Dueño: Espero salir entero esta vez. 
-Samuel: (El público comienza a reírse.)
-do show_character("maga", "default")
-Adelaide: Haré todo lo posible.
-Adelaide: Ahora entre en la caja, si es tan amable.
-do hide_character("duenyo")
-Samuel: (El Dueño entra con tranquilidad en la gran caja que han colocado en el centro del escenario.)
-Adelaide: Se trata de un truco clásico.
-do espada_visibility(true)
-Adelaide: Clavaré las espadas en la caja y veremos si nuestro querido jefe sale como un colador o no.
-do espada_visibility(false)
-do pantalla_negra(true)
-do hide_character("maga")
-Samuel: (Levanta una espada larga y brillante, para después clavarla en la caja.)
-Samuel: (Después clava otra y otra más.)
-Samuel: (El público cuchichea y los más pequeños parecen preocupados.)
-Samuel: (Entre los murmullos del público se escucha algo más. Probablemente algún niño emocionado.)
-do show_character("maga", "default")
-Adelaide: Esto sería suficiente para dejar a cualquiera como un queso suizo.
-Adelaide: Así que comprobemos cómo se encuentra.
-do hide_character("maga")
-Samuel: (Comienza a retirar las espadas lentamente.)
-do video(video_descubrimiento)
-do despues_descubrimiento()
-=> END
-
-~ carpa2
-do cambiar_fondo(fondo_despues)
-Samuel: (Todo el mundo se encuentra consternado. Incluso Adelaide ha dejado caer la espada que llevaba en la mano.)
-Samuel: (Bueno, hay una persona que parece más viva que nunca.)
-do show_character("detective", "default_hot")
-Claire: Escuchadme todos, hagan el favor de mantener la calma. 
-Samuel: (Se levantó y caminó con tranquilidad hacia el escenario levantando una placa de policía.)
-Claire: Necesito que todos los espectadores evacuen la carpa con precaución. Que un grupo vaya a la cabina más cercana y pida refuerzos.
-Claire: Mientras yo me encargaré de la investigación. Por lo que necesito que los miembros del circo no abandonen las instalaciones. Por lo que agradecería que el resto se quedara vigilando la entrada.
-do show_character("maga", "enfado")
-Adelaide: ¿Estás diciéndo que somos sospechosos? ¡Yo no he hecho nada!
-do hide_character("detective")
-do show_character("trapecista", "default")
-Trapecista: Calma, será parte del protocolo. Querrá interrogarnos y esas cosas.
-do hide_character("maga")
-do show_character("payasa", "triste")
-Payasa: Pero yo no quiero quedarme aquí viéndolo así.
-do hide_character("trapecista")
-do show_character("fortachon", "preocupado")
-Forzudo: ¿Las caravanas cuentan como parte del recinto? Creo que allí algunos estarían más cómodos después de lo que acaba de pasar.
-do hide_character("payasa")
-do show_character("detective", "default_hot")
-Claire: Me parece bien, igualmente investigaremos todo. Pero no montéis un alboroto, si tratáis de salir os verán.
-do hide_character("fortachon")
-Claire: Samuel, necesito que vayas apuntando las cosas importantes. Así que ven aquí.
-Samuel: V-voy, pero yo el cadáver no quiero verlo.
-Claire: Está bien, céntrate en tomar nota entonces.
-Claire: Tiene una marca horizontal en el cuello, está bastante marcada.
-do marca(true)
-{{" "}}: [color=#A4B2C1]Marca horizontal en el cuello ha sido añadida al cuaderno.[/color]
-do marca(false)
-Claire: Si nos fijamos en su cara, tiene unas marcas azuladas y moradas. Si no recuerdo mal, se llaman equimosis faciales.
-do equimosis(true)
-{{" "}}: [color=#A4B2C1]Equimosis faciales han sido añadidas al cuaderno.[/color]
-do equimosis(false)
-Samuel: (Me tiembla la mano y me cuesta concentrarme.)
-Claire: No parece que tenga ningún daño más. Sacaremos conclusiones con esto.
-do hide_character("detective")
-do puzzle()
-=> END
-
-~ tutorial1
-do iluminacion1(true)
-Claire: En el cuaderno tenemos las cosas que podemos usar para resolver esto.
-do iluminacion1(false)
-do show_character("detective", "default_hot")
-Claire: Si quieres ver las pistas con más detalle puedes seguir consultándolas con Esc.
-do hide_character("detective")
-do iluminacion2(true)
-Claire: El otro lado es donde arrastramos las pruebas para formar una respuesta a la pregunta.
-do iluminacion2(false)
-do show_character("detective", "default_hot")
-do iluminacion3(true)
-Claire: Forma primero el inicio de la frase.
-do hide_character("detective")
-do iluminacion3(false)
-=> END
-
-~ tutorial2
-do show_character("detective", "default_hot")
-Claire: No trates de construir la casa por el tejado.
-do hide_character("detective")
-=> END
-
-~ tutorial3
-do show_character("detective", "default_hot")
-do iluminacion4(true)
-Claire: El tercer espacio tiene un símbolo distinto. Aquí se pueden añadir 2 pruebas de distintos tipos para deducir cosas nuevas.
-Claire: Prueba a añadir las 2 cosas que hemos descubierto del cadáver.
-Claire: Cuando sea tu respuesta final, pulsa el botón de verificar. Prometo que no me burlaré demasiado si fallas.
-Samuel: (Demasiado...)
-do hide_character("detective")
-do iluminacion4(false)
-=> END
-
-~ tutorial4
-do show_character("detective", "default_hot")
-Claire: Si al finalizar la deducción no estás satisfecho puedes pulsar sobre ella para repetirla y cambiar tu respuesta.
-do hide_character("detective")
-=> END
-
-~ carpa3
-Samuel: ¿Crees que el dueño murió asfixiado?
-do show_character("detective", "default_hot")
-Claire: Es lo que da a entender el cuerpo, si.
-Samuel: Pero estaba él solo dentro de la caja.
-Claire: No tenemos suficientes pistas para sacar más conclusiones. Investiguemos el escenario.
-do hide_character("detective")
-{{" "}}: [color=#A4B2C1]Ahora puedes guardar la partida desde el cuaderno.[/color]
-do escena_terminada()
 => END

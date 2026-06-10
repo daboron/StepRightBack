@@ -1481,14 +1481,15 @@ text = "Diálogo 3
 
 [node name="deduccion1" type="Button" parent="cuaderno"]
 layout_mode = 0
-offset_left = 1170.0
+offset_left = 1343.0
 offset_top = 827.0
-offset_right = 1355.0
+offset_right = 1528.0
 offset_bottom = 936.0
 theme_override_font_sizes/font_size = 30
 text = "Deducción 1"
 
 [node name="deduccion2" type="Button" parent="cuaderno"]
+visible = false
 layout_mode = 0
 offset_left = 1367.0
 offset_top = 827.0
@@ -1510,9 +1511,10 @@ text = "Salir"
 [node name="personaje" type="AnimatedSprite2D" parent="."]
 position = Vector2(415, 540)
 sprite_frames = SubResource("SpriteFrames_lrxhf")
-animation = &"trapecista"
+animation = &"detective"
 
 [connection signal="pressed" from="cuaderno/dialogo1" to="." method="_on_dialogo_1_pressed"]
 [connection signal="pressed" from="cuaderno/dialogo2" to="." method="_on_dialogo_2_pressed"]
 [connection signal="pressed" from="cuaderno/dialogo3" to="." method="_on_dialogo_3_pressed"]
+[connection signal="pressed" from="cuaderno/deduccion1" to="." method="_on_deduccion_1_pressed"]
 [connection signal="pressed" from="cuaderno/salir" to="." method="_on_salir_pressed"]

@@ -18,6 +18,33 @@ var pistas = {
 				"informacion": "placeholder"
 			}
 		}
+	},
+	"espada": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/objetos/equimosis_faciales.png"),
+				"nombre": "Espada",
+				"informacion": "placeholder"
+			}
+		}
+	},
+	"guirnalda": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/objetos/equimosis_faciales.png"),
+				"nombre": "Guirnalda",
+				"informacion": "placeholder"
+			}
+		}
+	},
+	"caja_magica": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/objetos/equimosis_faciales.png"),
+				"nombre": "Caja magica",
+				"informacion": "placeholder"
+			}
+		}
 	}
 }
 
@@ -173,6 +200,30 @@ var acciones = {
 				"nombre": "Se sorprendió por"
 			}
 		}
+	},
+	"creo": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/verbos/puzzle1/sorprendio.png"),
+				"nombre": "Creó"
+			}
+		}
+	},
+	"utilizo": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/verbos/puzzle1/sorprendio.png"),
+				"nombre": "Utilizó"
+			}
+		}
+	},
+	"escondio": {
+		"fases": {
+			1: {
+				"imagen": preload("res://arte/verbos/puzzle1/sorprendio.png"),
+				"nombre": "Escondió"
+			}
+		}
 	}
 }
 
@@ -207,8 +258,35 @@ var puzzles = {
 			},
 			"solucion": ["duenyo", "murio", "asfixia"],
 			"dialogo_solucion": {
-				"dialogo": preload("res://dialogos/escenarios/carpa.dialogue"),
+				"dialogo": preload("res://dialogos/escenarios/carpa_ini.dialogue"),
 				"nombre_dialogo": "carpa3"
+			}
+		},
+		"puzzle2": {
+			"pregunta": "¿Cómo funciona el truco de magia?",
+			"elementos": {
+				"perfiles": ["maga", "detective", "duenyo"],
+				"acciones": ["creo", "utilizo", "escondio"],
+				"pistas": ["espada", "guirnalda", "caja_magica"]
+			},
+			"plantilla": [
+				{"tipo": "perfiles", "flecha": true},
+				{"tipo": "acciones", "flecha": true},
+				{"tipo": "deduccion", "flecha": false}
+			],
+			"deducciones": {
+				"truco_espadas": {
+					"dialogo": "puzzle2",
+					"requisitos_activacion": ["espada", "caja_magica"],
+					"espadas_trucadas": preload("res://arte/deducciones/puzzle1/envenenamiento.png"),
+					"fuerza_bruta": preload("res://arte/deducciones/puzzle1/asfixia.png"),
+					"efecto_optico": preload("res://arte/deducciones/puzzle1/apuñalamiento.png")
+				}
+			},
+			"solucion": ["maga", "utilizo", "espadas_trucadas"],
+			"dialogo_solucion": {
+				"dialogo": preload("res://dialogos/escenarios/carpa.dialogue"),
+				"nombre_dialogo": "carpa1"
 			}
 		}
 	}
@@ -242,7 +320,10 @@ var dialogos_personajes = {
 			},
 			"deducciones": {
 				#aqui van los puzzles y sus condiciones de acctivacion
-				"deduccion1": {},
+				"deduccion1": {
+					"puzzle": "puzzle2",
+					"condiciones": ["caja", "espada", "guirnalda"]
+				},
 				"deduccion2": {}
 			}
 		}

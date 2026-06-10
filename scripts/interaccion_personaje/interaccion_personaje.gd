@@ -68,3 +68,14 @@ func _on_salir_pressed() -> void:
 		
 		# Destruimos la escena de interacción porque ya no la necesitamos
 		queue_free()
+
+
+func _on_deduccion_1_pressed() -> void:
+	var puzzle_scene = preload("res://escenas/cuaderno.tscn").instantiate()
+	puzzle_scene.configurar("puzzle2")
+	puzzle_scene.puzzle_terminado.connect(puzzle_terminado)
+	add_child(puzzle_scene)
+	move_child(puzzle_scene, get_child_count() - 1)
+
+func puzzle_terminado(dialogo):
+	print("se termina el puzzle")

@@ -14,8 +14,6 @@ signal puzzle_terminado(datos_dialogo)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Controlador.set_tutorial(true) #solo para las pruebas luego lo quito
-	configurar("puzzle1") #solo para las pruebas luego lo quito
 	Controlador.modo = "puzzle"
 	Input.set_custom_mouse_cursor(cursor_hand, Input.CURSOR_ARROW)
 	Input.set_custom_mouse_cursor(cursor_hand, Input.CURSOR_DRAG)
@@ -120,7 +118,7 @@ func result(tipo_resultado: String) -> void:
 	#si estamos en el tutorial y es la primera deduccion
 	if primera_deduccion && Controlador.tutorial :
 		DialogueManager.game_states = [get_parent(), self]
-		DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/carpa.dialogue"), "tutorial4")
+		DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/carpa_ini.dialogue"), "tutorial4")
 	
 	# 1. Buscamos la textura en los datos del puzzle usando el string que nos llega
 	var datos_deduccion = datos_puzzle["deducciones"]["causa_muerte"]
@@ -210,7 +208,7 @@ func _on_slot_normal_actualizado(slot_modificado: Control) -> void:
 
 func mostrar_tutorial() -> void:
 	DialogueManager.game_states = [get_parent(), self]
-	DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/carpa.dialogue"), "tutorial1")
+	DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/carpa_ini.dialogue"), "tutorial1")
 
 func iluminacion1(parametro) -> void:
 	$iluminacion1.visible = parametro
@@ -226,7 +224,7 @@ func iluminacion4(parametro) -> void:
 
 func seguir_tutorial() -> void:
 	DialogueManager.game_states = [get_parent(), self]
-	DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/carpa.dialogue"), "tutorial3")
+	DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/carpa_ini.dialogue"), "tutorial3")
 	
 	for slot in $area_deduccion/GridContainer.get_children():
 		if slot.tipo == "deduccion": # Variable directa
@@ -235,4 +233,4 @@ func seguir_tutorial() -> void:
 
 func _on_slot_deduccion_bloqueado_intentado() -> void:
 	DialogueManager.game_states = [get_parent(), self]
-	DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/carpa.dialogue"), "tutorial2")
+	DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/carpa_ini.dialogue"), "tutorial2")
