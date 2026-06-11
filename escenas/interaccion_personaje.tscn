@@ -1,4 +1,4 @@
-[gd_scene load_steps=354 format=3 uid="uid://fsn2o5ta3h3v"]
+[gd_scene load_steps=354 format=3 uid="uid://l22pv2twc1yk"]
 
 [ext_resource type="Texture2D" uid="uid://dliebignbpfff" path="res://arte/menu/notebook.png" id="1_k30qf"]
 [ext_resource type="Script" path="res://scripts/interaccion_personaje/interaccion_personaje.gd" id="1_nnvi6"]
@@ -1461,6 +1461,7 @@ theme_override_font_sizes/font_size = 50
 text = "Diálogo 1"
 
 [node name="dialogo2" type="Button" parent="cuaderno"]
+visible = false
 layout_mode = 0
 offset_left = 843.0
 offset_top = 369.0
@@ -1470,6 +1471,7 @@ theme_override_font_sizes/font_size = 50
 text = "Diálogo 2"
 
 [node name="dialogo3" type="Button" parent="cuaderno"]
+visible = false
 layout_mode = 0
 offset_left = 844.0
 offset_top = 523.0
@@ -1480,6 +1482,7 @@ text = "Diálogo 3
 "
 
 [node name="deduccion1" type="Button" parent="cuaderno"]
+visible = false
 layout_mode = 0
 offset_left = 1343.0
 offset_top = 827.0

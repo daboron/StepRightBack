@@ -1,3 +1,4 @@
+# dialogos de los nodos de deduccion de los puzzles
 ~ puzzle1
 do show_character("detective", "default_hot")
 Claire: El cuerpo solo tiene dos cosas notorias. No hay rastro de sangre o cualquier otro daño.
@@ -16,7 +17,18 @@ do hide_character("detective")
 
 ~ puzzle2
 do show_character("detective", "default_hot")
-Claire: 
+Samuel: Aún no entiendo cómo las espadas no llegaron a tocar al jefe.
+Claire: Tiene que haber un truco en alguna parte.
+Samuel: ¿No sería cargarse la magia si lo descubrimos?
+Claire: ¿Quieres que no descubramos al asesino?
+Samuel: Está bien, está bien.
+Samuel: (Mirando la información detallada de las pruebas el truco consiste en ...)
+- Espadas trucadas
+	do result("espadas_trucadas")
+- Fuerza bruta
+	do result("fuerza_bruta")
+- Efecto óptico
+	do result("efecto_optico")
 => END
 
 

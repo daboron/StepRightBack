@@ -82,7 +82,7 @@ var perfiles = {
 			}
 		}
 	},
-	"forzudo": {
+	"fortachon": {
 		"fases": {
 			1: {
 				"imagen": preload("res://arte/fotos/07_STRONGMAN_POLAROID.png"),
@@ -160,7 +160,8 @@ var lugares = {
 			1: {
 				"imagen": preload("res://arte/fondos/SET_Despacho.png"),
 				"nombre": "Despacho",
-				"informacion": "placeholder"
+				"informacion": "placeholder",
+				"escena": "res://escenas/despacho.tscn"
 			}
 		}
 	},
@@ -247,14 +248,12 @@ var puzzles = {
 				{"tipo": "acciones", "flecha": true},
 				{"tipo": "deduccion", "flecha": false}
 			],
-			"deducciones": {
-				"causa_muerte": {
-					"dialogo": "puzzle1",
-					"requisitos_activacion": ["marca_horizontal", "equimosis_faciales"],
-					"envenenamiento": preload("res://arte/deducciones/puzzle1/envenenamiento.png"),
-					"asfixia": preload("res://arte/deducciones/puzzle1/asfixia.png"),
-					"puñalada": preload("res://arte/deducciones/puzzle1/apuñalamiento.png")
-				}
+			"deduccion": {
+				"dialogo": "puzzle1",
+				"requisitos_activacion": ["marca_horizontal", "equimosis_faciales"],
+				"envenenamiento": preload("res://arte/deducciones/puzzle1/envenenamiento.png"),
+				"asfixia": preload("res://arte/deducciones/puzzle1/asfixia.png"),
+				"puñalada": preload("res://arte/deducciones/puzzle1/apuñalamiento.png")
 			},
 			"solucion": ["duenyo", "murio", "asfixia"],
 			"dialogo_solucion": {
@@ -274,14 +273,12 @@ var puzzles = {
 				{"tipo": "acciones", "flecha": true},
 				{"tipo": "deduccion", "flecha": false}
 			],
-			"deducciones": {
-				"truco_espadas": {
-					"dialogo": "puzzle2",
-					"requisitos_activacion": ["espada", "caja_magica"],
-					"espadas_trucadas": preload("res://arte/deducciones/puzzle1/envenenamiento.png"),
-					"fuerza_bruta": preload("res://arte/deducciones/puzzle1/asfixia.png"),
-					"efecto_optico": preload("res://arte/deducciones/puzzle1/apuñalamiento.png")
-				}
+			"deduccion": {
+				"dialogo": "puzzle2",
+				"requisitos_activacion": ["espada", "caja_magica"],
+				"espadas_trucadas": preload("res://arte/deducciones/puzzle1/envenenamiento.png"),
+				"fuerza_bruta": preload("res://arte/deducciones/puzzle1/asfixia.png"),
+				"efecto_optico": preload("res://arte/deducciones/puzzle1/apuñalamiento.png")
 			},
 			"solucion": ["maga", "utilizo", "espadas_trucadas"],
 			"dialogo_solucion": {

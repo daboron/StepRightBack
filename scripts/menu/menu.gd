@@ -10,6 +10,7 @@ extends CanvasLayer
 const item_ui = preload("res://escenas/ui/item_ui.tscn")
 var current_tab = null
 var tab_tweens = {}
+var lugar_seleccionado_datos = null
 
 func _ready() -> void:
 	protagonista.visibility(true)
@@ -117,6 +118,7 @@ func select_menu(selected_menu):
 	$cuaderno/resolucion_text.visible = false
 	selector_modo.visible = false
 	$cuaderno/modo_pantalla_text.visible = false
+	$detalle/ColorRect/HBoxContainer/VBoxContainer/desplazarse.visible = false
 	match selected_menu.name:
 		"PanelDialogos":
 			for entry in log:
@@ -197,6 +199,16 @@ func mostrar_detalle(datos):
 	$detalle/ColorRect/HBoxContainer/imagen.texture = datos["imagen"]
 	$detalle/ColorRect/HBoxContainer/VBoxContainer/nombre.text = datos["nombre"]
 	$detalle/ColorRect/HBoxContainer/VBoxContainer/informacion.text = datos["informacion"]
+	
+	lugar_seleccionado_datos = datos
+	var es_un_lugar = datos.has("escena")
+	var viaje_activo = SaveGame.game_data["desplazamiento_activo"]
+	print("es_un_lugar = ", es_un_lugar)
+	print("viaje_activo = ", viaje_activo)
+	if es_un_lugar and viaje_activo:
+		$detalle/ColorRect/HBoxContainer/VBoxContainer/desplazarse.visible = true
+	else:
+		$detalle/ColorRect/HBoxContainer/VBoxContainer/desplazarse.visible = false
 
 func _on_cerrar_pressed() -> void:
 	$detalle.visible = false
@@ -212,3 +224,15 @@ func _on_salir_pressed() -> void:
 	cerrar()
 	get_tree().paused = false
 	get_tree().change_scene_to_file("res://escenas/menu_inicio.tscn")
+
+
+func _on_desplazarse_pressed() -> void:
+	if lugar_seleccionado_datos and lugar_seleccionado_datos.has("escena"):
+		var ruta_escena = lugar_seleccionado_datos["escena"]
+		
+		cerrar()
+		$detalle.visible = false
+		$bloqueador_clic.visible = false
+		get_tree().paused = false
+		
+		get_tree().change_scene_to_file(ruta_escena)

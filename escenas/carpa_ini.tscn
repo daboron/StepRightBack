@@ -2742,6 +2742,7 @@ sprite_frames = SubResource("SpriteFrames_ls5w2")
 animation = &"preocupado"
 offset = Vector2(0, -540)
 script = ExtResource("203_ukujk")
+id = "fortachon"
 
 [node name="espada" type="ColorRect" parent="."]
 visible = false

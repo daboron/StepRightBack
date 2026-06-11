@@ -14,7 +14,9 @@ var game_data : Dictionary = {
 	"contador_objetos_inicio": 0,
 	"personajes_visibles": {},
 	"modo_pantalla": 0,
-	"resolucion_pantalla": 0
+	"resolucion_pantalla": 0,
+	"dialogos_vistos": {},
+	"desplazamiento_activo": false
 }
 
 func game_data_add(place, obj, fase := 1) -> void:

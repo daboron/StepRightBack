@@ -5,6 +5,8 @@ Samuel: Eso no es lo que me preocupa.
 Claire: En realidad es bastante ligera y no parece muy afilada.
 Samuel: Cualquier cosa puede ser un arma en tus manos.
 {{" "}}: [color=#A4B2C1]Espada ha sido añadida al cuaderno.[/color]
+do objeto_cuaderno("espada")
+do hide_character("detective")
 => END
 
 ~ guirnalda
@@ -14,6 +16,8 @@ Samuel: ¿Es bonita verdad?
 Claire: Es rara.
 Samuel: (Parece que le ha gustado mucho.)
 {{" "}}: [color=#A4B2C1]Guirnalda ha sido añadida al cuaderno.[/color]
+do objeto_cuaderno("guirnalda")
+do hide_character("detective")
 => END
 
 ~ caja_magica
@@ -22,32 +26,45 @@ Samuel: Se ve que Adelaide cuida bien las cosas que usa para sus espectáculos.
 Claire: ¿Eso es en lo que te fijas?
 Samuel: Yo también tengo mi cuaderno impoluto, respeto esas cosas.
 {{" "}}: [color=#A4B2C1]Caja magica ha sido añadida al cuaderno.[/color]
+do objeto_cuaderno("caja_magica")
+do hide_character("detective")
 => END
 
 ~ gradas
 Samuel: Antes todos los asientos estaban llenos de gente.
 Samuel: Que lástima.
 Claire: Ahora se está más traqnuilo.
+do hide_character("detective")
 => END
 
 ~ backstage
 Samuel: Es bastante pequeña la zona de aquí atrás.
 Claire: Aquí no han podido caber los otros tres durante el truco de mágia.
 Claire: Pero no recuerdo verlos sentados con el público tampoco.
+do hide_character("detective")
 => END
 
 ~ llave
 Samuel: ¿Y esto?
 Claire: ¿Será la llave de las cajas de fuera?
 Samuel: ¿Sigues con eso?
+do show_character("fortachon", "preocupado")
 Forzudo: Disculpad, esa es la llave del despacho del jefe.
+do show_character("detective", "default_hot")
 Claire: Que rápido la has reconocido.
+do show_character("fortachon", "preocupado")
 Forzudo: Bueno, está junto a su cuerpo. Es normal pensar que se le haya caído.
+do show_character("detective", "default_hot")
 Claire: Justo yo estaba a punto de decir lo mismo, pero no sabemos cuál es su despacho para comprobarlo.
 Samuel: (Creo que no le ha hecho gracia que se le adelantaran.)
+do show_character("fortachon", "preocupado")
 Forzudo: Os acompaño hasta allí, así podéis preguntarme lo que haga falta.
+do show_character("detective", "default_hot")
 Claire: Vale, cuando hayamos visto suficiente, iremos.
 {{" "}}: [color=#A4B2C1]Ahora al clicar sobre los lugares del cuaderno podrás visitarlos.[/color]
+do exploracion_activa()
+do hide_character("detective")
+do hide_character("fortachon")
 => END
 
 ~ cadaver
@@ -55,8 +72,11 @@ Claire: No le veo nada más interesante a parte de lo que ya hemos comentado.
 Samuel: Mejor, no quiero verlo.
 Claire: En cuanto llegue la policía se lo llevará y no tendrás que preocuparte.
 Samuel: (¿Por qué ha tenido que pasar esto?)
+do hide_character("detective")
 => END
 
 #Al finalizar el puzzle
 ~ carpa1
+Claire: Ya te hemos descubierto.
+do cambiar_dialogo()
 => END

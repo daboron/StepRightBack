@@ -61,7 +61,7 @@ func esperando_cuaderno() -> void:
 	SaveGame.game_data_add("perfiles", "protagonista")
 	SaveGame.game_data_add("perfiles", "detective")
 	SaveGame.game_data_add("perfiles", "duenyo")
-	SaveGame.game_data_add("perfiles", "forzudo")
+	SaveGame.game_data_add("perfiles", "fortachon")
 	SaveGame.game_data_add("lugares", "exterior")
 	$placeHolder.visible = true
 	MenuManager.activar_espera_menu()

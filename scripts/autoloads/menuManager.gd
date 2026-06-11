@@ -24,7 +24,6 @@ func _input(event):
 
 func toggle_menu():
 	var abrir = !menu_instance.visible
-	print("\n--- [MENU] INTERRUPTOR PULSADO. ¿Abrir?: ", abrir, " | Modo actual: ", Controlador.modo, " ---")
 	
 	if not abrir and esperando_cierre_de_menu:
 		esperando_cierre_de_menu = false
@@ -50,12 +49,9 @@ func toggle_menu():
 	if abrir and menu_instance.current_tab == null:
 		menu_instance._init_first_tab()
 		
-	# Rastreamos qué pasa con la detective
-	print("[DEBUG] ¿CharacterManager tiene detective?: ", CharacterManager.personajes.has("detective"))
 	if CharacterManager.personajes.has("detective"):
 		var nodo_detective = CharacterManager.personajes["detective"]
 		if is_instance_valid(nodo_detective):
-			print("[DEBUG] Detective encontrada en escena. Visibilidad antes de cambiar: ", nodo_detective.visible)
 			# Quitamos temporalmente el filtro de modo puzzle para probar si la apaga aquí
 			if abrir:
 				nodo_detective.set_meta("visibilidad_previa", nodo_detective.visible)
@@ -66,9 +62,7 @@ func toggle_menu():
 				else:
 					# Por si acaso no se hubiera guardado, por defecto la dejamos oculta
 					nodo_detective.visible = false
-			print("[DEBUG] Visibilidad después de cambiar: ", nodo_detective.visible)
 	
-	print("[DEBUG] Iniciando escaneo de nodos en la raíz de la ventana...")
 	for node in get_tree().root.get_children():
 		gestionar_visibilidad_dialogos(node, abrir)
 
@@ -78,7 +72,6 @@ func gestionar_visibilidad_dialogos(node, menu_abierto):
 
 	# Chivato para ver pasar TODOS los CanvasLayer del juego
 	if node is CanvasLayer:
-		print("  -> Encontrado CanvasLayer: '", node.name, "' | Visibilidad actual: ", node.visible)
 		
 		# Corregimos la estructura: Evaluamos de forma independiente a la CapaMenuGlobal
 		if node.name == "CapaMenuGlobal":
@@ -86,7 +79,6 @@ func gestionar_visibilidad_dialogos(node, menu_abierto):
 		elif node != menu_instance:
 			var nombre = node.name.to_lower()
 			if "dialog" in nombre or "balloon" in nombre or "line" in nombre:
-				print("     [¡ALERTA!] Detectada capa de diálogo: '", node.name, "'. Cambiando visible a: ", not menu_abierto)
 				if menu_abierto:
 					# 1. Al ABRIR, guardamos si el diálogo se estaba mostrando realmente
 					node.set_meta("visibilidad_previa_dialogo", node.visible)

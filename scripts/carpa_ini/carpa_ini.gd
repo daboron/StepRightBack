@@ -82,7 +82,7 @@ func cambiar_fondo(fondo) -> void:
 	fondo.visible = true
 
 func puzzle_terminado(dialogo):
-	#ResourceLoader.load_threaded_request("res://escenas/carpa.tscn")
+	Controlador.set_tutorial(false)
 	DialogueManager.show_dialogue_balloon(dialogo["dialogo"], dialogo["nombre_dialogo"])
 
 func escena_terminada() -> void:

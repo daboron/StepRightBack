@@ -80,13 +80,12 @@ func _on_deduccion_actualizada(slot_deduccion: Control) -> void:
 		ids_introducidos.append(nodo.id_elemento)
 		
 	# Buscamos el bloque de deducciones en los datos del puzzle actual
-	var deducciones = datos_puzzle.get("deducciones", {})
+	var deducciones = datos_puzzle.get("deduccion", {})
 	
 	# Recorremos las deducciones configuradas en el JSON/Diccionario de este puzzle
 	for clave_deduccion in deducciones:
-		var requisitos = deducciones[clave_deduccion].get("requisitos_activacion", [])
-		var titulo_dialogo = deducciones[clave_deduccion].get("dialogo", "")
-		
+		var requisitos = deducciones.get("requisitos_activacion", [])
+		var titulo_dialogo = deducciones.get("dialogo", "")
 		# Comprobamos si los IDs que tiene el slot coinciden con los requisitos
 		var es_correcto := true
 		for req in requisitos:
@@ -104,7 +103,8 @@ func _on_deduccion_actualizada(slot_deduccion: Control) -> void:
 			DialogueManager.game_states = [get_parent(), self]
 			return
 			
-	print("Se han colocado 2 elementos en la nube, pero no son la combinación correcta.")
+		else:
+			print("Se han colocado 2 elementos en la nube, pero no son la combinación correcta.")
 
 
 # Esta función es la que llama el diálogo mediante: do result("asfixia")
@@ -121,7 +121,7 @@ func result(tipo_resultado: String) -> void:
 		DialogueManager.show_dialogue_balloon(load ("res://dialogos/escenarios/carpa_ini.dialogue"), "tutorial4")
 	
 	# 1. Buscamos la textura en los datos del puzzle usando el string que nos llega
-	var datos_deduccion = datos_puzzle["deducciones"]["causa_muerte"]
+	var datos_deduccion = datos_puzzle["deduccion"]
 	
 	if datos_deduccion.has(tipo_resultado):
 		var textura_ganadora: Texture2D = datos_deduccion[tipo_resultado]
@@ -147,7 +147,7 @@ func reevaluar_deduccion(slot_deduccion: Control) -> void:
 	slot_deduccion_activo = slot_deduccion
 	
 	# Buscamos los datos para relanzar el diálogo
-	var datos_deduccion = datos_puzzle.get("deducciones", {}).get("causa_muerte", {})
+	var datos_deduccion = datos_puzzle.get("deduccion", {})
 	var titulo_dialogo = datos_deduccion.get("dialogo", "")
 	
 	if titulo_dialogo != "":

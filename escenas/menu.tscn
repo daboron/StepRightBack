@@ -534,7 +534,6 @@ grow_vertical = 2
 color = Color(1, 1, 1, 0)
 
 [node name="detalle" type="Panel" parent="."]
-visible = false
 offset_left = 207.0
 offset_top = 220.0
 offset_right = 1723.0
@@ -576,12 +575,18 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="informacion" type="RichTextLabel" parent="detalle/ColorRect/HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 450)
+custom_minimum_size = Vector2(0, 400)
 layout_mode = 2
 theme_override_font_sizes/normal_font_size = 30
 bbcode_enabled = true
-text = "[fill]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. [/fill]
+text = "[fill]Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. [/fill]
 "
+
+[node name="desplazarse" type="Button" parent="detalle/ColorRect/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Desplazarse"
 
 [node name="cerrar" type="Button" parent="detalle"]
 layout_direction = 3
@@ -594,4 +599,5 @@ text = "X"
 
 [connection signal="pressed" from="cuaderno/guardar" to="." method="_on_guardar_pressed"]
 [connection signal="pressed" from="cuaderno/salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="detalle/ColorRect/HBoxContainer/VBoxContainer/desplazarse" to="." method="_on_desplazarse_pressed"]
 [connection signal="pressed" from="detalle/cerrar" to="." method="_on_cerrar_pressed"]
